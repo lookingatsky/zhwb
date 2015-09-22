@@ -1,0 +1,30 @@
+.baner_border{border:1px solid #DBDBDB;}
+.baner_border img{max-width:100%;}
+article{padding:30px;text-align:center;width:690px;}
+article img{display:inline-block;margin-bottom:20px;}
+article header h1{font-size:20px;color:#3c3c3c;text-align:center;}
+article header p{color:#999; font-family:"宋体";text-align:center;margin:15px 0 20px 0;}
+article p{font-family:"宋体";color:#555;line-height:24px; text-indent:25px;margin-bottom:20px;text-align:left;}
+article  p img,article img{max-width:100%;}
+article  p img{margin-left:-25px;}
+article p strong,article strong{ font-weight:bold;}
+.conterbox  article{padding:0px;}
+section.article{margin-top:0px;width:690px;padding-top:0px;}
+section.mt_pt0{margin-top:0px;padding-top:0px;}
+/*理财案例*/
+.lc_title{height:22px;border-bottom:2px solid #d60b18;}
+.lc_title h3{height:22px; background:url(/../../img/index/lc_titlebg.png) no-repeat left top;width:123px;color:#fff;font-size:16px;padding-left:12px;}
+.anli_list li{border-bottom:1px solid #cecece;cursor:pointer;}
+.anli_list li h2{font-size:16px;line-height:55px;color:#3c3c3c;}
+.anli_info{display:none;margin-bottom:15px;}
+.anli_info p{font-size:12px;line-height:24px;font-family:Arial, Helvetica, sans-serif;color:#555; text-indent:25px;}
+.anli_info p span{font-size:16px;display:inline-block; position:relative;left:-45px;width:3px;}
+.anli_info h3{ font-size:14px;color:#3c3c3c;margin:5px 0;}
+.other_icon,other_iconoff{display:inline-block;width:15px;height:10px; background-position:-152px -480px; vertical-align:middle;margin-left:5px; _background-position:-152px -475px;position:absolute;right:10px;top:25px;_top:0px;}
+.other_iconoff{ background-position:-174px -480px;_ background-position:-174px -475px;}
+/*学堂 */
+.icon_q{display:inline-block; background:url(/../../img/index/q.gif) no-repeat;width:23px;height:21px;margin-right:12px;}
+.icon_A{display:inline-block; background:url(/../../img/index/a.gif) no-repeat;width:21px;height:21px; }
+.school_text p{width:640px;float:right; text-indent:0;margin-right:12px;}
+/*20140606去掉行首标点符号*/
+article p,article,.school_text p,.anli_info p{word-break:normal;}

@@ -1,0 +1,33 @@
+/*动态页面顶部baner图片*/
+.page_baner{border:1px solid #e2e2e2;margin-top:15px;}
+
+/*动态页微信息列表*/
+.dtinfo_list dl{border:1px solid #dddddd;background:#fff;padding:14px 10px;width:456px;height:110px;float:left;margin-bottom:10px;}
+.dtinfo_list dl:hover{background:#f1f0f0;}
+.dtinfo_list dl dt{font-size:14px;}
+.dtinfo_list dl dd{float:left;margin-top:10px;height:88px;}
+.dtinfo_list dl dd,.dtinfo_list dl dd img{width:155px;height:88px; overflow:hidden;}
+.dtinfo_list dl dd.info_text{width:285px;margin-left:15px;}
+.dtinfo_list dl dd.info_text p{color:#555555; font-family:"宋体";line-height:21px;}
+.info_text p a,.dtinfo_list dl dd.info_text p a{color:#d60b18;_margin-top:5px;}
+.more_icon{ background-position:-98px -56px;_background-position:-100px -56px;}
+/*媒体报到*/
+.video_box,.active_box{display:none;}
+.video_box ul li{border-bottom:1px solid #e9e9e9;padding:0 5px;}
+.video_title{width:850px;}
+.title_date{width:100px;line-height:34px;text-align:right;}
+.video_title a{display:inline-block;height:34px;line-height:34px;font-size:12px; font-family:"宋体"}
+
+/*市场活动*/
+.active_box ul li{border-bottom:1px solid #cecece;margin-bottom:10px;}
+.schd_infobox{width:580px;height:90px;padding:15px 5px;}
+.schd_infobox h2 a{font-size:16px;color:#3c3c3c;margin-bottom:14px;}
+.schd_infobox h2 a:hover{color:#D60B18;}
+.schd_infobox p{color:#777;line-height:23px; font-family:"宋体";}
+.xq_btnbox{width:90px;padding-top:60px;}
+.xq_btnbox a{font-size:12px;color:#d60b18;font-family:"宋体";}
+.xq_btnbox span{font-size:12px;font-family:Arial, Helvetica, sans-serif;}
+.schd_imgbox{width:290px;height:105px; overflow:hidden;}
+.schj_imgbox .picbox{width:191px;height:105px;}
+
+.dtinfo_list dl dt a{color:#3c3c3c;font-size:15px;}
