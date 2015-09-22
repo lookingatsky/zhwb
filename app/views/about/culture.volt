@@ -15,26 +15,26 @@
 				<div class="aside_telicon mt10 fl"><img src="/../../img/index/page_tel_03.gif"></div>
 				<div class="fr aside_number">
 					<h3>客服热线</h3>
-					<p><li><a></a></li></p>
+					<p>400-077-8000</p>
 					<p style="color:#777;font-size:12px;"><span style="font-family:'微软雅黑';">周一至周五：</span>9:00—18:00 </p>
 				</div>
 			</div>
 		</aside>
 		<div class="about_conter fr mt30">
 			<section>
-				<h2 class="title_text mb30">海银文化</h2>
+				<h2 class="title_text mb30">万邦文化</h2>
 
 				<div class="mt25 clearfix">
 					<div class="fl hy_wenhua_box">
-						<h2 class="red_bg"><span>海银人的</span><i>愿 景</i></h2>
+						<h2 class="red_bg"><span>万邦人的</span><i>愿 景</i></h2>
 						<p class="mt30" style="font-size:18px;">做最有价值的<br>财富管理机构</p>
 					</div>
 					<div class="fl hy_wenhua_box ml14">
-						<h2 class="yellow_bg"><span>海银人的</span><i>使 命</i></h2>
+						<h2 class="yellow_bg"><span>万邦人的</span><i>使 命</i></h2>
 						<p class="mt25">优化您的资产配置<br>使您的财富得以<br>安全、稳健、持续增长</p>
 					</div>
 					<div class="fl hy_wenhua_box ml14">
-						<h2 class="blue_bg"><span>海银的核心</span><i>价值观</i></h2>
+						<h2 class="blue_bg"><span>万邦的核心</span><i>价值观</i></h2>
 						<p class="mt15">坚守诚信与正直<br>追求卓越与成就<br>注重效能与品质<br>永远关注与客户共赢</p>
 					</div>
 				</div>

@@ -25,8 +25,8 @@
                 </li>
                 <li>
                 	<a href="/college/index" target="_blank">
-                    	<img src="/../../img/index/tools_icon2.jpg" alt="海银学堂">
-                        <span>海银学堂</span>
+                    	<img src="/../../img/index/tools_icon2.jpg" alt="万邦学堂">
+                        <span>万邦学堂</span>
                     </a>
                 </li>
                <li>

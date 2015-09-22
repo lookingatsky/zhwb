@@ -31,8 +31,6 @@
 								<div class="clearfix">
 									<ul class="fr fenxiang">
 										<li><a href="http://weibo.com/5657584093" title="新浪" class="sina_icon web_skin" target="_blank"></a></li>
-										<li><a href="http://chyjr.t.sohu.com/" title="搜狐" class="souhu web_skin" target="_blank"></a></li>
-										<li><a href="http://t.qq.com/haiyincaifu" title="腾讯" class="tenq web_skin" target="_blank"></a></li>
 									</ul>                
 									<div class="fr">
 										<div class="search_input clearfix">
@@ -58,7 +56,7 @@
 											<li><a href="/about/partner">合作伙伴<i class="web_skin menu_icon"></i></a></li>
 											<li><a href="/about/contact">联系我们<i class="web_skin menu_icon"></i></a></li>
 											<li><a href="/about/culture">万邦文化<i class="web_skin menu_icon"></i> </a></li>
-											<!-- <li><a href="#">海银荣誉<i class="web_skin menu_icon"></i></a></li>-->
+											<!-- <li><a href="#">万邦荣誉<i class="web_skin menu_icon"></i></a></li>-->
 										</ul>
 									</div>
 								</li>

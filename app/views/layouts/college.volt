@@ -208,7 +208,7 @@ style.firebugResetStyles {
       	<div class="fl footer_leftbox">
         	<ul class="clearfix">
             	<li><a href="http://www.chyjr.com/site/web/research.shtml" target="_blank">研究资讯</a></li>
-                <li><a href="/college/index" target="_blank"> 海银学堂</a></li>
+                <li><a href="/college/index" target="_blank"> 万邦学堂</a></li>
                 <li><a href="http://www.chyjr.com/site/web/news.shtml" target="_blank">公司动态</a></li>
                 <li><a href="http://www.chyjr.com/site/web/recruit.shtml" target="_blank">诚聘英才</a></li>
                 <li><a href="http://www.chyjr.com/site/web/aboutLianxi.jsp" target="_blank">联系我们</a></li>

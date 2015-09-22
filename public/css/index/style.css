@@ -320,7 +320,7 @@ footer{height:100px;border-top:2px solid #d91920;width:100%;margin-top:45px;font
 .close_btnvideo{ background:url(./../../img/index/video_close.gif) no-repeat left top;width:60px;height:60px;position:absolute;right:-60px;top:-4px;}
 .video_jianjie h2{font-size:22px;}
 .video_jianjie p{font-size:14px;line-height:25px;}
-/*海银年度广告*/
+/*万邦年度广告*/
 .laybox_video2{width:720px;position:absolute;border-top:4px solid #d40a16;z-index:999999; }
 .video2{height:420px; background:url(../video/video_bg2.jpg) no-repeat left top;}
 .close_btnvideo2{ background:url(./../../img/index/video_close.gif) no-repeat left top;width:60px;height:60px;position:absolute;right:-60px;top:-4px;}
@@ -366,11 +366,11 @@ _top:expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ?
 	.aside_video{ display:block;background: url(./../../img/index/video_play_03.jpg) no-repeat left top;height:103px;padding-top:31px;_background: url(./../../img/index/ie_play.jpg) no-repeat left top;}
 	.play_btn{display:block;height:71px;width:72px;margin-left:85px; background:url(./../../img/index/btn_01.png) no-repeat center top;_background: none;}
 	.aside_video:hover span{display:block;height:71px;width:72px; background:url(./../../img/index/btn_02.png) no-repeat center top;padding-top:31px;_background:none;}
-	/*海银年度广告*/
+	/*万邦年度广告*/
 	.aside_video2{ display:block;background: url(./../../img/index/video_play_04.jpg) no-repeat left top;height:103px;padding-top:31px;_background: url(./../../img/index/video_play_04.jpg) no-repeat left top;}
 	.play_btn2{display:block;height:71px;width:72px;margin-left:85px; background:url(./../../img/index/btn_01.png) no-repeat center top;_background: none;}
 	.aside_video2:hover span{display:block;height:71px;width:72px; background:url(./../../img/index/btn_02.png) no-repeat center top;padding-top:31px;_background:none;}
-    /*海银年度广告*/
+    /*万邦年度广告*/
 	.aside_video3{ display:block;background: url(./../../img/index/video_play3.jpg) no-repeat left top;height:103px;padding-top:31px;_background: url(./../../img/index/video_play3.jpg) no-repeat left top;}
 	.play_btn3{display:block;height:71px;width:72px;margin-left:85px; background:url(./../../img/index/btn_01.png) no-repeat center top;_background: none;}
 	.aside_video3:hover span{display:block;height:71px;width:72px; background:url(./../../img/index/btn_02.png) no-repeat center top;padding-top:31px;_background:none;}

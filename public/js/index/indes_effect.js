@@ -126,7 +126,7 @@ $(function(){
              $laybox.css({"left":getPoupLeft,"top":0}).animate({'top':getPoupTop},500);
 		
 		});
-	/*海银年度广告*/
+	/*万邦年度广告*/
 	$('.aside_video2').on('click',function(){
 		var mask='<div class="mask"></div>'
 		$('body').append(mask)

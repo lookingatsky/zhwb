@@ -22,8 +22,6 @@
 							<div class="clearfix">
 								<ul class="fr fenxiang">
 									<li><a href="http://weibo.com/5657584093" title="新浪" class="sina_icon web_skin" target="_blank"></a></li>
-									<li><a href="http://chyjr.t.sohu.com/" title="搜狐" class="souhu web_skin" target="_blank"></a></li>
-									<li><a href="http://t.qq.com/haiyincaifu" title="腾讯" class="tenq web_skin" target="_blank"></a></li>
 								</ul>
 								<div class="fr">
 									<div class="search_input clearfix">

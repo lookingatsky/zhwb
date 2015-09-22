@@ -25,8 +25,8 @@
                 </li>
                 <li>
                 	<a href="/college/index" target="_blank">
-                    	<img src="/../../img/index/tools_icon2.jpg" alt="海银学堂">
-                        <span>海银学堂</span>
+                    	<img src="/../../img/index/tools_icon2.jpg" alt="万邦学堂">
+                        <span>万邦学堂</span>
                     </a>
                 </li>
                <li>
@@ -255,10 +255,9 @@
                     <p style="color:#777;font-size:12px;"><span style="font-family:'微软雅黑';">周一至周五：</span>9:00—18:00 </p>
                 </div>
             </div>
-       </div></section>
-
-
-    </aside>
+       </div>
+	</section>
+	</aside>
   
   <div class="about_conter fr mt30">
     <section class="rel">
@@ -295,6 +294,5 @@
       </section>
      </div>
   </section>
- 
     </div>
  </section>

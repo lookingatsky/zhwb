@@ -763,7 +763,7 @@
 						<div class="tel400 fl"><i class="web_skin tel400_icon"></i></div>
 						<div class="fr number_400">
 							<h3>客服热线</h3>
-							<p><li><a></a></li></p>
+							<p>400-077-8000</p>
 							<p style="color:#26211a;font-size:12px;"><span style="font-family:&#39;微软雅黑&#39;;">(周一至周五：</span>9:00—18:00) </p>
 						</div>
 					</div>
@@ -1112,7 +1112,7 @@
 						</div>
 						<div class="fr number_400">
 							<h3>客服热线</h3>
-							<p><li><a></a></li></p>
+							<p>400-077-8000</p>
 						</div>
 					</section>
 				</div>

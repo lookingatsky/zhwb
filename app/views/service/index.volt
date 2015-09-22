@@ -390,7 +390,7 @@ style.firebugResetStyles {
                 <div class="aside_telicon mt10 fl"><img src="/../../img/index/page_tel_03.gif"></div>
                 <div class="fr aside_number">
                     <h3>客服热线</h3>
-                    <p><li><a></a></li></p>
+                    <p>400-077-8000</p>
                     <p style="color:#777;font-size:12px;"><span style="font-family:'微软雅黑';">周一至周五：</span>9:00—18:00 </p>
                 </div>
             </div>
