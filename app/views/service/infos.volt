@@ -267,25 +267,25 @@
      <div class="hycp_box mt10">
      	<ul class="pl_list">
      		
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4542" target="_blank">1. 海石季度丰基金-五牛尊进成立公告</a><span>2015-09-14</span></li>
+        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4542" target="_blank">1. ************************公告</a><span>2015-09-14</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4522" target="_blank">2. 海石季度丰基金-五牛尊绎成立公告</a><span>2015-09-08</span></li>
+        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4522" target="_blank">2. ************************公告</a><span>2015-09-08</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4508" target="_blank">3. 五牛黄金时代系列-并购1号基金成立公告</a><span>2015-09-02</span></li>
+        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4508" target="_blank">3. ************************成立公告</a><span>2015-09-02</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4507" target="_blank">4. 长富臻选价值增长并购基金2号成立公告</a><span>2015-08-31</span></li>
+        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4507" target="_blank">4. ************************成立公告</a><span>2015-08-31</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4470" target="_blank">5. 海石季度丰基金-五牛尊腾成立公告</a><span>2015-08-26</span></li>
+        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4470" target="_blank">5. ************************成立公告</a><span>2015-08-26</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4440" target="_blank">6. 海石季度丰基金-五牛尊谭成立公告</a><span>2015-08-20</span></li>
+        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4440" target="_blank">6. ************************成立公告</a><span>2015-08-20</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4419" target="_blank">7. 上海五牛庄福投资中心（有限合伙）终止公告书</a><span>2015-08-18</span></li>
+        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4419" target="_blank">7. ************************终止公告书</a><span>2015-08-18</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4420" target="_blank">8. 上海五牛淳福投资中心（有限合伙）终止公告书</a><span>2015-08-18</span></li>
+        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4420" target="_blank">8. ************************终止公告书</a><span>2015-08-18</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4421" target="_blank">9. 上海五牛敦福投资中心（有限合伙）终止公告书</a><span>2015-08-18</span></li>
+        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4421" target="_blank">9. ************************终止公告书</a><span>2015-08-18</span></li>
         	
-        	<li style="border-bottom: 0px none;"><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4422" target="_blank">10. 上海五牛怀福投资中心（有限合伙）终止公告书</a><span>2015-08-18</span></li>
+        	<li style="border-bottom: 0px none;"><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4422" target="_blank">10. ************************终止公告书</a><span>2015-08-18</span></li>
         	
         </ul>
         <form action="productInfo.shtml" method="post" id="pageForm">
