@@ -5,7 +5,7 @@ error_reporting(E_ALL^E_NOTICE);
 
 
 try {
-	require_once 'FirePHP/fb.php';
+	//require_once 'FirePHP/fb.php';
 	/**
 	 * Read the configuration
 	 */
