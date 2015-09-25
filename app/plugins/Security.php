@@ -67,7 +67,8 @@ class Security extends Plugin
 				'contact' => array('index', 'send'),
 				'help' => array('index'),
 				'register' => array('verifyemail','register'),
-				'vote' => array('index')
+				'vote' => array('index'),
+				'operate' => array('index')
 			);
 			foreach ($publicResources as $resource => $actions) {
 				$acl->addResource(new Phalcon\Acl\Resource($resource), $actions);

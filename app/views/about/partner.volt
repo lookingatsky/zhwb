@@ -1,11 +1,11 @@
 	<section class="conterbox clearfix">
-		<div class="page_baner mt25"><img src="/../../img/index/about_baner.jpg" alt="关于万邦"></div>
+		<div class="page_baner mt25"><img src="/../../img/index/about_baner.jpg" alt="关于我们"></div>
 		<aside class="about_aside fl mt30">
-			<h2 class="page_title title_pl18">关于万邦</h2>
+			<h2 class="page_title title_pl18">关于我们</h2>
 			<ul class="aside_listbox">
-				<li><a href="/about/index" class="clearfix"><span style="margin-left: 0px;" class="fl">万邦简介</span><i class="web_skin aside_arrow"></i></a></li>
-				<li><a href="http://www.chyjr.com/site/web/aboutZhici.jsp" class="clearfix"><span class="fl">总裁致辞</span><i class="web_skin aside_arrow"></i></a></li>
-				<li><a href="/about/culture" class="clearfix"><span style="margin-left: 0px;" class="fl">万邦文化</span><i class="web_skin aside_arrow"></i></a></li>
+				<li><a href="/about/index" class="clearfix"><span style="margin-left: 0px;" class="fl">公司简介</span><i class="web_skin aside_arrow"></i></a></li>
+				<li><a href="#" class="clearfix"><span class="fl">总裁致辞</span><i class="web_skin aside_arrow"></i></a></li>
+				<li><a href="/about/culture" class="clearfix"><span style="margin-left: 0px;" class="fl">公司文化</span><i class="web_skin aside_arrow"></i></a></li>
 				
 				<li><a href="javascript:void(0)" class=" aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li>
 				<!-- <li><a href="#" class="clearfix"><span class="fl">员工风采</span><i class="web_skin aside_arrow"></i></a></li>-->

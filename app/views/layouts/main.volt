@@ -1,3 +1,11 @@
+	{{ stylesheet_link('css/bootstrap/bootstrap.css') }}
+	{{ stylesheet_link('css/bootstrap/bootstrap-responsive.css') }}
+	{{ stylesheet_link('css/bootstrap/style.css') }}	
+
+	{{ javascript_include('js/bootstrap/jquery.min.js') }}
+	{{ javascript_include('js/bootstrap/bootstrap.js') }}
+	{{ javascript_include('js/bootstrap/utils.js') }}	
+	
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">

@@ -140,12 +140,12 @@ style.firebugResetStyles {
 </script>
 <input name="status" value="1" type="hidden">
 <section class="conterbox clearfix">
-<div class="page_baner mt25"><img src="/../../img/index/products_baner.jpg" alt="关于万邦产品与服务"></div>
+<div class="page_baner mt25"><img src="/../../img/index/products_baner.jpg" alt="关于我们产品与服务"></div>
 <aside class="fl mt30">
 	<section class="about_aside">
 		<h2 class="page_title title_pl18">产品与服务</h2>
 		<ul class="aside_listbox">
-			<li><a href="javascript:void(0)" class="aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">万邦产品</span><i class="web_skin aside_arrow"></i></a></li>
+			<li><a href="javascript:void(0)" class="aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">公司产品</span><i class="web_skin aside_arrow"></i></a></li>
 			<li><a href="/service/infos" class="clearfix"><span style="margin-left: 0px;" class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li>
 			<li><a href="/service/method" class=" clearfix"><span style="margin-left: 0px;" class="fl">服务方式</span><i class="web_skin aside_arrow"></i></a></li>
 			<li style="border-bottom: 0px none;"><a href="/service/mode" class="clearfix"><span style="margin-left: 0px;" class="fl">服务理念</span><i class="web_skin aside_arrow"></i></a></li>
@@ -164,8 +164,8 @@ style.firebugResetStyles {
                 </li>
                 <li>
                 	<a href="/college/index" target="_blank">
-                    	<img src="/../../img/index/tools_icon2.jpg" alt="万邦学堂">
-                        <span>万邦学堂</span>
+                    	<img src="/../../img/index/tools_icon2.jpg" alt="理财学堂">
+                        <span>理财学堂</span>
                     </a>
                 </li>
                <li>
@@ -401,8 +401,8 @@ style.firebugResetStyles {
   
     <div class="about_conter fr mt30">
     <section class=" rel">
-     <h2 class="title_text ">万邦产品</h2>
-     <p class="mbx">当前位置：<a href="#">首页</a>  &gt; <a href="#">产品与服务</a> &gt; 万邦产品</p>
+     <h2 class="title_text ">公司产品</h2>
+     <p class="mbx">当前位置：<a href="#">首页</a>  &gt; <a href="#">产品与服务</a> &gt; 公司产品</p>
      <div class="hycp_box mt10">
      	<ul class="cp_tbbg cp_tab001  clearfix" style="border-bottom:none;">
             <li class="hy_info_tab wxtitle " onclick="javascript:changeType(1)">重点推荐</li>

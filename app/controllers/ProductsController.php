@@ -8,13 +8,14 @@ class ProductsController extends ControllerBase
     public function initialize()
     {
         $this->view->setTemplateAfter('main');
-        Tag::setTitle('信息录入');
+        Tag::setTitle('产品操作');
         parent::initialize();
     }
 
     public function indexAction()
     {
-        $this->persistent->searchParams = null;
+		//列表页
+/*         $this->persistent->searchParams = null;
 		$departments = Department::find();
 		$this->view->setVar("departments",$departments);
 		
@@ -30,36 +31,53 @@ class ProductsController extends ControllerBase
 			Tag::setDefault("company", $auth['did']);
 		}
 		$this->view->setVar('did',$auth['did']);
-		$this->view->setVar("typeArr",$typeArr);		
+		$this->view->setVar("typeArr",$typeArr);	 */	
     }
 
-	public function saveAction(){
+    public function newAction()
+    {
+        $this->view->setVar("productTypes", ProductTypes::find());
+    }
+
+    public function createAction()
+    {
+
+		$auth = $this->session->get('auth');
 		
-		$id = $this->request->getPost("id", "int");
+		$request = $this->request;
 		
-		$finance = Finance::findFirstById($id);
+        if (!$request->isPost()) {
+            return $this->forward("products/index");
+        }	
+		fb($request);
+		$request = $request->getPost();
+		$products = new Products();	
+		$products->product_types_id = $request['product_types_id'];	
+		$products->name = $request['name'];	
+		$products->issuer = $request['issuer'];	
+		$products->status = $request['status'];	
+		$products->cycle = $request['cycle'];	
+		$products->min = $request['min'];	
+		$products->expected = $request['expected'];	
+		$products->issuetime = $request['issuetime'];	
+		$products->telephone = $request['telephone'];	
+		$products->control = $request['control'];
+		$products->description = $request['description'];	
+		$products->registrar = $auth['name'];
 		
-		if (!$finance) {
-            $this->flash->error("没找到对应的录入信息");
-            return $this->forward("product/index");			
-		}	
-			
-		$request = $this->request->getPost();
-		//$finance = new Finance();
-		
-		$finance->data = json_encode($request);
-		$finance->time = time(); 
-		$finance->did = $request['company'];
-		$finance->d_name = $finance->department->name;
-		if($finance->save()){
+		if($products->save()){
 			$this->flash->notice("保存成功！");
+			return $this->forward('products/new');
 		}else{
-			$this->flash->error("保存失败！");
+			foreach ($products->getMessages() as $message) {
+                $this->flash->error((string) $message);
+            }
 		}
-		$this->response->redirect('products/list');
-	}
+				
+		
+    }
 	
-	public function listAction(){	
+/* 	public function listAction(){	
         $request = $this->request->getPost();	
 		$departments = Department::find();
 		$this->view->setVar("departments",$departments);
@@ -112,7 +130,7 @@ class ProductsController extends ControllerBase
 		$this->view->setVar('listInfos',$listInfos);
 		$this->view->setVar('did',$auth['did']);
 		
-	}
+	} */
     public function searchAction()
     {
         $numberPage = 1;
@@ -148,10 +166,7 @@ class ProductsController extends ControllerBase
         $this->view->setVar("page", $page);
     }
 
-    public function newAction()
-    {
-        $this->view->setVar("productTypes", ProductTypes::find());
-    }
+
 
     public function editAction($id)
     {
@@ -214,32 +229,31 @@ class ProductsController extends ControllerBase
         }
     }
 	
-    public function createAction()
-    {
-
-		$auth = $this->session->get('auth');
+	public function saveAction(){
 		
-		$request = $this->request;
+		$id = $this->request->getPost("id", "int");
 		
-        if (!$request->isPost()) {
-            return $this->forward("products/index");
-        }	
-		$request = $request->getPost();
-		$finance = new Finance();	
-		$finance->data = json_encode($request);	
-		$finance->time = time(); 		
+		$finance = Finance::findFirstById($id);
+		
+		if (!$finance) {
+            $this->flash->error("没找到对应的录入信息");
+            return $this->forward("product/index");			
+		}	
+			
+		$request = $this->request->getPost();
+		//$finance = new Finance();
+		
+		$finance->data = json_encode($request);
+		$finance->time = time(); 
 		$finance->did = $request['company'];
 		$finance->d_name = $finance->department->name;
-		$finance->registrar = $auth['name'];
-		
 		if($finance->save()){
 			$this->flash->notice("保存成功！");
 		}else{
 			$this->flash->error("保存失败！");
 		}
-		$this->response->redirect('products/list');		
-		
-    }
+		$this->response->redirect('products/list');
+	}
 
 /*     public function saveAction()
     {

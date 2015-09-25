@@ -1,11 +1,11 @@
 	<section class="conterbox clearfix">
-		<div class="page_baner mt25"><img src="/../../img/index/about_baner.jpg" alt="关于万邦"></div>
+		<div class="page_baner mt25"><img src="/../../img/index/about_baner.jpg" alt="关于我们"></div>
 		<aside class="about_aside fl mt30">
-			<h2 class="page_title title_pl18">关于万邦</h2>
+			<h2 class="page_title title_pl18">关于我们</h2>
 			<ul class="aside_listbox">
-				<li><a href="javascript:void(0)" class="aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">万邦简介</span><i class="web_skin aside_arrow"></i></a></li>
-				<li><a href="http://www.chyjr.com/site/web/aboutZhici.jsp" class="clearfix"><span class="fl">总裁致辞</span><i class="web_skin aside_arrow"></i></a></li>
-				<li><a href="/about/culture" class="clearfix"><span style="margin-left: 0px;" class="fl">万邦文化</span><i class="web_skin aside_arrow"></i></a></li>
+				<li><a href="javascript:void(0)" class="aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">公司简介</span><i class="web_skin aside_arrow"></i></a></li>
+				<li><a href="#" class="clearfix"><span class="fl">总裁致辞</span><i class="web_skin aside_arrow"></i></a></li>
+				<li><a href="/about/culture" class="clearfix"><span style="margin-left: 0px;" class="fl">公司文化</span><i class="web_skin aside_arrow"></i></a></li>
 				<li><a href="/about/partner" class="clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li>
 				<!-- <li><a href="#" class="clearfix"><span class="fl">员工风采</span><i class="web_skin aside_arrow"></i></a></li>-->
 				<li style="border-bottom: 0px none;" class="none_line"><a href="/about/contact" class="clearfix"><span style="margin-left: 0px;" class="fl">联系我们</span><i class="web_skin aside_arrow"></i></a></li>
@@ -21,7 +21,7 @@
 		</aside>
 		<div class="about_conter fr mt30">
 			<section>
-				<h2 class="title_text mb30">万邦简介</h2>
+				<h2 class="title_text mb30">公司简介</h2>
 				<img src="/../../img/index/jianjie_img.jpg" width="317">
 				<p>
 					中合万邦投资管理有限公司（以下简称中合万邦），国内知名综合性资产管理集团，创建于2014年， 总部位于北京CBD核心商务区。

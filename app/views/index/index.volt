@@ -67,16 +67,14 @@
 							<dl>
 								<dt class="clearfix">
 									<h2 class="fl message_title web_skin">微信息</h2>
-									<a href="http://www.chyjr.com/site/web/news.shtml?type=X_WXX" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
+									<a href="/situation/index?type=X_WXX" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
 								</dt>
 								<dd class="clearfix h_114">
 									<div class="fl imgbox"><img src="/../../img/index/index_pl_pic_06.jpg"></div>
 									<div class="hynews fl ml10 ">
-										<div><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4547" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</a></div>
-										<div><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4541" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXXXXXX</a></div>
-										<div><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4537" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXX XXXXXXXXXXXXXXXXXXXX</a></div>
-										<div><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4533" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXXX</a></div>                 	
-										<div><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4530" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</a></div>
+										{% for new in news1 %}
+										<div><a href="/news/index/{{ new.id }}" target="_blank"><i class="new_texticon web_skin"></i><?php if(mb_strlen($new->title,'utf-8')  > 15){ echo mb_substr($new->title,0,14,'utf-8'); }else{ echo $new->title;  }?></a></div>
+										{% endfor %}
 									</div>
 								</dd>
 							</dl>
@@ -85,17 +83,15 @@
 						<li>
 							<dl>
 								<dt class="clearfix">
-									<h2 class="fl message_title web_skin">万邦研究</h2>
-									<a href="http://www.chyjr.com/site/web/research.shtml?type=WEB_HYYJ" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
+									<h2 class="fl message_title web_skin">行业新闻</h2>
+									<a href="/situation/index?type=X_MTBD?type=WEB_HYYJ" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
 								</dt>
 								<dd class="clearfix h_114">
 									<div class="fl imgbox"><img src="/../../img/index/index_pl.jpg"></div>
 									<div class="new_lsit fr">
-										<div> <a href="http://www.chyjr.com/site/web/article.shtml?articleId=4546" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXXXXXXXXX</a> </div>
-										<div> <a href="http://www.chyjr.com/site/web/article.shtml?articleId=4536" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXXX</a> </div>
-										<div> <a href="http://www.chyjr.com/site/web/article.shtml?articleId=4532" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</a> </div>
-										<div> <a href="http://www.chyjr.com/site/web/article.shtml?articleId=4528" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXXXXXXXXX</a> </div>
-										<div> <a href="http://www.chyjr.com/site/web/article.shtml?articleId=4519" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXX</a> </div>
+										{% for new in news2 %}
+										<div> <a href="/news/index/{{ new.id }}" target="_blank"><i class="new_texticon web_skin"></i><?php if(mb_strlen($new->title,'utf-8')  > 15){ echo mb_substr($new->title,0,14,'utf-8')."..."; }else{ echo $new->title;  }?></a> </div>
+										{% endfor %}
 									</div>
 								</dd>
 							</dl>
@@ -103,16 +99,14 @@
 						<li class="mr18">
 							<dl>
 								<dt class="clearfix">
-									<h2 class="fl message_title web_skin">万邦披露</h2>
+									<h2 class="fl message_title web_skin">公司公告</h2>
 									<a href="/service/infos" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
 								</dt>
 								<dd class="clearfix h_114">
-									<div class="new_lsit  w315">
-										<div><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4542" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXX成立公告</a> </div>
-										<div><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4522" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXX成立公告</a> </div>
-										<div><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4508" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXX成立公告</a> </div>
-										<div><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4507" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXX成立公告</a> </div>
-										<div><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4470" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXX成立公告</a> </div>
+									<div class="new_lsit w315">
+										{% for new in news4 %}
+										<div><a href="/news/index/{{ new.id }}" target="_blank"><i class="new_texticon web_skin"></i>{{ new.title }}</a> </div>
+										{% endfor %}
 									</div>
 								</dd>
 							</dl>
@@ -121,7 +115,7 @@
 							<dl>
 								<dt class="clearfix">
 									<h2 class="fl message_title web_skin">媒体报导</h2>
-									<a href="http://www.chyjr.com/site/web/news.shtml?type=X_MTBD" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
+									<a href="/situation/index?type=X_MTBD" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
 								</dt>
 								<dd class="clearfix h_114">
 									<div class="new_lsit w315">
@@ -338,20 +332,21 @@
 						<dl>
 							<dt class="clearfix">
 								<h2 class="fl message_title web_skin">市场活动</h2>
-								<a href="http://www.chyjr.com/site/web/news.shtml?type=H_SCHD" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
+								<a href="/situation/index?type=H_SCHD" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
 							</dt>
 							<dd style="padding-top:0px;" class="h_353">
+								{% for new in news3 %}
 								<div class="hdlistbox">
-									<h2 class="sess_bt"><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4502" target="_blank">XXXXXXXXXXXXXXXXXXXX</a></h2>
+									<h2 class="sess_bt"><a href="/news/index/{{ new.id }}" target="_blank"><?php if(mb_strlen($new->title,'utf-8')  > 21){ echo mb_substr($new->title,0,20,'utf-8')."..."; }else{ echo $new->title;  }?></a></h2>
 									<div class="clearfix mt10">
 										<div class="fl infotext">
-											<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX...</p>
+											<p><?php if(mb_strlen($new->description,'utf-8')  > 41){ echo mb_substr($new->description,0,40,'utf-8')."..."; }else{ echo $new->description;  }?></p>
 										</div>
-										<div class="fr picbox"><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4502" target="_blank"><img src="/../../img/index/e92f5e41-3c1b-43b1-9b69-83d4d3d3a06d.jpg" style="width:123px;height:66px;"></a></div>
+										<div class="fr picbox"><a href="/news/index/{{ new.id }}" target="_blank"><img src="/../..{{ new.thumb }}" style="width:123px;height:66px;"></a></div>
 									</div>
 								</div>
-											  
-								<div class="hdlistbox">
+								{% endfor %}			  
+<!-- 								<div class="hdlistbox">
 									<h2 class="sess_bt"><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4472" target="_blank">XXXXXXXXXXXXXXXXXXXX</a></h2>
 									<div class="clearfix mt10">
 										<div class="fl infotext">
@@ -369,7 +364,7 @@
 										</div>
 										<div class="fr picbox"><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4473" target="_blank"><img src="/../../img/index/a2fbdff7-8bb4-4613-87a4-62f8248085cc.jpg" style="width:123px;height:66px;"></a></div>
 									</div>
-								</div>	  
+								</div>	   -->
 							</dd>
 						</dl>
 					</div>
@@ -382,45 +377,22 @@
 							<dd> 
 								<div class="map_bg rel">
 									<section class="map001_zb" id="zb">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="北京总部"></a>
+										<a href="" class="nibo" title="北京总部"></a>
 										<div class=" infobox_map position_hz">
-											<div class="rel relavebox"></div>
+											<div class="rel relavebox2"></div>
 											<div class="zblist">
-												<h2>中合万邦投资管理有限公司（总部）</h2>
-												<p>总公司地址: 朝阳区建国门外大街2号银泰中心c座 46层<br>
-												联系方式: <li><a></a></li></p> 
-												<h2>中合万邦（浦西）管理有限公司</h2>
-												<p> 地址: 朝阳区建国门外大街2号银泰中心c座 46层<br>
-												联系方式: 021-xxxxxx
-												</p>
-												<h2>中合万邦（北外滩）管理有限公司</h2>
-												<p> 地址: 朝阳区建国门外大街2号银泰中心c座 46层<br>
-												联系方式: 021-xxxx
-												</p>
-												<h2>中合万邦（浦东）管理有限公司</h2>
-												<p> 地址:上海市浦东新区世纪大道1168号东方金融广场B座2301-2302室 
-												<br>联系方式:021-60232016
-												</p>
-												<h2>中合万邦（虹桥）管理有限公司</h2>
-												<p> 地址:上海市长宁区长宁路1193号来福士广场T3办公楼11层1101-1102、1108-1109单元 
-												<br>联系方式:021-80261900
-												</p>
-												<h2>中合万邦（昆山）管理有限公司</h2>
-												<p> 地址:昆山市前进西路296号中茵世贸广场1609-1612室 
-												<br>联系方式:0512-86161988
-												</p>
+												<h2>上海中欣财富中心</h2>
+												<p>地址: 上海市静安区南京西路1468号4201、4209室<br>
+												联系方式: 021-61279530</p> 
 											</div>
 										</div> 
 									</section>
-									<section class="map01_hz">
+<!-- 									<section class="map01_hz">
 										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="合肥"></a>
 										<div class="infobox_map position_hz">
 											<div class="rel relavebox2" style="height:100px;"></div>
 											<div class="maptext">
-												<h2>中合万邦（合肥）管理有限公司</h2>
-												<p> 地址: 合肥市阜南路169号东怡金融广场B座40层<br>
-												联系方式: 0551-67196188　
-												</p>
+												<h2>合肥分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section>
@@ -429,10 +401,7 @@
 										<div class="infobox_map position_nc">
 											<div class="rel relavebox2" style="height:100px;"></div>
 											<div class="maptext">
-												<h2>中合万邦（南昌）管理有限公司</h2>
-												<p> 地址: 南昌市红谷滩新区绿茵路129号联发广场45层01、02、03室<br>
-												联系方式: 0791-82070200　
-												</p>
+												<h2>南昌分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section>
@@ -441,26 +410,7 @@
 										<div class="infobox_map position_a">
 											<div class="rel relavebox2" style="height:450px;"></div>
 											<div class="maptext">
-												<h2>中合万邦（杭州）管理有限公司</h2>
-												<p>地址: 杭州市环城北路208号3305-3308室<br>
-												联系方式: 0571-56972660 
-												</p>
-												<h2>中合万邦（钱江）管理有限公司</h2>
-												<p> 地址: 杭州市解放东路37号浙江财富金融中心48层03、04、05单元<br>
-												联系方式:  0571-26899360
-												</p>
-												<h2>中合万邦（宁波）管理有限公司</h2>
-												<p>地址:宁波市江北区大闸南路500号来福士广场21楼01,02,09室<br>
-												联系方式: 0574-55861594 
-												</p>
-												<h2>中合万邦（慈溪）管理有限公司</h2>
-												<p>地址:浙江省慈溪市浒山街道环城南路173-175号（329国道）<br>
-												联系方式: 0574-23620752
-												</p>
-												<h2>中合万邦（萧山）管理有限公司</h2>
-												<p>地址:杭州市萧山区金城路358号蓝爵国际中心5号楼4102、4103单元<br>
-												联系方式: 0571-22953588
-												</p>
+												<h2>杭州分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section>
@@ -469,14 +419,7 @@
 										<div class="infobox_map position_b">
 											<div class="rel relavebox2" style="height:210px;"></div>
 											<div class="maptext">
-												<h2>中合万邦（厦门）管理有限公司</h2>
-												<p>厦门市思明区鹭江道100号怡山商业中心（厦门财富中心）40层03-07单元<br>
-												联系方式: 0592-3139544
-												</p>
-												<h2>中合万邦（福州）管理有限公司</h2>
-												<p>福州市鼓楼区五四路109号东煌大厦17层<br>
-												联系方式:0591-38309500
-												</p>
+												<h2>厦门分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section>
@@ -485,63 +428,30 @@
 										<div class="infobox_map position_c">
 											<div class="rel relavebox2" style="height:300px;"></div>
 											<div class="maptext">
-												<h2>中合万邦（深圳）管理有限公司</h2>
-												<p> 地址: 深圳市福田区中心四路1-1号嘉里建设广场第三座第38层01、04室<br>
-												联系方式: 0755-83884188
-												</p>
-												<h2>中合万邦（广州）管理有限公司</h2>
-												<p> 地址: 广州市天河区天河路385号太古汇一座3302室
-												<br>联系方式: 020-28086081
-												</p>
-												<h2>中合万邦（珠海）管理有限公司</h2>
-												<p> 地址: 广东省珠海市九洲大道西2021号A座13层01、02号<br>
-												联系方式: 0756-3807788
-												</p>
+												<h2>深圳分公司正在筹建中</h2>
 											</div>
 										</div>
-									</section>
+									</section> -->
 									<section class="map04">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="南京"></a>
+										<a href="" class="nibo" title="南京"></a>
 										<div class="infobox_map position_d">
-											<div class="rel relavebox2" style="height:580px;"></div>
+											<div class="rel relavebox2" style="height:190px;"></div>
 											<div class="maptext">
-												<h2>中合万邦（南京）管理有限公司</h2>
-												<p>地址:南京市鼓楼区汉中路2号亚太商务37楼A-D<br>
-												联系方式: 025-68666973</p>
-
-												<h2>中合万邦（苏州）管理有限公司</h2>
-												<p>地址: 苏州工业园区华池街圆融时代广场23栋B座
-												广运国际金融中心5F
-												<br>联系方式: 0512-82289018
-												<br>
-												</p><h2>中合万邦（无锡）管理有限公司</h2>
-												<p>地址: 无锡恒隆广场办公楼1座21层02-05单元
-												<br>联系方式: 0510-66627588
-												<br>
-												</p><h2>中合万邦（吴江）管理有限公司</h2>
-												<p>地址: 苏州市吴江区松陵镇开平路789号金城大厦12楼<br>
-												联系方式: 0512-86856555
-												</p>
-												<h2>中合万邦（南通）管理有限公司</h2>
-												<p>地址: 南通市工农南路128号天宝国能中心（天宝大厦）主楼0601-0610<br>
-												联系方式: 0513-80216262
-												</p>
-												<h2>中合万邦（江阴）管理有限公司</h2>
-												<p>地址: 江阴市环城北路27号凯悦国际金融中心A幢1102、1103、1104室<br>
-												联系方式: 0510-66283188
-												</p>
+												<h2>南京新地财富中心</h2>
+												<p>地址:江苏省南京市建邺区庐山路188号南京新地中心45层4503、4504室<br>
+												联系方式: 025-86918866</p>
+												<h2>苏州晋合财富中心</h2>
+												<p>地址:江苏省苏州市工业园区华池街88号晋合广场1幢1201室<br>
+												联系方式: 0512-89181688</p>												
 											</div>
 										</div>
 									</section>
-									<section class="map05">
+<!-- 									<section class="map05">
 										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="长沙"></a>
 										<div class="infobox_map position_e">
 											<div class="rel relavebox2"></div>
 											<div class="maptext">
-												<h2>中合万邦（长沙）管理有限公司</h2>
-												<p>地址:长沙市开福区中山路589号万达广场A座22层22003室、22004室
-												<br>联系方式:0731-89938237
-												</p>
+												<h2>长沙分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section> 
@@ -550,10 +460,7 @@
 										<div class="infobox_map position_f">
 											<div class="rel relavebox2"></div>
 											<div class="maptext">
-												<h2>中合万邦（昆明）管理有限公司</h2>
-												<p>地址:云南省昆明市五华区崇仁街1号东方首座20层2、3、4号<br>
-												联系方式: 0871-65511700
-												</p>
+												<h2>昆明分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section>
@@ -562,9 +469,7 @@
 										<div class="infobox_map position_g">
 											<div class="rel relavebox2"></div>
 											<div class="maptext">
-												<h2>中合万邦（武汉）管理有限公司</h2>
-												<p>武汉市武昌区中南路99号保利广场45层4501-A
-												<br>联系方式: 027-65396628</p>
+												<h2>武汉分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section>
@@ -573,7 +478,8 @@
 										<div class="infobox_map position_h">
 											<div class="rel relavebox2"></div>
 											<div class="maptext">
-											<h2>郑州分公司正在筹建中</h2></div>
+												<h2>郑州分公司正在筹建中</h2>
+											</div>
 										</div>
 									</section>
 									<section class="map09">
@@ -581,10 +487,7 @@
 										<div class="infobox_map position_i">
 											<div class="rel relavebox2" style="height:110px;"></div>
 											<div class="maptext">
-												<h2> 中合万邦（天津）管理有限公司</h2>
-												<p>地址: 天津市和平区大沽北路2号<br>天津环球金融中心津塔写字楼5201-5202室
-												<br> 	联系方式: 022-59269079
-												</p>
+												<h2>天津分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section>
@@ -593,10 +496,7 @@
 										<div class="infobox_map position_j">
 											<div class="rel relavebox2"></div>
 											<div class="maptext">
-												<h2>中合万邦（青岛）管理有限公司</h2>
-												<p>地址:青岛市市南区香港中路26号2202室
-												<br> 	联系方式: 0532-55715135
-												</p>
+												<h2>青岛分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section> 
@@ -605,10 +505,7 @@
 										<div class="infobox_map position_k">
 											<div class="rel relavebox2" style="height:110px;"></div>
 											<div class="maptext">
-												<h2>中合万邦（成都）管理有限公司</h2>
-												<p>地址:成都市锦江区红星路三段1号国际金融中心1号办公楼30楼01,09,10号
-												<br> 	联系方式: 028-66405535
-												</p>
+												<h2>成都分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section> 
@@ -617,36 +514,31 @@
 										<div class="infobox_map position_l">
 											<div class="rel relavebox2"></div>
 											<div class="maptext">
-												<h2>中合万邦（西安）管理有限公司</h2>
-												<p>地址:西安市南二环西段64号凯德广场11层中合万邦西安分公司<br>
-												联系方式: 029-68710300
-												</p>
+												<h2>西安分公司正在筹建中</h2>
 											</div>
 										</div>
-									</section>
+									</section> -->
 									<section class="map13">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="北京"></a>
+										<a href="" class="nibo" title="北京"></a>
 										<strong class="text_tag">(&nbsp;总部&nbsp;)</strong> 
 										<div class="infobox_map position_m" style="z-index:999;">
-											<div class="rel relavebox2"></div>
+											<div class="rel relavebox2" style="height:190px;"></div>
 											<div class="maptext">
-												<h2> 万邦财富（北京）管理有限公司</h2>
-												<p> 地址: 北京朝阳区建国门外大街8号IFC A座32层02-03单元<br>
-												联系方式: 010-56571166</p>
+												<h2>中合万邦投资管理有限公司（总部）</h2>
+												<p>总部地址: 北京市朝阳区建国门外大街8号IFC A座32层02-03单元<br>
+												联系方式: 400-077-8000</p>
+												<h2>北京普惠中心</h2>
+												<p>地址:北京市朝阳区建外大街2号院银泰中心C座46层<br>
+												联系方式: 010-85659901</p>													
 											</div>
 										</div>
 									</section>
-									
-
-									<section class="map14">
+<!-- 									<section class="map14">
 										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="山西"></a>
 										<div class="infobox_map position_n">
 											<div class="rel relavebox2"></div>
 											<div class="maptext">
-												<h2>中合万邦（山西）管理有限公司</h2>
-												<p>地址:太原市迎泽区青年路5号太原湖滨广场综合项目第一栋22层2206-2209室<br>
-												联系方式: 0351-5626687
-												</p>
+												<h2>山西分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section>
@@ -655,9 +547,7 @@
 										<div class="infobox_map position_p">
 											<div class="rel relavebox2"></div>
 											<div class="maptext">
-												<h2>中合万邦（沈阳）管理有限公司</h2>
-												<p>地址:沈阳市和平区青年大街286号华润大厦36F第03,05单元<br>
-												联系方式: 024-31320998</p>
+												<h2>沈阳分公司正在筹建中</h2>
 											</div>
 										</div>
 									</section>
@@ -696,12 +586,35 @@
 												<h2>新疆分公司正筹建中</h2>
 											</div>
 										</div>
+									</section> -->
+									<section class="map20">
+										<a href="" class="nibo" title="广州"></a>
+										<div class="infobox_map position_20">
+											<div class="rel relavebox2"></div>
+											<div class="zblist">
+												<h2>广州白云财富中心</h2>
+												<p>地址: 广东省广州市越秀区三元里山西大厦3号楼3220室<br>
+												联系方式: 020-36298548</p>
+											</div>
+										</div>
 									</section>
+									<section class="map21">
+										<a href="" class="nibo" title="海口"></a>
+										<div class="infobox_map position_21">
+											<div class="rel relavebox2"></div>
+											<div class="zblist">
+												<h2>海口时代普惠中心</h2>
+												<p>地址: 海南省海口市龙华区国贸路2号海南时代广场18层东侧<br>
+												联系方式: 0898-36651855</p>
+											</div>
+										</div>
+									</section>	
+									
 								</div>
 								<div class="company">
 									<h2>中合万邦投资管理有限公司（总部）</h2>
-									<p>地址: 朝阳区建国门外大街2号银泰中心c座 46层<br>
-									联系方式: <li><a></a></li></p>
+									<p>地址: 北京市朝阳区建国门外大街2号银泰中心c座 46层<br>
+									联系方式:400-077-8000 <li><a></a></li></p>
 								</div>
 							</dd>
 						</dl>
@@ -781,8 +694,8 @@
 							</li>
 							<li>
 								<a href="/college/index" target="_blank">
-								<img src="/../../img/index/tools_icon2.jpg" alt="万邦学堂">
-								<span>万邦学堂</span>
+								<img src="/../../img/index/tools_icon2.jpg" alt="理财学堂">
+								<span>理财学堂</span>
 								</a>
 							</li>
 							<li>
@@ -1125,10 +1038,10 @@
 			<div class="footer_conter clearfix">
 				<div class="fl footer_leftbox">
 					<ul class="clearfix">
-						<li><a href="http://www.chyjr.com/site/web/research.shtml" target="_blank">研究资讯</a></li>
-						<li><a href="/college/index" target="_blank">万邦学堂</a></li>
-						<li><a href="http://www.chyjr.com/site/web/news.shtml" target="_blank">公司动态</a></li>
-						<li><a href="http://www.chyjr.com/site/web/recruit.shtml" target="_blank">诚聘英才</a></li>
+						<li><a href="/situation/index?type=X_MTBD" target="_blank">行业新闻</a></li>
+						<li><a href="/college/index" target="_blank">理财学堂</a></li>
+						<li><a href="/situation/index" target="_blank">公司动态</a></li>
+						<li><a href="http://www.zhwbchina.com/zxns/" target="_blank">诚聘英才</a></li>
 						<li><a href="/about/contact" target="_blank">联系我们</a></li>
 					</ul>
 					<p>

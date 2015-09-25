@@ -1,10 +1,10 @@
   <section class="conterbox clearfix">
-    <div class="page_baner mt25"><img src="/../../img/index/products_baner.jpg" alt="关于万邦产品与服务"></div>
+    <div class="page_baner mt25"><img src="/../../img/index/products_baner.jpg" alt="关于我们产品与服务"></div>
  	<aside class="fl mt30">
         <section class="about_aside">
     	<h2 class="page_title title_pl18">产品与服务</h2>
         <ul class="aside_listbox">
-        <li><a href="/service/index" class=" clearfix"><span class="fl">万邦产品</span><i class="web_skin aside_arrow"></i></a></li>
+        <li><a href="/service/index" class=" clearfix"><span class="fl">公司产品</span><i class="web_skin aside_arrow"></i></a></li>
         <li><a href="javascript:void(0)" class="aside_btn_on clearfix"><span class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li>
         <li><a href="/service/method" class=" clearfix"><span class="fl">服务方式</span><i class="web_skin aside_arrow"></i></a></li>
         <li style="border-bottom: 0px none;"><a href="/service/mode" class="clearfix"><span class="fl">服务理念</span><i class="web_skin aside_arrow"></i></a></li>
@@ -25,8 +25,8 @@
                 </li>
                 <li>
                 	<a href="/college/index" target="_blank">
-                    	<img src="/../../img/index/tools_icon2.jpg" alt="万邦学堂">
-                        <span>万邦学堂</span>
+                    	<img src="/../../img/index/tools_icon2.jpg" alt="理财学堂">
+                        <span>理财学堂</span>
                     </a>
                 </li>
                <li>

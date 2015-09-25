@@ -44,8 +44,8 @@ class Elements extends Phalcon\Mvc\User\Component
     );
 
     private $_tabs = array(
-        '行政费控' => array(
-            'controller' => 'invoices',
+        '新闻操作' => array(
+            'controller' => 'operate',
             'action' => 'index',
             'any' => false
         ),

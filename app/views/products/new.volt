@@ -4,37 +4,72 @@
 
 <ul class="pager">
     <li class="previous pull-left">
-        <?php echo Tag::linkTo(array("products", "&larr; Go Back")) ?>
+        <?php echo Tag::linkTo(array("products", "&larr; 返 回")) ?>
     </li>
     <li class="pull-right">
-        <?php echo Tag::submitButton(array("Save", "class" => "btn btn-success")) ?>
+        <?php echo Tag::submitButton(array("保 存", "class" => "btn btn-success")) ?>
     </li>
 </ul>
 
 <?php echo $this->getContent() ?>
 
-<div class="center scaffold">
-    <h2>Create products</h2>
+<div class="left scaffold">
+    <h2>创建产品</h2>
 
     <div class="clearfix">
-        <label for="product_types_id">Product Type</label>
+        <label for="product_types_id">产品类型</label>
         <?php echo Tag::select(array("product_types_id", $productTypes, "using" => array("id", "name"), "useDummy" => true)) ?>
     </div>
 
     <div class="clearfix">
-        <label for="name">Name</label>
+        <label for="name">产品名称</label>
         <?php echo Tag::textField(array("name", "size" => 24, "maxlength" => 70)) ?>
     </div>
-
+	
     <div class="clearfix">
-        <label for="price">Price</label>
-        <?php echo Tag::textField(array("price", "size" => 24, "maxlength" => 70, "type" => "number")) ?>
+        <label for="status">产品状态</label>
+        <?php echo Tag::selectStatic("status", array("1" => "发行中", "0" => "未发行", "2" => "审核中", "3" => "已过期")) ?>
     </div>
 
     <div class="clearfix">
-        <label for="active">Active</label>
-        <?php echo Tag::selectStatic(array("active", array('Y'=>'Y','N'=>'N',), "useDummy" => true)) ?>
+        <label for="issuer">发行机构</label>
+        <?php echo Tag::selectStatic("issuer", array("万邦家族财富" => "万邦家族财富", "万邦普惠" => "万邦普惠")) ?>
     </div>
 
+    <div class="clearfix">
+        <label for="cycle">产品期限</label>
+        <?php echo Tag::textField(array("cycle","maxlength" => 70)) ?>
+    </div>
+	
+    <div class="clearfix">
+        <label for="min">最小投资金额</label>
+        <?php echo Tag::textField(array("min","maxlength" => 70)) ?>
+    </div>
+
+    <div class="clearfix">
+        <label for="expected">预期收益</label>
+        <?php echo Tag::textField(array("expected","maxlength" => 70)) ?>
+    </div>
+	
+    <div class="clearfix">
+        <label for="issuetime">发行时间</label>
+        <?php echo Tag::textField(array("issuetime","maxlength" => 70)) ?>
+    </div>	
+
+    <div class="clearfix">
+        <label for="telephone">预约电话</label>
+        <?php echo Tag::textField(array("telephone","maxlength" => 70)) ?>
+    </div>
+
+    <div class="clearfix">
+        <label for="control">风控方式</label>
+        <?php echo Tag::textArea(array("control","maxlength" => 500)) ?>
+    </div>
+
+    <div class="clearfix">
+        <label for="description">详细描述</label>
+        <?php echo Tag::textArea(array("description","maxlength" => 500)) ?>
+    </div>	
+	
 </div>
 </form>

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        {{ get_title() }}
+        {{ get_title() }}		
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="中合万邦">
 		<meta name="keywords" content="中合万邦、中合万邦投资管理有限公司、财富管理、高端理财、理财解决方案">
