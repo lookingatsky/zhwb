@@ -12,18 +12,22 @@ class IndexController extends ControllerBase
     public function indexAction(){
 		$news1 = News::find(array(
 			"typeid = 1",
+			"order" => "inputtime desc",			
 			"limit" => 5
 		));
 		$news2 = News::find(array(
 			"typeid = 2",
+			"order" => "inputtime desc",			
 			"limit" => 5
 		));
 		$news3 = News::find(array(
 			"typeid = 3",
+			"order" => "inputtime desc",
 			"limit" => 3
 		));
 		$news4 = News::find(array(
 			"typeid = 4",
+			"order" => "inputtime desc",
 			"limit" => 5
 		));
 		
