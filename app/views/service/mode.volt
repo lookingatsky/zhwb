@@ -295,7 +295,7 @@
       <section class="mt30">
           <h2>完善的客户服务体系：</h2>
           <div class="fuwu_tx">
-          <p>呼叫中心 信息发布中心  会员尊享服务</p>
+          <p>呼叫中心 信息发布中心  VIP尊享服务</p>
           </div>
       </section>
      </div>

@@ -278,8 +278,8 @@
  				<p><span class="web_skin cp_falist_icon"></span>专属的资产配置建议</p>
             </li>
             <li>
-            	<h3>成为万邦会员</h3>
-                <p><span class="web_skin cp_falist_icon"></span>专属定制服务，Email与<br>&nbsp;&nbsp;&nbsp;短信形式接收最新财富资讯</p>
+            	<h3>成为万邦VIP</h3>
+                <p><span class="web_skin cp_falist_icon"></span>专属定制服务，Email与<br>&nbsp;&nbsp;&nbsp;微信形式接收最新财富资讯</p>
  				<p><span class="web_skin cp_falist_icon"></span>不定期专家讲座，最新行<br>&nbsp;&nbsp;&nbsp;业动态、市场热点专家解析</p>
  				<p><span class="web_skin cp_falist_icon"></span>丰富的理财沙龙，投资者与<br>&nbsp;&nbsp;&nbsp;理财专家交流平台</p>
             </li>
