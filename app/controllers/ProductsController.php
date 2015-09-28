@@ -49,7 +49,6 @@ class ProductsController extends ControllerBase
         if (!$request->isPost()) {
             return $this->forward("products/index");
         }	
-		fb($request);
 		$request = $request->getPost();
 		$products = new Products();	
 		$products->product_types_id = $request['product_types_id'];	

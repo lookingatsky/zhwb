@@ -30,9 +30,7 @@ class IndexController extends ControllerBase
 			"order" => "inputtime desc",
 			"limit" => 5
 		));
-		foreach($news1 as $key=>$val){
-			fb($val->title);
-		}
+		
 		$this->view->setVar("news1",$news1);
 		$this->view->setVar("news2",$news2);
 		$this->view->setVar("news3",$news3);
