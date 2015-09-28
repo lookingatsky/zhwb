@@ -38,7 +38,7 @@
 .cpsxbox{border-bottom:2px solid #c6c6c6;}
 .fuwu_tx{ background:url(./../../img/index/cp_leave.jpg) no-repeat center top;height:395px;}
 .fuwu_tx p{ text-indent:-99999px;}
-.cpsx_img{ background:url(./../../img/index/cp_fuwu.jpg) no-repeat center 80px;height:450px;width:430px;border-right:1px solid #c6c6c6;}
+.cpsx_img{ background:url(./../../img/index/cp_fuwu.jpg) no-repeat center 80px;height:450px;width:430px;border-right:1px solid #c6c6c6;background-size:430px;}
 .js_zcbox{width:270px;margin-left:10px;}
 .js_zcbox dl{margin-bottom:30px;}
 .js_zcbox dl dt{float:left;}
