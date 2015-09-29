@@ -5,11 +5,21 @@
 			<ul class="aside_listbox">
 				<li><a href="/about/index" class="clearfix"><span style="margin-left: 0px;" class="fl">公司简介</span><i class="web_skin aside_arrow"></i></a></li>
 				<!-- <li><a href="#" class="clearfix"><span class="fl">总裁致辞</span><i class="web_skin aside_arrow"></i></a></li> -->
-				<li><a href="javascript:void(0)" class=" aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">公司文化</span><i class="web_skin aside_arrow"></i></a></li>
+				<li>
+					<a href="/about/culture" class="clearfix">
+						<span style="margin-left: 0px;" class="fl">公司文化</span>
+						<i class="web_skin aside_arrow"></i>
+					</a>
+				</li>
 				
 				<!-- <li><a href="/about/partner" class="clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li> -->
 				<!-- <li><a href="#" class="clearfix"><span class="fl">员工风采</span><i class="web_skin aside_arrow"></i></a></li>-->
-				<li style="border-bottom: 0px none;" class="none_line"><a href="/about/contact" class="clearfix"><span style="margin-left: 0px;" class="fl">联系我们</span><i class="web_skin aside_arrow"></i></a></li>
+				<li style="border-bottom: 0px none;" class="none_line">
+					<a href="javascript:void(0)" class=" aside_btn_on clearfix">
+						<span style="margin-left: 0px;" class="fl">联系我们</span>
+						<i class="web_skin aside_arrow"></i>
+					</a>
+				</li>
 			</ul>
 			<div class="clearfix aside_tel_aboutbg">
 				<div class="aside_telicon mt10 fl"><img src="/../../img/index/page_tel_03.gif"></div>
@@ -31,7 +41,7 @@
                 	<dt>中合万邦投资管理有限公司（总部）</dt>
                     <dd>地址:北京朝阳区建国门外大街2号银泰中心C座46层<br>联系方式: 400-077-8000</dd>
                 </dl>
-                <div class="fr mapbox"><img src="/../../img/index/zongbu_map.jpg" title="中合万邦投资管理有限公司（总部）" alt="中合万邦投资管理有限公司（总部）"></div>
+                <div class="fr mapbox"><img src="/../../img/index/map/beijing.png" title="中合万邦投资管理有限公司（总部）" alt="中合万邦投资管理有限公司（总部）"></div>
             </li>  
             <li class="clearfix">
             	<span class="fl number_bg web_skin">02</span>
@@ -39,7 +49,7 @@
                 	<dt>北京普惠中心</dt>
                     <dd>地址:北京市朝阳区建外大街2号院银泰中心C座46层<br>联系方式: 010-85659901</dd>
                 </dl>
-                <div class="fr mapbox"><img src="/../../img/index/puxi_map.jpg" title="北京普惠中心" alt="北京普惠中心"></div>
+                <div class="fr mapbox"><img src="/../../img/index/map/beijing.png" title="北京普惠中心" alt="北京普惠中心"></div>
             </li>  
 			<li class="clearfix">
             	<span class="fl number_bg web_skin">03</span>
@@ -48,7 +58,7 @@
                     <dd>地址:上海市静安区南京西路1468号4201、4209室
 					<br>联系方式: 021-61279530</dd>
                 </dl>
-                <div class="fr mapbox"><img src="/../../img/index/sh_bwt_map.jpg" title="上海中欣财富中心" alt="上海中欣财富中心"></div>
+                <div class="fr mapbox"><img src="/../../img/index/map/shanghai.png" title="上海中欣财富中心" alt="上海中欣财富中心"></div>
             </li>  
 			<li class="clearfix">
             	<span class="fl number_bg web_skin">04</span>
@@ -57,7 +67,7 @@
                     <dd>地址:上海市静安区南京西路1468号4201、4209室 
 					<br>联系方式:021-60232016</dd>
                 </dl>
-                <div class="fr mapbox"><img src="/../../img/index/pudong_map.jpg" title="上海第二财富中心" alt="上海第二财富中心"></div>
+                <div class="fr mapbox"><img src="/../../img/index/map/shanghai.png" title="上海第二财富中心" alt="上海第二财富中心"></div>
             </li>  
             <li class="clearfix">
             	<span class="fl number_bg web_skin">05</span>
@@ -66,7 +76,7 @@
                     <dd>地址: 广东省广州市越秀区三元里山西大厦3号楼3220室
 					<br>联系方式: 020-36298548</dd>
                 </dl>
-                <div class="fr mapbox"><img src="/../../img/index/hongqiao_map.jpg" title="广州白云财富中心" alt="广州白云财富中心"></div>
+                <div class="fr mapbox"><img src="/../../img/index/map/guangzhou.png" title="广州白云财富中心" alt="广州白云财富中心"></div>
             </li> 
             <li class="clearfix">
             	<span class="fl number_bg web_skin">06</span>
@@ -74,7 +84,7 @@
                 	<dt>苏州晋合财富中心</dt>
                     <dd>地址: 江苏省苏州市工业园区华池街88号晋合广场1幢1201室<br>联系方式: 0512-89181688</dd>
                 </dl>
-                <div class="fr mapbox"><img src="/../../img/index/nanjing_map.jpg" title="苏州晋合财富中心" alt="苏州晋合财富中心"></div>
+                <div class="fr mapbox"><img src="/../../img/index/map/suzhou.png" title="苏州晋合财富中心" alt="苏州晋合财富中心"></div>
             </li> 
             <li class="clearfix">
             	<span class="fl number_bg web_skin">07</span>
@@ -83,7 +93,7 @@
                     <dd>地址: 江苏省苏州市工业园区华池街88号晋合广场1幢1201室
 					<br>联系方式: 0512-89181688</dd>
                 </dl>
-                <div class="fr mapbox"><img src="/../../img/index/wujiang_map.jpg" title="苏州第二财富中心" alt="苏州第二财富中心"></div>
+                <div class="fr mapbox"><img src="/../../img/index/map/suzhou.png" title="苏州第二财富中心" alt="苏州第二财富中心"></div>
             </li>
            <li class="clearfix">
             	<span class="fl number_bg web_skin">08</span>
@@ -91,7 +101,7 @@
                 	<dt>南京新地财富中心</dt>
                     <dd>地址: 江苏省南京市建邺区庐山路188号南京新地中心45层4503、4504室<br>联系方式: 025-86918866</dd>
                 </dl>
-                <div class="fr mapbox"><img src="/../../img/index/suzhou_map.jpg" title="南京新地财富中心" alt="南京新地财富中心"></div>
+                <div class="fr mapbox"><img src="/../../img/index/map/nanjing.png" title="南京新地财富中心" alt="南京新地财富中心"></div>
             </li> 
             <li class="clearfix">
             	<span class="fl number_bg web_skin">09</span>
@@ -100,7 +110,7 @@
                     <dd>地址: 海南省海口市龙华区国贸路2号海南时代广场18层东侧
 					<br>联系方式: 0898-36651855</dd>
                 </dl>
-                <div class="fr mapbox"><img src="/../../img/index/nantong_map.jpg" title="海口时代普惠中心" alt="海口时代普惠中心"></div>
+                <div class="fr mapbox"><img src="/../../img/index/map/haikou.png" title="海口时代普惠中心" alt="海口时代普惠中心"></div>
             </li> 
          </ul>
 		</section>
