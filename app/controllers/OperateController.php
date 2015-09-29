@@ -365,4 +365,29 @@ class OperateController extends ControllerBase
             return $this->forward("products/index");
         }
     }
+	
+	public function changetypesAction($id){
+		if($id){
+			$newstype = Newstype::findFirst("id =".$id);
+			Tag::displayTo("id",$newstype->id);
+			Tag::displayTo("name",$newstype->name);
+		}else{
+			 $this->flash->error("错误");
+		}
+		
+	}
+	
+	public function  savetypesAction(){
+		$id = $this->request->getPost("id");
+		$newtypes = Newstype::findFirst("id =".$id);
+		$newtypes->name = $this->request->getPost("name");
+		if($newtypes->save()){
+			$this->flash->notice("保存成功！");
+		}else{
+			foreach ($newtypes->getMessages() as $message) {
+                $this->flash->error((string) $message);
+            }
+		}
+	}
+	
 }
