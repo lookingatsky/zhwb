@@ -5,7 +5,7 @@
     	<h2 class="page_title title_pl18">产品与服务</h2>
         <ul class="aside_listbox">
         <li><a href="/service/index" class=" clearfix"><span class="fl">公司产品</span><i class="web_skin aside_arrow"></i></a></li>
-        <li><a href="javascript:void(0)" class="aside_btn_on clearfix"><span class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li>
+        <!-- <li><a href="javascript:void(0)" class="aside_btn_on clearfix"><span class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li> -->
         <li><a href="/service/method" class=" clearfix"><span class="fl">服务方式</span><i class="web_skin aside_arrow"></i></a></li>
         <li style="border-bottom: 0px none;"><a href="/service/mode" class="clearfix"><span class="fl">服务理念</span><i class="web_skin aside_arrow"></i></a></li>
        </ul>
@@ -267,25 +267,25 @@
      <div class="hycp_box mt10">
      	<ul class="pl_list">
      		
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4542" target="_blank">1. ************************公告</a><span>2015-09-14</span></li>
+        	<li><a href="#" target="_blank">1. ************************公告</a><span>2015-09-14</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4522" target="_blank">2. ************************公告</a><span>2015-09-08</span></li>
+        	<li><a href="#" target="_blank">2. ************************公告</a><span>2015-09-08</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4508" target="_blank">3. ************************成立公告</a><span>2015-09-02</span></li>
+        	<li><a href="#" target="_blank">3. ************************成立公告</a><span>2015-09-02</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4507" target="_blank">4. ************************成立公告</a><span>2015-08-31</span></li>
+        	<li><a href="#" target="_blank">4. ************************成立公告</a><span>2015-08-31</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4470" target="_blank">5. ************************成立公告</a><span>2015-08-26</span></li>
+        	<li><a href="#" target="_blank">5. ************************成立公告</a><span>2015-08-26</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4440" target="_blank">6. ************************成立公告</a><span>2015-08-20</span></li>
+        	<li><a href="#" target="_blank">6. ************************成立公告</a><span>2015-08-20</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4419" target="_blank">7. ************************终止公告书</a><span>2015-08-18</span></li>
+        	<li><a href="#" target="_blank">7. ************************终止公告书</a><span>2015-08-18</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4420" target="_blank">8. ************************终止公告书</a><span>2015-08-18</span></li>
+        	<li><a href="#" target="_blank">8. ************************终止公告书</a><span>2015-08-18</span></li>
         	
-        	<li><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4421" target="_blank">9. ************************终止公告书</a><span>2015-08-18</span></li>
+        	<li><a href="#" target="_blank">9. ************************终止公告书</a><span>2015-08-18</span></li>
         	
-        	<li style="border-bottom: 0px none;"><a href="http://www.chyjr.com/site/web/productInfoDetail.shtml?infoId=4422" target="_blank">10. ************************终止公告书</a><span>2015-08-18</span></li>
+        	<li style="border-bottom: 0px none;"><a href="#" target="_blank">10. ************************终止公告书</a><span>2015-08-18</span></li>
         	
         </ul>
         <form action="productInfo.shtml" method="post" id="pageForm">

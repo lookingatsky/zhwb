@@ -4,10 +4,10 @@
 			<h2 class="page_title title_pl18">关于我们</h2>
 			<ul class="aside_listbox">
 				<li><a href="/about/index" class="clearfix"><span style="margin-left: 0px;" class="fl">公司简介</span><i class="web_skin aside_arrow"></i></a></li>
-				<li><a href="#" class="clearfix"><span class="fl">总裁致辞</span><i class="web_skin aside_arrow"></i></a></li>
+				<!-- <li><a href="#" class="clearfix"><span class="fl">总裁致辞</span><i class="web_skin aside_arrow"></i></a></li> -->
 				<li><a href="javascript:void(0)" class=" aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">公司文化</span><i class="web_skin aside_arrow"></i></a></li>
 				
-				<li><a href="/about/partner" class="clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li>
+				<!-- <li><a href="/about/partner" class="clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li> -->
 				<!-- <li><a href="#" class="clearfix"><span class="fl">员工风采</span><i class="web_skin aside_arrow"></i></a></li>-->
 				<li style="border-bottom: 0px none;" class="none_line"><a href="/about/contact" class="clearfix"><span style="margin-left: 0px;" class="fl">联系我们</span><i class="web_skin aside_arrow"></i></a></li>
 			</ul>

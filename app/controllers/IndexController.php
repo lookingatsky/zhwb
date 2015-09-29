@@ -30,6 +30,12 @@ class IndexController extends ControllerBase
 			"order" => "inputtime desc",
 			"limit" => 5
 		));
+
+		$indexProducts = Products::find(array(
+			"limit" => 4,
+			"order" => "id asc"
+		));		
+		$this->view->indexProducts = $indexProducts;
 		
 		$this->view->setVar("news1",$news1);
 		$this->view->setVar("news2",$news2);

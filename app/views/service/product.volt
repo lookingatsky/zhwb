@@ -146,7 +146,7 @@ style.firebugResetStyles {
 		<h2 class="page_title title_pl18">产品与服务</h2>
 		<ul class="aside_listbox">
 			<li><a href="/service/index" class="aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">公司产品</span><i class="web_skin aside_arrow"></i></a></li>
-			<li><a href="/service/infos" class="clearfix"><span style="margin-left: 0px;" class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li>
+			<!-- <li><a href="/service/infos" class="clearfix"><span style="margin-left: 0px;" class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li> -->
 			<li><a href="/service/method" class=" clearfix"><span style="margin-left: 0px;" class="fl">服务方式</span><i class="web_skin aside_arrow"></i></a></li>
 			<li style="border-bottom: 0px none;"><a href="/service/mode" class="clearfix"><span style="margin-left: 0px;" class="fl">服务理念</span><i class="web_skin aside_arrow"></i></a></li>
 		</ul>
@@ -407,67 +407,58 @@ style.firebugResetStyles {
      	<table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tbody><tr>
     <th>产品名称</th>
-    <td>东方汇智-长富奥山-光谷1号专项资产管理计划  </td>
+    <td>{{ product.name }}  </td>
   </tr>
   <tr>
     <th>产品状态</th>
-    <td>正常到期 </td>
+    <td>正常 </td>
   </tr>
+  <tr>
+    <th>产品类型</th>
+    <td>{{ product.productTypes.name }} </td>
+  </tr>  
   <tr>
     <th>发行机构</th>
-    <td>东方汇智资产管理有限公司 </td>
+    <td>{{ product.issuer }} </td>
   </tr>
-  <tr>
+<!--   <tr>
     <th>投资方向</th>
     <td>武汉光谷新城项目</td>
-  </tr>
+  </tr> -->
   <tr>
     <th>产品期限</th>
-    <td>18个月 </td>
+    <td>{{ product.cycle }} </td>
   </tr>
   <tr>
     <th>投资起点</th>
-    <td>100.0万元 </td>
-  </tr>
-  <tr>
-    <th>产品规模</th>
-    <td>7500万元</td>
+    <td>{{ product.min }} </td>
   </tr>
   <tr>
     <th>预期收益</th>
-    <td>11%</td>
+    <td>{{ product.expected }}</td>
   </tr>
   <tr>
     <th>发行时间</th>
-    <td>2014-11-21</td>
+    <td>{{ product.issuetime }}</td>
   </tr>
   <tr>
     <th>预约电话</th>
-    <td>400-077-8000 </td>
+    <td>{{ product.telephone }} </td>
   </tr>
   <tr>
     <th class="top">风控方式</th>
     <td>
     <p>
-    1. 有限合伙企业的普通合伙人认购有限合伙的12.5%份额，奥山置业以总资金规模12.5%认购资管计划劣后级。
-2. 有限合伙企业受让项目公司60%的股权，另外40%的股权质押给有限合伙企业。
-3. 奥山置业及其实际控制人对本次融资的本金及预期收益承担无限连带责任保证担保。
-4. 长富汇银、东方汇智及上万邦行共同监管合伙企业资金流向。
-5. 获取土地使用权证后抵押至委贷银行。
-6. 派驻董事，东方汇智和长富汇银各派驻一名董事，对项目公司重大事项实施一票否决权；派驻财务总监和工程总监监管公司章、证、照，所有租售账户，工程预算和工程进度。
-   </p>
+		{{ product.control }}
+	</p>
     </td>
   </tr>
   <tr>
     <th class="top">产品详细描述</th>
     <td>
-    <p>项目介绍：项目位于武汉市东湖新技术开发区，高新大道南侧，光谷生物城板块内。东湖国家自主创新示范区中部核心位置的光谷新城，为规划在建
-地铁29号线、30号线的交汇处，距离规划中光谷新行政中心约200米，占据核心未来商务中心位置。项目净面积共26218㎡，包括零售商场、写字楼及部
-分车位，总计可售面积共103264㎡。
-<br>融资方介绍：奥山置业，二级资质，2013、2014年连续两年全国地产百强企业，已相继成功开发欧景苑、拜赞庭、奥山星座、奥山磁湖天下、奥山
-世纪城等多个精品楼盘。目前，奥山置业在建项目规模430余万方，远期规划开发面积2000余万方，土地静态储备1万多亩，2011年销售收入10亿
-元，2012年销售收入25亿元，2013年预计销售收入35亿元，并最终形成以专业化城市综合体开发与运营为导向，以湖北省省会、华中地区中心城市——
-武汉市为中心，辐射省内黄石、恩施等二、三线城市，多区域协调发展的格局。</p>
+    <p>
+		{{ product.description }}
+	</p>
     </td>
   </tr>
 </tbody></table>

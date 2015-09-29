@@ -11,7 +11,6 @@
      	<input name="type" value="{{type}}" id="newsType" type="hidden">
      </form>
 <section class="conterbox clearfix">
-	
     <div class="page_baner mt25"><img src="/../../img/index/hy_dtbaner.jpg" alt="关于我们"></div>
     <div class="dtlistbox mt25">
     	<ul class="dt_title  {% if type == 'X_WXX' %}index_tab001{% endif %} {% if type == 'X_MTBD' %}index_tab002{% endif %} {% if type == 'H_SCHD' %}index_tab003{% endif %}   clearfix">
@@ -56,7 +55,7 @@
 			</p>
         </div>
 		
-        <div class="video_box mt10 hide" {% if type == 'X_MTBD' %}style="display:block;"{% endif %}>
+        <div class="video_box mt10 hide" {% if type == 'X_MTBD' %}222 style="display:block;"{% endif %}>
         	<ul>
 				<?php foreach ($page2->items as $key=>$new) { ?>
             	<li class="clearfix">
@@ -76,7 +75,7 @@
 			</p>
         </div>
 		
-        <div class="active_box mt10 hide" {% if type == 'H_SCHD' %}style="display:block;"{% endif %}>
+        <div class="active_box mt10 hide" {% if type == 'H_SCHD' %}333 style="display:block;"{% endif %}>
         	<ul>
 				<?php foreach ($page->items as $new) { ?>
             	<li class="clearfix">

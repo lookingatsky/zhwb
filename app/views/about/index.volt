@@ -4,9 +4,9 @@
 			<h2 class="page_title title_pl18">关于我们</h2>
 			<ul class="aside_listbox">
 				<li><a href="javascript:void(0)" class="aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">公司简介</span><i class="web_skin aside_arrow"></i></a></li>
-				<li><a href="#" class="clearfix"><span class="fl">总裁致辞</span><i class="web_skin aside_arrow"></i></a></li>
+				<!-- <li><a href="#" class="clearfix"><span class="fl">总裁致辞</span><i class="web_skin aside_arrow"></i></a></li> -->
 				<li><a href="/about/culture" class="clearfix"><span style="margin-left: 0px;" class="fl">公司文化</span><i class="web_skin aside_arrow"></i></a></li>
-				<li><a href="/about/partner" class="clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li>
+				<!-- <li><a href="/about/partner" class="clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li> -->
 				<!-- <li><a href="#" class="clearfix"><span class="fl">员工风采</span><i class="web_skin aside_arrow"></i></a></li>-->
 				<li style="border-bottom: 0px none;" class="none_line"><a href="/about/contact" class="clearfix"><span style="margin-left: 0px;" class="fl">联系我们</span><i class="web_skin aside_arrow"></i></a></li>
 			</ul>
@@ -49,11 +49,11 @@
 					<div class="pic_next"></div>
 				</div>
 			</section>
-			<section class="mt30">
+<!-- 			<section class="mt30">
 				<div class="line_red "><h2 class="message_title web_skin">发展历程</h2></div>
 				<div class="mt15">
-					<!-- <img src="/../../img/index/fzlc.jpg" alt="万邦发展历程"> -->
+					<img src="/../../img/index/fzlc.jpg" alt="万邦发展历程">
 				</div>
-			</section>
+			</section> -->
 		</div>
 	</section>

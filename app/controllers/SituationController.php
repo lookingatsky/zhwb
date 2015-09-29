@@ -16,7 +16,9 @@ class SituationController extends ControllerBase
 		$schdPageBegin = $this->request->getPost("schdPageBegin");
 		
 		$type =	$this->request->getQuery("type");
-		$type =	$this->request->getPost("type");
+		if($type == ''){
+			$type =	$this->request->getPost("type");	
+		}
 		if($type == ''){
 			$type = 'X_WXX';
 		}

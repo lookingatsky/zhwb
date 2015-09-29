@@ -53,8 +53,8 @@
 											<li><a href="/about/index">公司简介<i class="web_skin menu_icon"></i></a></li>
 											<!-- <li><a href="#">客户服务<i class="web_skin menu_icon"></i></a></li>
 											<li><a href="#">员工风采<i class="web_skin menu_icon"></i></a></li>-->
-											<li><a href="#">总裁致辞<i class="web_skin menu_icon"></i></a></li>
-											<li><a href="/about/partner">合作伙伴<i class="web_skin menu_icon"></i></a></li>
+											<!-- <li><a href="#">总裁致辞<i class="web_skin menu_icon"></i></a></li> -->
+											<!-- <li><a href="/about/partner">合作伙伴<i class="web_skin menu_icon"></i></a></li> -->
 											<li><a href="/about/contact">联系我们<i class="web_skin menu_icon"></i></a></li>
 											<li><a href="/about/culture">公司文化<i class="web_skin menu_icon"></i> </a></li>
 											<!-- <li><a href="#">万邦荣誉<i class="web_skin menu_icon"></i></a></li>-->
@@ -78,7 +78,7 @@
 									<div class="menulist">
 										<ul class="clearfix ulbox">
 											<li><a href="/service/index">公司产品<i class="web_skin menu_icon"></i></a></li>
-											<li><a href="/service/infos">信息披露<i class="web_skin menu_icon"></i></a></li>
+											<!-- <li><a href="/service/infos">信息披露<i class="web_skin menu_icon"></i></a></li> -->
 											<li><a href="/service/method">服务方式<i class="web_skin menu_icon"></i></a></li>
 											<li><a href="/service/mode">服务理念<i class="web_skin menu_icon"></i></a></li>
 										</ul>

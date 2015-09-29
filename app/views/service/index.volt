@@ -146,7 +146,7 @@ style.firebugResetStyles {
 		<h2 class="page_title title_pl18">产品与服务</h2>
 		<ul class="aside_listbox">
 			<li><a href="javascript:void(0)" class="aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">公司产品</span><i class="web_skin aside_arrow"></i></a></li>
-			<li><a href="/service/infos" class="clearfix"><span style="margin-left: 0px;" class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li>
+			<!-- <li><a href="/service/infos" class="clearfix"><span style="margin-left: 0px;" class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li> -->
 			<li><a href="/service/method" class=" clearfix"><span style="margin-left: 0px;" class="fl">服务方式</span><i class="web_skin aside_arrow"></i></a></li>
 			<li style="border-bottom: 0px none;"><a href="/service/mode" class="clearfix"><span style="margin-left: 0px;" class="fl">服务理念</span><i class="web_skin aside_arrow"></i></a></li>
 		</ul>
@@ -411,22 +411,22 @@ style.firebugResetStyles {
          <section class="tabbox">
             <div class="tj_box ">
               <ul class="clearfix">
-              	
+              	{% for key,product in indexProducts %}
               	<li>
-                	<h2><span>产品名称：</span>XXXXXXXXXXXXXXXXXXXX</h2>
-                    <h2><span>产品类型：</span>XXXXXXXXXX</h2>
+                	<h2><span>产品名称：</span>{{ product.name }}</h2>
+                    <h2><span>产品类型：</span>{{ product.productTypes.name }}</h2>
                     
                     <dl class="clearfix">
-                    	<dt class="sy fl bg01">
+                    	<dt class="sy fl bg0{{ key+1 }}">
                         	<span>预期收益</span>
-                            <span class="sy_number">11%</span>
+                            <span class="sy_number">{{ product.expected }}</span>
                         </dt>
-                        <dd class="jianjie fr">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</dd>
+                        <dd class="jianjie fr">{{ product.description }}</dd>
                     </dl>
-                    <p class="in_btnbox"><a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=129" target="_blank">进入详情</a></p>
+                    <p class="in_btnbox"><a href="/service/product/{{ product.id }}" target="_blank">进入详情</a></p>
                 </li>
-                
-              	<li>
+                {% endfor %}
+<!--               	<li>
                 	<h2><span>产品名称：</span>XXXXXXXXXX</h2>
                     <h2><span>产品类型：</span>XXXXXXXXXX</h2>
                     
@@ -466,131 +466,51 @@ style.firebugResetStyles {
                         <dd class="jianjie fr">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</dd>
                     </dl>
                     <p class="in_btnbox"><a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=82" target="_blank">进入详情</a></p>
-                </li>
+                </li> -->
                 
               </ul>
             </div>
             <div class="cplist_box">
                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tbody><tr>
+                      <tbody>
+					
+					<tr>
                         <th scope="col" class="w317" style="text-align:center;">产品/机构</th>
                         <th scope="col">产品期限</th>
                         <th scope="col">预期收益</th>
                         <th scope="col">发行时间</th>
                         <th scope="col">状 态</th>
-                      </tr>
+					</tr>
                  	
+					<?php foreach ($page->items as $product) { ?>
                       <tr>
                         <td class="w317">
-						 <a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=129" target="_blank">
-                         <h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>东方汇智-长富奥山-光谷</h2>
-                         <h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>东方汇智资产管理有限公司</h2></a></td>
-						 
-                        <td>12个月~18个月 </td>
-                        <td>10%~11%</td>
-                        <td>2014-11-21</td>
+						 <a href="/service/product/{{ product.id }}" target="_blank">
+							 <h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span> {{ product.name }}</h2>
+							 <h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span> {{ product.issuer }}</h2>
+						 </a>
+						</td> 
+                        <td>{{ product.cycle }} </td>
+                        <td>{{ product.expected }}</td>
+                        <td>{{ product.issuetime }}</td>
                         <td> <span class="icon_align"><i class="time_icon web_skin"></i>
-                        	正常到期
+                        	正常
                       </span></td></tr>
-                      
-                      <tr>
-                        <td class="w317">
-						 <a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=117" target="_blank">
-                         <h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>中融-无锡阳山财产权信托</h2>
-                         <h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>中融国际信托有限公司</h2></a></td>
-						 
-                        <td>24个月 </td>
-                        <td>9%~9.2%</td>
-                        <td>2014-06-17</td>
-                        <td> <span class="icon_align"><i class="time_icon web_skin"></i>
-                        	提前结束
-                      </span></td></tr>
-                      
-                      <tr>
-                        <td class="w317">
-						 <a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=116" target="_blank">
-                         <h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>信达新兴资产贵阳富源路棚</h2>
-                         <h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>信达新兴财富(北京)资产管理有限公司</h2></a></td>
-						 
-                        <td>12个月~18个月 </td>
-                        <td>10.5%~11.2%</td>
-                        <td>2014-06-17</td>
-                        <td> <span class="icon_align"><i class="time_icon web_skin"></i>
-                        	正常到期
-                      </span></td></tr>
-                      
-                      <tr>
-                        <td class="w317">
-						 <a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=115" target="_blank">
-                         <h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>金元百利•银行IC卡产业</h2>
-                         <h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>上海金元百利资产管理有限公司</h2></a></td>
-						 
-                        <td>12个月 </td>
-                        <td>10%~10.8%</td>
-                        <td>2014-06-17</td>
-                        <td> <span class="icon_align"><i class="time_icon web_skin"></i>
-                        	正常到期
-                      </span></td></tr>
-                      
-                      <tr>
-                        <td class="w317">
-						 <a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=114" target="_blank">
-                         <h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>财通资产-常州松涛苑安置</h2>
-                         <h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>上海财通资产管理有限公司</h2></a></td>
-						 
-                        <td>24个月 </td>
-                        <td>10%~10.4%</td>
-                        <td>2014-06-17</td>
-                        <td> <span class="icon_align"><i class="time_icon web_skin"></i>
-                        	正常到期
-                      </span></td></tr>
-                      
-                      <tr>
-                        <td class="w317">
-						 <a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=113" target="_blank">
-                         <h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>中铁信托•优债1426期</h2>
-                         <h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>中铁信托有限责任公司</h2></a></td>
-						 
-                        <td>12个月 </td>
-                        <td>7.5%~8.3%</td>
-                        <td>2014-06-05</td>
-                        <td> <span class="icon_align"><i class="time_icon web_skin"></i>
-                        	正常到期
-                      </span></td></tr>
-                      
-                      <tr>
-                        <td class="w317">
-						 <a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=112" target="_blank">
-                         <h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>金元惠理医药产业一、二期</h2>
-                         <h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>上海金元惠理资产管理</h2></a></td>
-						 
-                        <td>18个月~24个月 </td>
-                        <td>10%~11%</td>
-                        <td>2014-06-04</td>
-                        <td> <span class="icon_align"><i class="time_icon web_skin"></i>
-                        	正常到期
-                      </span></td></tr>
-                      
-                      <tr>
-                        <td class="w317">
-						 <a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=111" target="_blank">
-                         <h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>中原信托-安益266期-</h2>
-                         <h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>中原信托</h2></a></td>
-						 
-                        <td>14个月 </td>
-                        <td>9%~9.5%</td>
-                        <td>2014-05-29</td>
-                        <td> <span class="icon_align"><i class="time_icon web_skin"></i>
-                        	正常到期
-                      </span></td></tr>
-                      
-                       
+                     <?php }?>
                     </tbody></table>
                     <form action="product.shtml" method="post" id="pageForm">
 			       		<input name="page.begin" id="pagebegin" type="hidden">
 			       		<input name="status" id="status" value="" type="hidden">
 			       </form>
-                    <p class="page_number"><a href='javascript:hygotopage("","",1,8,5)'>首页</a>|<a href='javascript:hygotopage("","",1,8,5)'>上一页</a>|<a href='javascript:hygotopage("","",2,8,5)'>下一页</a>|<a href='javascript:hygotopage("","",5,8,5)'>尾页</a><span>第&nbsp;&nbsp;1&nbsp;/&nbsp;5&nbsp;&nbsp;页</span><span>转到第<input name="topage" id="topage" type="text">页</span><a class="jump_btn web_skin" href='javascript:hygotopage("","",$("#topage").val(),8,5)'>跳转</a></p>
+                    <p class="page_number">
+						<a href='javascript:hygotopage("","",1,8,{{ page.total_pages}})'>首页</a>|
+						<a href='javascript:hygotopage("","",{{ page.before}},8,{{ page.total_pages}})'>上一页</a>|
+						<a href='javascript:hygotopage("","",{{ page.next}},8,{{ page.total_pages}})'>下一页</a>|
+						<a href='javascript:hygotopage("","",{{ page.last}},8,{{ page.total_pages}})'>尾页</a>
+						<span>第&nbsp;&nbsp;{{ page.current}}&nbsp;/&nbsp;{{ page.total_pages}}&nbsp;&nbsp;页</span>
+						<span>转到第<input name="topage" id="topage" type="text">页</span>
+						<a class="jump_btn web_skin" href='javascript:hygotopage("","",$("#topage").val(),8,{{ page.total_pages}})'>跳转</a>
+					</p>
                     
                 </div>
 		</section>

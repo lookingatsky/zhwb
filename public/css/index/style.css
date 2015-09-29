@@ -138,7 +138,7 @@ a:hover i.more_icon{background-position:-98px -56px;_background-position:-100px 
 /*地图定位*/
 .hy_icon{background-position:-21px -20px;}
 
-.map001_zb,.map01_hz,.map01_nc,.map01,.map02,.map03,.map04,.map05,.map06,.map07,.map08,.map09,.map10,.map11,.map12,.map13,.map14,.map15,.map16,.map17,.map18,.map19{display:block;width:16px;height:16px;cursor:pointer;_zoom:1;background:url(./../../img/index/logo2.png) no-repeat center center;_background:url(./../../img/index/logo2.gif) no-repeat center center;/*_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/logo2.png")*/;
+.map001_zb,.map01_hz,.map01_nc,.map01,.map02,.map03,.map04,.map05,.map06,.map07,.map08,.map09,.map10,.map11,.map12,.map13,.map14,.map15,.map16,.map17,.map18,.map19,.map20,.map21{display:block;width:16px;height:16px;cursor:pointer;_zoom:1;background:url(./../../img/index/logo2.png) no-repeat center center;_background:url(./../../img/index/logo2.gif) no-repeat center center;/*_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/logo2.png")*/;
 }
 .map13,.red_icon{background:url(./../../img/index/logo1.png) no-repeat center center;_background:url(./../../img/index/logo1.gif) no-repeat center center;/*_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/logo1.png");*/}
 .infobox_map{width:250px;/*background:url(./../../img/index/map_info_bg_03.png) no-repeat left top;*/ z-index:9999;display:none;/*_background:#999;*//*_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/map_info_bg_03.png");*/}
@@ -209,7 +209,10 @@ a:hover i.more_icon{background-position:-98px -56px;_background-position:-100px 
 .position_r{position:absolute;right:-10px;top:15px;}
 .map19{position:absolute;left:72px;top:73px; z-index:10;}
 .position_s{position:absolute;right:-10px;top:15px;}
-
+.map20{position:absolute;left:218px;top:216px; z-index:10;}
+.position_20{position:absolute;right:-10px;top:15px;}
+.map21{position:absolute;left:198px;top:244px; z-index:10;}
+.position_21{position:absolute;right:-10px;top:15px;}
 /*右边侧栏内容器*/
 .right_aside{width:243px;display:inline-block;_display:inline;}
 .user_loging h2{height:23px;background:#DBDBDB;font-size:14px;padding-left:20px;line-height:23px;color:#232323;}

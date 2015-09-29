@@ -5,7 +5,7 @@
     	<h2 class="page_title title_pl18">产品与服务</h2>
         <ul class="aside_listbox">
         <li><a href="/service/index" class=" clearfix"><span class="fl">公司产品</span><i class="web_skin aside_arrow"></i></a></li>
-        <li><a href="/service/infos" class=" clearfix"><span class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li>
+        <!-- <li><a href="/service/infos" class=" clearfix"><span class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li> -->
         <li><a href="/service/method" class=" clearfix"><span class="fl">服务方式</span><i class="web_skin aside_arrow"></i></a></li>
         <li style="border-bottom: 0px none;"><a href="javascript:void(0)" class="aside_btn_on clearfix"><span class="fl">服务理念</span><i class="web_skin aside_arrow"></i></a></li>
        </ul>

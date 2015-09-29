@@ -7,45 +7,45 @@
 					<!-- javascript:void(0) -->
 					<div class="baner_imglist" id="advindex" isindex="1" style="left: 0px; width: 5712px;">            	
 						<div style="width:714px;">
-							<a href="http://www.chyjr.com/site/web/article.shtml?articleId=4454" target="_blank">
-								<img src="/../../img/index/20150811104241_261361.jpg" alt="">
+							<a href="#" target="_blank">
+								<img src="/../../img/index/index/index1.png" alt="">
 							</a>
 						</div>              	
 						<div style="width:714px;">
-							<a href="http://www.chyjr.com/site/web/article.shtml?articleId=4443" target="_blank">
-								<img src="/../../img/index/20150821133353_603789.JPG" alt="">
+							<a href="#" target="_blank">
+								<img src="/../../img/index/index/index2.png" alt="">
 							</a>
 						</div>              	
 						<div style="width:714px;">
-							<a href="http://www.chyjr.com/site/web/article.shtml?articleId=4347" target="_blank">
-								<img src="/../../img/index/20150803103707_245854.JPG" alt="">
+							<a href="#" target="_blank">
+								<img src="/../../img/index/index/index3.png" alt="">
 							</a>
 						</div>              	
 						<div style="width:714px;">
-							<a href="http://www.chyjr.com/site/web/article.shtml?articleId=4293" target="_blank">
-								<img src="/../../img/index/20150722100832_227368.JPG" alt="">
+							<a href="#" target="_blank">
+								<img src="/../../img/index/index/index4.png" alt="">
 							</a>
 						</div>        	
 						<div style="width:714px;">
-							<a href="http://www.chyjr.com/site/web/article.shtml?articleId=4218" target="_blank">
-								<img src="/../../img/index/20150630091909_713643.JPG" alt="">
+							<a href="#" target="_blank">
+								<img src="/../../img/index/index/index5.png" alt="">
 							</a>
 						</div>              	
 						<div style="width:714px;">
-							<a href="http://www.chyjr.com/site/web/article.shtml?articleId=4059" target="_blank">
-								<img src="/../../img/index/20150521091113_570263.JPG" alt="">
+							<a href="#" target="_blank">
+								<img src="/../../img/index/index/index6.png" alt="">
 							</a>
 						</div>              	
-						<div style="width:714px;">
-							<a href="http://www.chyjr.com/site/web/article.shtml?articleId=3790" target="_blank">
-								<img src="/../../img/index/20150228105157_419451.jpg" alt="">
+<!-- 						<div style="width:714px;">
+							<a href="#" target="_blank">
+								<img src="/../../img/index/index/index1.png" alt="">
 							</a>
 						</div>            	
 						<div style="width:714px;">
-							<a href="http://www.chyjr.com/site/web/article.shtml?articleId=4502" target="_blank">
-								<img src="/../../img/index/20150210175901_259917.JPG" alt="">
+							<a href="#" target="_blank">
+								<img src="/../../img/index/index/index1.png" alt="">
 							</a>
-						</div>              	
+						</div>    -->           	
 					</div>
 					<div class="playbox" id="id">
 						<div id="obkList" class="focus_btn"> 
@@ -84,7 +84,7 @@
 							<dl>
 								<dt class="clearfix">
 									<h2 class="fl message_title web_skin">行业新闻</h2>
-									<a href="/situation/index?type=X_MTBD?type=WEB_HYYJ" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
+									<a href="/situation/index?type=X_MTBD" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
 								</dt>
 								<dd class="clearfix h_114">
 									<div class="fl imgbox"><img src="/../../img/index/index_pl.jpg"></div>
@@ -96,7 +96,7 @@
 								</dd>
 							</dl>
 						</li>
-						<li class="mr18">
+<!-- 						<li class="mr18">
 							<dl>
 								<dt class="clearfix">
 									<h2 class="fl message_title web_skin">公司公告</h2>
@@ -119,15 +119,15 @@
 								</dt>
 								<dd class="clearfix h_114">
 									<div class="new_lsit w315">
-										<div><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4485" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXX...</a></div>
-										<div><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4446" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX...</a></div>
-										<div><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4445" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXX...</a></div>
-										<div><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4396" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX...</a></div>
-										<div><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4379" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXXXXXXXXXXXX...</a></div>
+										<div><a href="#" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXX...</a></div>
+										<div><a href="#" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXX...</a></div>
+										<div><a href="#" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXX...</a></div>
+										<div><a href="#" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXX...</a></div>
+										<div><a href="#" target="_blank"><i class="new_texticon web_skin"></i>XXXXXXXXXX...</a></div>
 									</div>
 								</dd>
 							</dl>
-						</li>
+						</li> -->
 					</ul>
 				</section>
 				<!--热销业务-->
@@ -139,189 +139,30 @@
 						</dt>
 						<dd>
 							<section id="hot" rel="1" iscom="1" style="height:240px; overflow:hidden;">
+								{% for product in indexProducts %}
 								<div class="start" style="zoom: 1; display: block; height: 79px; clear: both; background-color: rgb(255, 255, 255);">
-									<a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=115" target="_blank">
+									<a href="/service/product/{{ product.id }}" target="_blank">
 										<div class="clearfix pr13 yewulist">
 											<div class="fl cp_name">
-												<h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX  </h2>
-												<h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
+												<h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>{{ product.name }}  </h2>
+												<h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>{{ product.issuer }}</h2>
 											</div>
 											<div class="fr yuyue">
 												<div class="clearfix">
 													<div class="fl qixian">
-														<p>期限：12个月</p>
-														<span class="icon_align"><i class="time_icon web_skin"></i>正常到期 </span> 
+														<p>期限：{{ product.cycle }}</p>
+														<span class="icon_align"><i class="time_icon web_skin"></i>正常 </span> 
 													</div>
 													<div class="fr earnings web_skin">
 														<h2>预期收益</h2>
-														<p>10%~10.8%</p>
+														<p>{{ product.expected }}</p>
 													</div>
 												</div>
 											</div>
 										</div>
 									</a>
 								</div>
-								
-								<div class="start" style="zoom: 1; display: block; height: 79px; clear: both; background-color: rgb(255, 255, 255);">
-									<a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=114" target="_blank">
-										<div class="clearfix pr13 yewulist">
-											<div class="fl cp_name">
-												<h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX  </h2>
-												<h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
-											</div>
-											<div class="fr yuyue">
-												<div class="clearfix">
-													<div class="fl qixian">
-														<p>期限：24个月</p>
-														<span class="icon_align"><i class="time_icon web_skin"></i>正常到期 </span> 
-													</div>
-													<div class="fr earnings web_skin">
-														<h2>预期收益</h2>
-														<p>10%~10.4%</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							
-								<div class="start" style="zoom: 1; display: block; height: 79px; clear: both; background-color: rgb(255, 255, 255);">
-									<a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=113" target="_blank">
-										<div class="clearfix pr13 yewulist">
-											<div class="fl cp_name">
-												<h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX  </h2>
-												<h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
-											</div>
-											<div class="fr yuyue">
-												<div class="clearfix">
-													<div class="fl qixian">
-														<p>期限：12个月</p>
-														<span class="icon_align"><i class="time_icon web_skin"></i>正常到期 </span> 
-													</div>
-													<div class="fr earnings web_skin">
-														<h2>预期收益</h2>
-														<p>7.5%~8.3%</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-							
-								<div class="start" style="zoom: 1; display: block; height: 79px; clear: both; background-color: rgb(255, 255, 255);">
-									<a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=112" target="_blank">
-										<div class="clearfix pr13 yewulist">
-											<div class="fl cp_name">
-												<h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX  </h2>
-												<h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
-											</div>
-											<div class="fr yuyue">
-												<div class="clearfix">
-													<div class="fl qixian">
-														<p>期限：18个月~24个月</p>
-														<span class="icon_align"><i class="time_icon web_skin"></i>正常到期 </span> 
-													</div>
-													<div class="fr earnings web_skin">
-														<h2>预期收益</h2>
-														<p>10%~11%</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-								
-								<div class="start" style="zoom: 1; display: block; height: 79px; clear: both; background-color: rgb(255, 255, 255);">
-									<a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=111" target="_blank">
-										<div class="clearfix pr13 yewulist">
-											<div class="fl cp_name">
-												<h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX  </h2>
-												<h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
-											</div>
-											<div class="fr yuyue">
-												<div class="clearfix">
-													<div class="fl qixian">
-														<p>期限：14个月</p>
-														<span class="icon_align"><i class="time_icon web_skin"></i>正常到期 </span> 
-													</div>
-													<div class="fr earnings web_skin">
-														<h2>预期收益</h2>
-														<p>9%~9.5%</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-										
-								<div class="start">
-									<a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=129" target="_blank">
-										<div class="clearfix pr13 yewulist">
-											<div class="fl cp_name">
-												<h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX  </h2>
-												<h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
-											</div>
-											<div class="fr yuyue">
-												<div class="clearfix">
-													<div class="fl qixian">
-														<p>期限：12个月~18个月</p>
-														<span class="icon_align"><i class="time_icon web_skin"></i>正常到期 </span> 
-													</div>
-													<div class="fr earnings web_skin">
-														<h2>预期收益</h2>
-														<p>10%~11%</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-										  
-								<div class="start">
-									<a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=117" target="_blank">
-										<div class="clearfix pr13 yewulist">
-											<div class="fl cp_name">
-												<h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX  </h2>
-												<h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
-											</div>
-											<div class="fr yuyue">
-												<div class="clearfix">
-													<div class="fl qixian">
-														<p>期限：24个月</p>
-														<span class="icon_align"><i class="time_icon web_skin"></i>提前结束 </span> 
-													</div>
-													<div class="fr earnings web_skin">
-														<h2>预期收益</h2>
-														<p>9%~9.2%</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
-
-								<div class="start">
-									<a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=116" target="_blank">
-										<div class="clearfix pr13 yewulist">
-											<div class="fl cp_name">
-												<h2 class="icon_align"><i class="cp_icon web_skin"></i><span>产品名称:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX  </h2>
-												<h2 class="icon_align"><i class="jigou_icon web_skin"></i><span>发行机构:</span>XXXXXXXXXXXXXXXXXXXXXXXXXX</h2>
-											</div>
-											<div class="fr yuyue">
-												<div class="clearfix">
-													<div class="fl qixian">
-														<p>期限：12个月~18个月</p>
-														<span class="icon_align"><i class="time_icon web_skin"></i>正常到期 </span> 
-													</div>
-													<div class="fr earnings web_skin">
-														<h2>预期收益</h2>
-														<p>10.5%~11.2%</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</a>
-								</div>
+								{% endfor %}
 							</section>
 						</dd>
 					</dl>
@@ -346,25 +187,6 @@
 									</div>
 								</div>
 								{% endfor %}			  
-<!-- 								<div class="hdlistbox">
-									<h2 class="sess_bt"><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4472" target="_blank">XXXXXXXXXXXXXXXXXXXX</a></h2>
-									<div class="clearfix mt10">
-										<div class="fl infotext">
-											<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX...</p>
-										</div>
-										<div class="fr picbox"><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4472" target="_blank"><img src="/../../img/index/fae7360c-031f-4f64-a7a0-99e61bff1972.jpg" style="width:123px;height:66px;"></a></div>
-									</div>
-								</div>
-
-								<div class="hdlistbox" style="border-bottom-width: 0px;">
-									<h2 class="sess_bt"><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4473" target="_blank">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</a></h2>
-									<div class="clearfix mt10">
-										<div class="fl infotext">
-										<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX...</p>
-										</div>
-										<div class="fr picbox"><a href="http://www.chyjr.com/site/web/article.shtml?articleId=4473" target="_blank"><img src="/../../img/index/a2fbdff7-8bb4-4613-87a4-62f8248085cc.jpg" style="width:123px;height:66px;"></a></div>
-									</div>
-								</div>	   -->
 							</dd>
 						</dl>
 					</div>
@@ -387,51 +209,6 @@
 											</div>
 										</div> 
 									</section>
-<!-- 									<section class="map01_hz">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="合肥"></a>
-										<div class="infobox_map position_hz">
-											<div class="rel relavebox2" style="height:100px;"></div>
-											<div class="maptext">
-												<h2>合肥分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map01_nc">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="南昌"></a>
-										<div class="infobox_map position_nc">
-											<div class="rel relavebox2" style="height:100px;"></div>
-											<div class="maptext">
-												<h2>南昌分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map01">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="宁波"></a>
-										<div class="infobox_map position_a">
-											<div class="rel relavebox2" style="height:450px;"></div>
-											<div class="maptext">
-												<h2>杭州分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map02">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="xiamen" title="厦门"></a>
-										<div class="infobox_map position_b">
-											<div class="rel relavebox2" style="height:210px;"></div>
-											<div class="maptext">
-												<h2>厦门分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map03">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="深圳"></a>
-										<div class="infobox_map position_c">
-											<div class="rel relavebox2" style="height:300px;"></div>
-											<div class="maptext">
-												<h2>深圳分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section> -->
 									<section class="map04">
 										<a href="" class="nibo" title="南京"></a>
 										<div class="infobox_map position_d">
@@ -446,78 +223,6 @@
 											</div>
 										</div>
 									</section>
-<!-- 									<section class="map05">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="长沙"></a>
-										<div class="infobox_map position_e">
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>长沙分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section> 
-									<section class="map06">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="昆明"></a>
-										<div class="infobox_map position_f">
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>昆明分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map07">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="武汉"></a>
-										<div class="infobox_map position_g">
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>武汉分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map08">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="郑州"></a>
-										<div class="infobox_map position_h">
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>郑州分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map09">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="天津"></a>
-										<div class="infobox_map position_i">
-											<div class="rel relavebox2" style="height:110px;"></div>
-											<div class="maptext">
-												<h2>天津分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map10">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="青岛"></a>
-										<div class="infobox_map position_j">
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>青岛分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section> 
-									<section class="map11">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="成都"></a>
-										<div class="infobox_map position_k">
-											<div class="rel relavebox2" style="height:110px;"></div>
-											<div class="maptext">
-												<h2>成都分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section> 
-									<section class="map12">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="西安"></a>
-										<div class="infobox_map position_l">
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>西安分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section> -->
 									<section class="map13">
 										<a href="" class="nibo" title="北京"></a>
 										<strong class="text_tag">(&nbsp;总部&nbsp;)</strong> 
@@ -533,60 +238,6 @@
 											</div>
 										</div>
 									</section>
-<!-- 									<section class="map14">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="山西"></a>
-										<div class="infobox_map position_n">
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>山西分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map15">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="沈阳"></a>
-										<div class="infobox_map position_p">
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>沈阳分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map16">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="哈尔滨"></a>
-										<div class="infobox_map position_o">
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>哈尔滨分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section> 
-									<section class="map17">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="西藏"></a>
-										<div class="infobox_map position_r">
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>西藏分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map18">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="青海"></a>
-										<div class="infobox_map position_r">
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>青海分公司正在筹建中</h2>
-											</div>
-										</div>
-									</section>
-									<section class="map19">
-										<a href="http://www.chyjr.com/site/web/index.shtml#" class="nibo" title="新疆"></a>
-										<div class="infobox_map position_s"> 
-											<div class="rel relavebox2"></div>
-											<div class="maptext">
-												<h2>新疆分公司正筹建中</h2>
-											</div>
-										</div>
-									</section> -->
 									<section class="map20">
 										<a href="" class="nibo" title="广州"></a>
 										<div class="infobox_map position_20">
@@ -1049,8 +700,6 @@
 						<span>  CopyRight 1999-2023 All Rights Reserved.
 							<span><br> 
 							京<span>ICP</span>备<span>15005678</span>号<span>-1</span>
-							<a href="http://www.cnzz.com/stat/website.php?web_id=4126230" target="_blank" title="站长统计">
-							<img border="0" hspace="0" vspace="0" src="/../../img/index/pic.gif"></a>
 							</span>
 						</span>
 					</p>
@@ -1086,4 +735,3 @@
 		//--------------万邦 Banner end--------------------
 	})
 </script>
-<a href="http://webscan.360.cn/index/checkwebsite/url/www.haiyinwm.com"><img border="0" src="./中合万邦_files/8a0fb1731f18383956db8f344914a791"></a>
