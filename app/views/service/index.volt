@@ -402,7 +402,7 @@ style.firebugResetStyles {
     <div class="about_conter fr mt30">
     <section class=" rel">
      <h2 class="title_text ">公司产品</h2>
-     <p class="mbx">当前位置：<a href="#">首页</a>  &gt; <a href="#">产品与服务</a> &gt; 公司产品</p>
+     <p class="mbx">当前位置：首页  &gt; 产品与服务 &gt; 公司产品</p>
      <div class="hycp_box mt10">
      	<ul class="cp_tbbg cp_tab001  clearfix" style="border-bottom:none;">
             <li class="hy_info_tab wxtitle " onclick="javascript:changeType(1)">重点推荐</li>

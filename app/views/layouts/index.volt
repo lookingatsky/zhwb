@@ -23,7 +23,7 @@
 		<section class="fixbox" style="top: 0px; left: 0px; position: fixed;">
 			<section class="clearfix headerbg">
 				<section class="header_warp">
-					<div class="logobox fl"> <a href="./中合万邦_files/中合万邦.htm" class="logimg" title="中合万邦"></a> </div>
+					<div class="logobox fl"> <a href="/index/index" class="logimg" title="中合万邦"></a> </div>
 					<div class="menubox fr">
 						<div class="searchbox clearfix">
 							<div class="fl language"><!-- <span class="mr10">English</span>|<span class="ml10">中文</span> --></div>

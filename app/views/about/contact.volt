@@ -39,7 +39,7 @@
             	<span class="fl number_bg web_skin">01</span>
                 <dl class="fl lianxi_text">
                 	<dt>中合万邦投资管理有限公司（总部）</dt>
-                    <dd>地址:北京朝阳区建国门外大街2号银泰中心C座46层<br>联系方式: 400-077-8000</dd>
+                    <dd>地址:北京朝阳区建国门外大街2号银泰中心C座46层<br>联系方式: 010-85659999</dd>
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/beijing.png" title="中合万邦投资管理有限公司（总部）" alt="中合万邦投资管理有限公司（总部）"></div>
             </li>  

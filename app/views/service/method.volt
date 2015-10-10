@@ -262,7 +262,7 @@
   <div class="about_conter fr mt30">
     <section class="rel">
      <h2 class="title_text ">服务方式</h2>
-      <p class="mbx">当前位置：<a href="#">首页</a>  &gt; <a href="#">产品与服务</a> &gt; 服务方式</p>
+      <p class="mbx">当前位置：首页  &gt; 产品与服务 &gt; 服务方式</p>
      <div class="hycp_box mt10">
       <section class="cpgl_mode">
      	 <h2 class="mt20 w192">动态财富管理体系:</h2>

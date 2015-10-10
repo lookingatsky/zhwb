@@ -145,7 +145,7 @@ style.firebugResetStyles {
 
 <section class="conterbox mt_pt0">
     <section class="clearfix baner_border">
-          <img src="/../../img/index/new_baner.jpg" alt="中合万邦">
+          <a href="/index/index"><img src="/../../img/index/new_baner.jpg" alt="中合万邦"></a>
     </section>
   <section class="mt30 clearfix">          
        
@@ -157,7 +157,7 @@ style.firebugResetStyles {
              <span class="blank15"> </span>
            </div>
        </div>
-       <div class="user_loging khd_donload mt5">
+<!--        <div class="user_loging khd_donload mt5">
        		<h2 style="text-align:left">移动客户端下载</h2>
             <div class="phone_bg clearfix mt23">
             	<a href="#" class="bigblackbut7"><img alt="Iphone客户端下载" src="/../../img/index/ios_07.gif"></a>
@@ -165,7 +165,7 @@ style.firebugResetStyles {
             <div class="phone_bg  clearfix mt15 mb15">
             	<a href="#" class="bigblackbut7"><img alt="安卓客户端下载" src="/../../img/index/anz_11.gif"></a>
             </div>
-       </div>
+       </div> -->
     
     <div class="user_loging mt5">
            <div style="padding-top:10px;" class="formbox clearfix tel400_bg">
