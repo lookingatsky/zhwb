@@ -229,7 +229,9 @@ a:hover i.more_icon{background-position:-98px -56px;_background-position:-100px 
 .w60{width:60px;}
 .pt18{padding-top:18px;}
 .loging_btn{padding:5px 18px;background:#d91920;border-radius:5px;color:#fff;font-size:16px;}
+.loging_btn_{padding:5px 18px;background:#d91920;border-radius:5px;color:#fff;font-size:16px;}
 a.loging_btn:hover{border:1px solid #a2a2a2;color:#fff;}
+a.loging_btn_:hover{border:1px solid #a2a2a2;color:#fff;}
 .ml50{margin-left:50px;}
 .btnbox{height:30px;}
 .tel_btn{width:59px;height:23px;border-radius:3px;display:inline-block;line-height:23px;text-align:center;background:#4b4b4b;/*background-position:-136px -32px;*/color:#fff;cursor:pointer;font-family:"宋体";font-size:12px;margin-left:2px;}

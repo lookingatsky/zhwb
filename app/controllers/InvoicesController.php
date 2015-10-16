@@ -14,7 +14,7 @@ class InvoicesController extends ControllerBase
     }
 
     public function indexAction()
-    {
+    {	
 		$auth = $this->session->get('auth');
 		$user = Users::findFirst($auth['id']);
 		if ($user == false) {

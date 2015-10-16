@@ -10,7 +10,8 @@ try {
 	define('LOGS_PATH', realpath('..') . '/logs/');	 
 	 
 	$config = new Phalcon\Config\Adapter\Ini(__DIR__ . '/../app/config/config.ini');
-
+	define('FILEWEBNAME',$config->webservice->filewebname);
+	
 	$loader = new \Phalcon\Loader();
 
 	/**
@@ -80,7 +81,7 @@ try {
 	}, true);
 
 	/**
-	 * Database connection is created based in the parameters defined in the configuration file
+	 *
 	 */
 	$di->set('db', function() use ($config) {
 		return new \Phalcon\Db\Adapter\Pdo\Mysql(array(
@@ -91,6 +92,15 @@ try {
 		));
 	});
 
+	$di->set('customersystem', function() use ($config) {
+		return new \Phalcon\Db\Adapter\Pdo\Mysql(array(
+			"host" => $config->database2->host,
+			"username" => $config->database2->username,
+			"password" => $config->database2->password,
+			"dbname" => $config->database2->name
+		));
+	});	
+	
 	$di->set('collectionManager', function() {
 		//$eventsManager = new Phalcon\Events\Manager();
 		/*
@@ -111,16 +121,9 @@ try {
 		return $modelsManager;
 
 	}, true);
-
-/* 	$di->set('mongo1',function(){
-		$mongo = new Mongo("mongodb://127.0.0.1");
-		return $mongo->selectDb("local");
-	},true);	 */
-	
-	
 	
 	/**
-	 * If the configuration specify the use of metadata adapter use it or use memory otherwise
+	 *
 	 */
 	$di->set('modelsMetadata', function() use ($config) {
 		if (isset($config->models->metadata)) {
@@ -132,7 +135,7 @@ try {
 	});
 
 	/**
-	 * Start the session the first time some component request the session service
+	 *
 	 */
 	$di->set('session', function(){
 		$session = new Phalcon\Session\Adapter\Files();
@@ -141,7 +144,7 @@ try {
 	});
 
 	/**
-	 * Register the flash service with custom CSS classes
+	 *
 	 */
 	$di->set('flash', function(){
 		return new Phalcon\Flash\Direct(array(
@@ -152,7 +155,7 @@ try {
 	});
 
 	/**
-	 * Register a user component
+	 *
 	 */
 	$di->set('elements', function(){
 		return new Elements();

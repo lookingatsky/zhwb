@@ -1,5 +1,4 @@
 <?php
-
 use Phalcon\Tag as Tag;
 
 class SessionController extends ControllerBase
@@ -11,7 +10,7 @@ class SessionController extends ControllerBase
         parent::initialize();
     }
 
-    public function indexAction()
+   /*  public function indexAction()
     {
         if (!$this->request->isPost()) {
             Tag::setDefault('email', ' ');
@@ -54,43 +53,55 @@ class SessionController extends ControllerBase
 			}		
         }
     }
-
+*/
     private function _registerSession($user)
     {
         $this->session->set('auth', array(
             'id' => $user->id,
-            'name' => $user->name,
-			'did' => $user->did
+            'name' => $user->username,
+			'cid' => $user->cid
         ));
-    }
+		
+    } 
 
     public function startAction()
     {
         if ($this->request->isPost()) {
-            $email = $this->request->getPost('email', 'email');
+			$getVerifyCode =  $this->session->get("authnum_session");
+			
+			$verifycode = $this->request->getPost('verifycode');
 
+			if($verifycode != $getVerifyCode){
+				return $this->response->redirect("/index/index");
+			}
+			
+            $email = $this->request->getPost('email', 'email');
             $password = $this->request->getPost('password');
             $password = sha1($password);
 
-            $user = Users::findFirst("email='$email' AND password='$password' AND active='Y'");
+            $user = Account::findFirst("email='$email' AND password='$password' AND active='Y'");
+
             if ($user != false) {
                 $this->_registerSession($user);
-                $this->flash->success('欢迎！ ' . $user->name);
-                return $this->forward('invoices/index');
-            }
-
-            $username = $this->request->getPost('email', 'alphanum');
+			
+                $this->flash->success('欢迎！ ' . $user->username);		
+                return $this->forward('personal/index');
+            }else{
+				$this->flash->error('帐号密码错误');
+			}
+			
+/*             $username = $this->request->getPost('email', 'alphanum');
             $user = Users::findFirst("username='$username' AND password='$password' AND active='Y'");
             if ($user != false) {
                 $this->_registerSession($user);
                 $this->flash->success('欢迎！ ' . $user->name);
                 return $this->forward('invoices/index');
-            }
+            } */
 			
-            $this->flash->error('帐号密码错误');
+            
         }
 
-        return $this->forward('session/index');
+        //return $this->forward('index/index');
     }
 
     public function endAction()

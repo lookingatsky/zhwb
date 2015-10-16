@@ -26,9 +26,9 @@ class Security extends Plugin
 
 			$acl->setDefaultAction(Phalcon\Acl::DENY);
 
-			//Register roles
+			///
 			$roles = array(
-				'users' => new Phalcon\Acl\Role('Users'),
+				'customer' => new Phalcon\Acl\Role('customer'),
 				'guests' => new Phalcon\Acl\Role('Guests'),
 				'admin' => new Phalcon\Acl\Role('admin')
 			);
@@ -36,7 +36,7 @@ class Security extends Plugin
 				$acl->addRole($role);
 			}
 
-			//////////
+			////
 			$privateResources = array(
 				'companies' => array('index', 'search', 'new', 'edit', 'save', 'create', 'delete','account','accountsave',"accountdelete"),
 				'products' => array('index', 'search', 'new', 'edit', 'save', 'create', 'delete','list'),
@@ -48,7 +48,8 @@ class Security extends Plugin
 			foreach ($privateResources as $resource => $actions) {
 				$acl->addResource(new Phalcon\Acl\Resource($resource), $actions);
 			}
-			////////////////
+			
+			////
 			$userResources = array(
 				'invoices' => array('index', 'profile'),
 				'products' => array('index', 'search', 'new', 'edit', 'save', 'create', 'delete','list'),
@@ -56,25 +57,21 @@ class Security extends Plugin
 			);
 			foreach ($userResources as $resource => $actions) {
 				$acl->addResource(new Phalcon\Acl\Resource($resource), $actions);
-			}			
-			//////////////////
+			}	
+			
+			/////
 			$publicResources = array(
 				'index' => array('index'),
-				'about' => array('index'),
-				'service' => array('index'),
-				'situation' => array('index'), 
-				'session' => array('index', 'register', 'start', 'end'),
-				'contact' => array('index', 'send'),
-				'help' => array('index'),
-				'register' => array('verifyemail','register'),
-				'vote' => array('index'),
-				'operate' => array('index')
+				'about' => array('index','contact','culture'),
+				'service' => array('index','method','mode'),
+				'situation' => array('index'),
+				'college' => array('index','case','test')
 			);
 			foreach ($publicResources as $resource => $actions) {
 				$acl->addResource(new Phalcon\Acl\Resource($resource), $actions);
 			}
 
-			//Grant access to public areas to both users and guests
+			//
 			foreach ($roles as $role) {
 				foreach ($publicResources as $resource => $actions) {
 					$acl->allow($role->getName(), $resource, '*');
@@ -94,7 +91,7 @@ class Security extends Plugin
 				}
 			}
 	
-			//The acl is stored in session, APC would be useful here too
+			//
 			$this->persistent->acl = $acl;
 		}
 

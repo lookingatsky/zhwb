@@ -42,5 +42,11 @@ class IndexController extends ControllerBase
 		$this->view->setVar("news3",$news3);
 		$this->view->setVar("news4",$news4);
     }
-	
+
+	public function verifycodeAction(){
+		$this->view->disable();
+		$verifycode = new Verifycode();
+		$result = $verifycode->getCode();
+		return $result;
+	}
 }

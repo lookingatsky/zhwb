@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Elements
  *
- * Helps to build UI elements for the application
  */
 class Elements extends Phalcon\Mvc\User\Component
 {
@@ -14,32 +12,16 @@ class Elements extends Phalcon\Mvc\User\Component
                 'caption' => '首 页',
                 'action' => 'index'
             ),
-             'invoices' => array(
-                'caption' => '系 统',
+             'personal' => array(
+                'caption' => '个人中心',
                 'action' => 'index'
-            ),
-             'help' => array(
-                'caption' => '帮助中心',
-                'action' => 'index'
-            ),			
-/*            'about' => array(
-                'caption' => '关于',
-                'action' => 'index'
-            ),
-            'contact' => array(
-                'caption' => '联系我们',
-                'action' => 'index'
-            ), */
+            )
         ),
         'pull-right' => array(
 			'invoices' => array(
 				'caption' => '',
 				'action' => 'index'
-			),
-            'session' => array(
-                'caption' => '登 录',
-                'action' => 'index'
-            ),
+			)
         )
     );
 
@@ -63,13 +45,7 @@ class Elements extends Phalcon\Mvc\User\Component
             'controller' => 'producttypes',
             'action' => 'index',
             'any' => true
-        ),
-/*        '客户管理' => array(
-            'controller' => 'customer',
-            'action' => 'index',
-            'any' => true
-        ),
-*/		
+        ),	
         '账户管理' => array(
             'controller' => 'invoices',
             'action' => 'profile',
@@ -77,10 +53,7 @@ class Elements extends Phalcon\Mvc\User\Component
         )
     );
 
-    /**
-     * Builds header menu with left and right items
-     *
-     * @return string
+    /*
      */
     public function getMenu()
     {

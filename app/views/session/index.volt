@@ -11,13 +11,13 @@
             {{ form('session/start', 'class': 'form-inline') }}
                 <fieldset>
                     <div class="control-group">
-                        <label class="control-label" for="email">用户名/邮箱</label>
+                        <label class="control-label" for="email">用户名/邮 箱</label>
                         <div class="controls">
                             {{ text_field('email', 'size': "30", 'class': "input-xlarge") }}
                         </div>
                     </div>
                     <div class="control-group">
-                        <label class="control-label" for="password">密码</label>
+                        <label class="control-label" for="password">密 码</label>
                         <div class="controls">
                             {{ password_field('password', 'size': "30", 'class': "input-xlarge") }}
                         </div>

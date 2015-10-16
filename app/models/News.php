@@ -3,8 +3,6 @@
 class News extends Phalcon\Mvc\Model
 {
     public $id;
-
-
     public $typeid;
 
     public function initialize()

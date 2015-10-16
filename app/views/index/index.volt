@@ -1,4 +1,25 @@
-
+<?php use Phalcon\Tag as Tag ?>
+<script>
+$(function(){
+	$(".verifycodesss").click(function(){
+		window.location.reload();
+	})
+	$(".loging_btn_").click(function(){
+		var account = $.trim($(".loginAccount").val());
+		var password = $.trim($(".loginPassword").val());
+		var verifycode = $.trim($(".verifycode").val());
+		if(account == ''){
+			alert("请填写帐号！");
+		}else if(password == ''){
+			alert("请填写密码！");
+		}else if(verifycode == ''){
+			alert("请填写验证码！");
+		}else{
+			$(".loginForm").submit();
+		}
+	})
+})
+</script>	
 		<section class="conterbox clearfix" style="margin-top: 95px;"> 
 			<!-- 左边内容-->
 			<section class="left_conterbox fl mt15"> 
@@ -278,27 +299,31 @@
 				<div class="user_loging">
 					<h2 style="font-size:16px;">账户登录</h2>
 					<div class="formbox">
-						<table width="100" border="0" cellspacing="0" cellpadding="0">
-							<tbody>
-								<tr>
-									<td class="w50">账号:</td>
-									<td colspan="2"><div class="loging_inputbox"><input type="text" value="" name=""></div></td>
-								</tr>
-								<tr>
-									<td class="w50">密码:</td>
-									<td colspan="2"><div class="loging_inputbox"><input type="text" value="" name=""></div></td>
-								</tr>
-								<tr>
-									<td class="w50">验证码:</td>
-									<td><div class="loging_inputbox w90"><input type="text" value="" name=""></div></td>
-									<td class="w60"><span class="web_skin tel_btn">手机获取</span></td>
-								</tr>
-							</tbody>
-						</table> 
-						<div class="mt10 btnbox clearfix">
-							<a href="javascript:void(0)" class="loging_btn web_skin ml50 fl">登&nbsp;&nbsp;录</a>
-							<a href="javascript:void(0)" class="fr mt5 mr18 help_btn">在线帮助</a>
-						</div>
+						<form class="loginForm" action="/session/start" method="post">
+							<table width="100" border="0" cellspacing="0" cellpadding="0">
+								<tbody>
+									<tr>
+										<td class="w50">账号:</td>
+										<td colspan="2"><div class="loging_inputbox"><input type="text" value="" name="email" class="loginAccount"></div></td>
+									</tr>
+									<tr>
+										<td class="w50">密码:</td>
+										<td colspan="2"><div class="loging_inputbox"><input type="password" value="" name="password" class="loginPassword"></div></td>
+									</tr>
+									<tr>
+										<td class="w50">验证码:</td>
+										<td><div class="loging_inputbox w60"><input type="text" value="" name="verifycode" class="verifycode"></div></td>
+										<td>
+											<img class="verifycodesss" style="width:60px;height:20px;" src="/index/verifycode" />
+										</td>
+									</tr>
+								</tbody>
+							</table> 
+							<div class="mt10 btnbox clearfix">
+								<a class="loging_btn_ web_skin ml50 fl">登&nbsp;&nbsp;录</a>
+								<a href="javascript:void(0)" class="fr mt5 mr18 help_btn">在线帮助</a>
+							</div>
+						</form>
 					</div>
 				</div>
 
@@ -590,8 +615,8 @@
 				</div>
 			</section>
 			
-		<script type="text/javascript" src="./js/jwplayer.js"></script>
-		   <script type="text/javascript">
+		<!-- <script type="text/javascript" src="./js/jwplayer.js"></script> -->
+<!-- 		   <script type="text/javascript">
 		 var theplayer;
 		 var theplayer2;
 		 var theplayer3;
@@ -635,7 +660,7 @@
 			});
 			
 
-		</script>
+		</script> -->
 		<!--视频弹出层-->
 			<div class="laybox_video hide rel">
 				<a href="javascript:void(0)" class="close_btnvideo"></a>

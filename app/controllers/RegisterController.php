@@ -133,11 +133,14 @@ class RegisterController extends ControllerBase
  	public function registerAction(){
 		
 		if ($this->request->isPost()) {
+			$iscustomer = $this->request->getPost('iscustomer');	
+
 			$email = $this->request->getPost('email');	
 			$username = $this->request->getPost('username');
 			$password = $this->request->getPost('password');
 			$name = $this->request->getPost('name');
 			$user = new Users();
+			$user->iscustomer = $iscustomer;
             $user->username = trim($username);
 			$user->name = trim($name);
             $user->password = sha1($password);
@@ -146,12 +149,10 @@ class RegisterController extends ControllerBase
 			$user->did = $this->request->getPost('did');
             $user->active = 'Y';
 
-			
-			
-			
             if ($user->save() == false) {
                 foreach ($user->getMessages() as $message) {
                     $this->flash->error((string) $message);
+					return $this->forward('register/cregister');
                 }
             } else {
 				$verifyEmail = VerifyEmail::FindFirst("email = '".$email."'");
@@ -164,5 +165,10 @@ class RegisterController extends ControllerBase
                 return $this->forward('session/index');
             } 
 		}		
-	}	 
+	}
+
+	public function cregisterAction(){
+		$form = new RegisterForm;
+		$this->view->form = $form;		
+	}	
 }
