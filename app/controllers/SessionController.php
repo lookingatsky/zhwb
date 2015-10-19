@@ -10,7 +10,7 @@ class SessionController extends ControllerBase
         parent::initialize();
     }
 
-   /*  public function indexAction()
+	public function indexAction()
     {
         if (!$this->request->isPost()) {
             Tag::setDefault('email', ' ');
@@ -18,7 +18,7 @@ class SessionController extends ControllerBase
         }	
     }
 
-    public function registerAction()
+    /* public function registerAction()
     {
         $request = $this->request;
         if ($request->isPost()) {
@@ -52,8 +52,8 @@ class SessionController extends ControllerBase
                 return $this->response->redirect('companies/search');
 			}		
         }
-    }
-*/
+    } */
+
     private function _registerSession($user)
     {
         $this->session->set('auth', array(
@@ -68,7 +68,6 @@ class SessionController extends ControllerBase
     {
         if ($this->request->isPost()) {
 			$getVerifyCode =  $this->session->get("authnum_session");
-			
 			$verifycode = $this->request->getPost('verifycode');
 
 			if($verifycode != $getVerifyCode){
@@ -78,30 +77,19 @@ class SessionController extends ControllerBase
             $email = $this->request->getPost('email', 'email');
             $password = $this->request->getPost('password');
             $password = sha1($password);
-
             $user = Account::findFirst("email='$email' AND password='$password' AND active='Y'");
-
             if ($user != false) {
                 $this->_registerSession($user);
-			
-                $this->flash->success('欢迎！ ' . $user->username);		
+                $this->flash->success('欢迎！ ' . $user->username);	
+				
                 return $this->forward('personal/index');
-            }else{
+            }else{	
 				$this->flash->error('帐号密码错误');
 			}
 			
-/*             $username = $this->request->getPost('email', 'alphanum');
-            $user = Users::findFirst("username='$username' AND password='$password' AND active='Y'");
-            if ($user != false) {
-                $this->_registerSession($user);
-                $this->flash->success('欢迎！ ' . $user->name);
-                return $this->forward('invoices/index');
-            } */
-			
+
             
         }
-
-        //return $this->forward('index/index');
     }
 
     public function endAction()

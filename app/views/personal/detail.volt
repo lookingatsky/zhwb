@@ -81,23 +81,23 @@ label font{
 		{% for detail in debt %}
 			{% if detail.type == 'txt'%}
 				<li>
-					<a href="http://test2.com{{detail.src}}"><img src="/img/icon/file/txt.png" width="100"/></a><br />
-					<a href="http://test2.com{{detail.src}}">{{ detail.title }}</a>
+					<a href="{{ website }}{{detail.src}}"><img src="/img/icon/file/txt.png" width="100"/></a><br />
+					<a href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
 				</li>
 			{% elseif detail.type == 'xlsx' or detail.type == 'xls' %}
 				<li>
-					<a href="http://test2.com{{detail.src}}"><img src="/img/icon/file/excel.png" width="100"/></a><br />
-					<a href="http://test2.com{{detail.src}}">{{ detail.title }}</a>
+					<a href="{{ website }}{{detail.src}}"><img src="/img/icon/file/excel.png" width="100"/></a><br />
+					<a href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
 				</li>
 			{% elseif detail.type == 'pdf' %}	
 				<li>
-					<a href="http://test2.com{{detail.src}}"><img src="/img/icon/file/pdf.png" width="100"/></a><br />
-					<a href="http://test2.com{{detail.src}}">{{ detail.title }}</a>
+					<a href="{{ website }}{{detail.src}}"><img src="/img/icon/file/pdf.png" width="100"/></a><br />
+					<a href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
 				</li>	
 			{% elseif detail.type == 'doc' or detail.type == 'docx' %}	
 				<li>
-					<a href="http://test2.com{{detail.src}}"><img src="/img/icon/file/word.png" width="100"/></a><br />
-					<a href="http://test2.com{{detail.src}}">{{ detail.title }}</a>
+					<a href="{{ website }}{{detail.src}}"><img src="/img/icon/file/word.png" width="100"/></a><br />
+					<a href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
 				</li>				
 			{% endif %}
 		{% endfor %}
@@ -117,7 +117,7 @@ label font{
 				{% for index,detail in debt %}
 				<tr>
 					<td>{{ index+1 }}</td>
-					<td><a href="http://test2.com{{detail.src}}">{{ detail.title }}</a></td>
+					<td><a href="{{ website }}{{detail.src}}">{{ detail.title }}</a></td>
 				</tr>
 				{% endfor %}
 			</tbody>	

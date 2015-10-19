@@ -62,6 +62,7 @@ class PersonalController extends ControllerBase
 			
 			$debt = Debt::find("fid = ".$id);
 			$this->view->debt = $debt;
+			$this->view->website = FILEWEBNAME ;
 		}else{
 			$this->flash->error("没有找到对应的债权");
 			return $this->forward("debt/index");

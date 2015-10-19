@@ -28,27 +28,7 @@ class Elements extends Phalcon\Mvc\User\Component
     private $_tabs = array(
         '新闻操作' => array(
             'controller' => 'operate',
-            'action' => 'index',
-            'any' => false
-        ),
-        '部门管理' => array(
-            'controller' => 'companies',
-            'action' => 'index',
-            'any' => true
-        ),
-        '信息录入' => array(
-            'controller' => 'products',
-            'action' => 'index',
-            'any' => true
-        ),
-        '类型管理' => array(
-            'controller' => 'producttypes',
-            'action' => 'index',
-            'any' => true
-        ),	
-        '账户管理' => array(
-            'controller' => 'invoices',
-            'action' => 'profile',
+            'action' => 'addnews',
             'any' => false
         )
     );

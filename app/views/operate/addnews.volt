@@ -37,9 +37,9 @@ $(function(){
 
 
 <ul class="pager">
-    <li class="previous pull-left">
+<!--     <li class="previous pull-left">
         <?php echo Tag::linkTo("products/list", "&larr; 返回") ?>
-    </li>
+    </li> -->
     <li class="pull-right">
         <?php echo Tag::submitButton(array("提 交", "class" => "btn btn-success")) ?>
     </li>
