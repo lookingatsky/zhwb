@@ -218,7 +218,58 @@ $(function(){
 								<a href="/about/contact" class="morebtn fr icon_align">更多<i class="web_skin more_icon"></i></a> 
 							</dt>
 							<dd> 
-								<div class="map_bg rel">
+<style>
+.startAddress{
+	border-bottom:1px solid #ddd;
+	min-height: 59px;
+}
+.startAddress>h3{
+	height:30px;
+	line-height:30px;
+	margin-top:10px;
+}
+.startAddress>p{
+	margin-bottom:10px;
+}
+</style>							
+								<section id="hotAddress" rel="1" iscom="1" style="height:340px; overflow:hidden;">
+									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+										<h3>中合万邦投资管理有限公司（总部）</h3>
+										<p>总部地址: 北京市朝阳区建国门外大街8号IFC A座32层02-03单元<br>
+										联系方式: 010-85659999</p>
+									</div>											
+									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+										<h3>北京普惠中心</h3>
+										<p>地址:北京市朝阳区建外大街2号院银泰中心C座46层<br>
+										联系方式: 010-85659901</p>
+									</div>										
+									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+										<h3>上海中欣财富中心</h3>
+										<p>地址: 上海市静安区南京西路1468号4201、4209室<br>
+										联系方式: 021-61279530</p>
+									</div>	
+									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+										<h3>苏州晋合财富中心</h3>
+										<p>地址:江苏省苏州市工业园区华池街88号晋合广场1幢1201室<br>
+										联系方式: 0512-89181688</p>	
+									</div>	
+									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+										<h3>南京新地财富中心</h3>
+										<p>地址:江苏省南京市建邺区庐山路188号南京新地中心45层4503、4504室<br>
+										联系方式: 025-86918866</p>
+									</div>											
+									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+										<h3>广州白云财富中心</h3>
+										<p>地址: 广东省广州市越秀区三元里山西大厦3号楼3220室<br>
+										联系方式: 020-36298548</p>
+									</div>											
+									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+										<h3>海口时代普惠中心</h3>
+										<p>地址: 海南省海口市龙华区国贸路2号海南时代广场18层东侧<br>
+										联系方式: 0898-36651855</p>
+									</div>										
+								</section>
+								<!-- <div class="map_bg rel">
 									<section class="map001_zb" id="zb">
 										<a href="" class="nibo" title="北京总部"></a>
 										<div class=" infobox_map position_hz">
@@ -287,7 +338,7 @@ $(function(){
 									<h2>中合万邦投资管理有限公司（总部）</h2>
 									<p>地址: 北京市朝阳区建国门外大街2号银泰中心c座 46层<br>
 									联系方式:400-077-8000 <li><a></a></li></p>
-								</div>
+								</div> -->
 							</dd>
 						</dl>
 					</div>
@@ -403,30 +454,44 @@ $(function(){
 									<tbody>
 										<tr>
 											<th scope="col">存款项目:</th>
-											<th scope="col">央行基准年利率:</th>
+											<th scope="col">央行基准年利率:<br /><span style="font-weight:0;color:#aaa;font-size:10px;">(2015年05月11日)</span></th>
+											<th scope="col">央行基准年利率:<br /><span style="font-weight:0;color:#aaa;font-size:10px;">(2015年06月28日)</span></th>
+											<th scope="col">央行基准年利率:<br /><span style="font-weight:0;color:#aaa;font-size:10px;">(2015年08月26日)</span></th>
 										</tr>
 										<tr>
 											<td>活期存款</td>
 											<td>0.35%</td>
+											<td>0.35%</td>
+											<td>0.35%</td>
 										</tr>
 										<tr>
 											<td>三个月定期存款</td>
+											<td>1.85%</td>
+											<td>1.60%</td>
 											<td>1.35%</td>
 										</tr>
 										<tr>
 											<td>半年定期存款</td>
+											<td>2.05%</td>
+											<td>1.80%</td>
 											<td>1.55%</td>
 										</tr>
 										<tr>
 											<td>一年定期存款</td>
+											<td>2.25%</td>
+											<td>2.00%</td>
 											<td>1.75%</td>
 										</tr>
 										<tr>
 											<td>两年定期存款</td>
+											<td>2.85%</td>
+											<td>2.60%</td>
 											<td>2.35%</td>
 										</tr>
 										<tr>
 											<td>三年定期存款</td>
+											<td>3.50%</td>
+											<td>3.25%</td>
 											<td>3.00%</td>
 										</tr>
 										<tr>
@@ -448,34 +513,50 @@ $(function(){
 									<tbody>
 										<tr>
 											<th scope="col">贷款项目:</th>
-											<th scope="col" style="width:65px;">年利率:</th>
+											<th scope="col" style="">年利率:<br /><span style="font-weight:0;color:#aaa;font-size:10px;">(2015年05月11日)</span></th>
+											<th scope="col" style="">年利率:<br /><span style="font-weight:0;color:#aaa;font-size:10px;">(2015年06月28日)</span></th>
+											<th scope="col" style="">年利率:<br /><span style="font-weight:0;color:#aaa;font-size:10px;">(2015年08月26日)</span></th>
 										</tr>
 										<tr>
 											<td>6个月以内(含6个月)贷款</td>
+											<td>5.10</td>
+											<td>4.85</td>
 											<td>4.60</td>
 										</tr>
 										<tr> 
 											<td>6个月至1年(含1年)贷款</td>
+											<td>5.10</td>
+											<td>4.85</td>
 											<td>4.60</td>
 										</tr>
 										<tr>
 											<td>1至3年(含3年)贷款	</td>
+											<td>5.50</td>
+											<td>5.25</td>
 											<td>5.00</td>
 										</tr>
 										<tr>
 											<td>3至5年(含5年)贷款</td>
+											<td>5.50</td>
+											<td>5.25</td>
 											<td>5.00</td>
 										</tr>
 										<tr>
 											<td>5年以上贷款</td>
+											<td>5.65</td>
+											<td>5.40</td>
 											<td>5.15</td>
 										</tr>
 										<tr>
 											<td>个人住房公积金贷款5年以下(含5年) </td>
+											<td>3.25</td>
+											<td>3.00</td>
 											<td>2.75</td>
 										</tr>
 										<tr>
 											<td>个人住房公积金贷款5年以上</td>
+											<td>3.75</td>
+											<td>3.50</td>
 											<td>3.25</td>
 										</tr>
 									</tbody>
@@ -593,7 +674,6 @@ $(function(){
 								</table>
 							</div> 
 						</div>
-						<div>(更新时间：2015年08月26日)</div>
 					</div>
 					<div class="user_loging mt5">
 						<h2>扫描加入中合万邦官方微信</h2>

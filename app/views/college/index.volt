@@ -1,7 +1,7 @@
       <section class=" conterbox clearfix fr mt18 article">
        <div class="dtlistbox mt25">
     	<ul class="dt_title   clearfix index_tab001">
-            <li class="hy_info_tab wxtitle">信托投资班</li>
+            <li class="hy_info_tab wxtitle">P2P理财</li>
             <li class="medio_tab">基金课堂</li>
             <li class="schd_tab">PE学习班</li>
         </ul>
@@ -12,18 +12,11 @@
              <section class="rel">
                <i class="web_skin other_icon"></i>
                </section>
-              <h2><i class="icon_q icon_align"></i>什么是慈善信托？</h2>
+              <h2><i class="icon_q icon_align"></i>什么是P2P理财？</h2>
               <section style="display: none;" class="anli_info">
                   <article class="clearfix school_text">
                   <span class="icon_A fl"></span>
-                     <p>慈善信托 
-又称“公益信托”。仅以实现社会慈善事业为目的，并以全社会或部分社会公众为受益人的信托。根据英美信托法理论的概括，慈善事业是指对社会有价值或有重要
-社会意义的事业；它包括发展济贫、教育、宗教、医疗、体育、科学研究、文化艺术、市政建设等各方面的事业。但衡平法规则通常将慈善信托分为救济贫穷的信
-托，促进教育的信托，发展宗教的信托和其他造福于社会的信托四大类。英美信托法中所称的“慈善事业”实际上与“社会公益”没有性质的差别，两者所适用的法
-律规则也完全等同，故学理上通常视慈善信托与公益信托为同义语。按照英美判例上规则的解释，法律上的“慈善事业”具有不同于其字面含义的特定内容：某些含
-有营利性意图和不以社会公众为受益人的信托却可归入慈善信托分类，而某些基于慈善性目的而设立的信托并不属于慈善信托；因此对慈善信托或公益信托的理解应
-以立法和判断规则的列举为准。大陆法国家的信托法典没有统一的公益信托概念，以避免概念混用，它一般包括基于祭祀、宗教、慈善、学术、体育或其他类似目的
-而设立的信托。</p>
+                     <p>P2P理财指个人与个人之间的借贷，而P2P理财是指以公司为中介机构，把借贷双方对接起来实现各自的借贷需求。借款方可以是无抵押贷款或是有抵押贷款的新型理财模式。</p>
                   </article>  
                 </section>
             </li>
@@ -31,16 +24,16 @@
              <section class="rel">
                <i class="web_skin other_icon"></i>
                </section>
-              <h2><i class="icon_q icon_align"></i>回归信托（resulting trust）是什么？</h2>
+              <h2><i class="icon_q icon_align"></i>业务模式是什么？</h2>
               <section class="anli_info">
                   <article class="clearfix school_text">
                   <span class="icon_A fl"></span>
-                     <p>回归信托（resulting 
-trust）也被译为“归复信托”、“结果信托”、“回复信托”等。在回归信托（resulting 
-trust）中，回归（resulting）一词中的“sulting”与翻筋斗（somersault）拥有相同的拉丁词根“sault”，如果严格地
-按照字面解释，回归（resulting）的意思是“往回跳”，这也说明了其含义。</p><p>
-“回归信托”可以解释为：在财产出让人意思表示不明确且实际已转移财产的情况下，由法院推定财产出让人与财产受让人之间成立事实上的自益信托关系，即把财产出让人作为委托人（受益人），由财产受让人担任受托人，并且后者负有向前者转移信托财产及信托利益的义务。
-</p>
+                     <p>纯线上模式</p>
+					 <p>是纯粹的P2P，在这种平台模式上纯粹进行信息匹配，帮助资金借贷双方更好的进行资金匹配，但缺点明显，这种线上模式并不参与担保；</p>
+                     <p>债权转让模式</p>
+					 <p>平台本身先行放贷，再将债权放到平台进行转让，很明显能让企业提高融资端的工作效率，但容易出现资金池，不能让资金充分发挥效益</p>
+                     <p>本金担保模式</p>
+					 <p>提供本金甚至利用利息担保的P2P模式，这种模式是金融市场的主流模式，本金担保的P2P模式实质是间接接触资金的概念。</p>
                   </article>  
                 </section>
             </li>
@@ -48,19 +41,14 @@ trust）中，回归（resulting）一词中的“sulting”与翻筋斗（somer
              <section class="rel">
                <i class="web_skin other_icon"></i>
                </section>
-              <h2><i class="icon_q icon_align"></i>什么是信托收据(T.R.)(T/R)(Trust Receipt)？</h2>
+              <h2><i class="icon_q icon_align"></i>P2P理财需要注意哪些事项？</h2>
               <section class="anli_info">
                   <article class="clearfix school_text">
                   <span class="icon_A fl"></span>
-                     <p>信托收据（Trust Receipt，T.R，T/R），又被称为受托人收据（bailee 
-receipt）或留置权书（letter of lien）或信托证（letter of 
-trust）。信托法律网将其含义概括为：委托人向受托人提供资金（或信用），并以所提供的动产标的物之所有权作为债权的担保，而受托人（例如进口商）则
-依据信托合同或其他信托约定对前述标的物进行处分，并把处分标的物的对价（即款项）交付给委托人（例如开证银行）。这种交易模式，在国际贸易中被称为“信
-托收据制度”，通常是银行为进口商提供的资金融通服务，在交易未付清票款之前允许进口商凭借其所出具的信托收据先行领取单证提货以出售，然后以销售所得的
-款项清偿票款。在这样一种贸易金融制度中，信托法律网总结其法律关系如下：银行是委托人，拥有标的物的所有权，受托人如果违反信托合同或其他信托约定，则
-银行作为委托人可以随时收回标的物，以保障和维护自身的合法权益。信托法律网提示：这种信托收据制度在早期是依据习惯法来处理的，但是，美国后来专门制订
-了Uniform Trust Receipt Act，即通常所说的“统一信托收据法”，由此使信托收据制度步入了法典化的发展道路。
-</p>
+                     <p>产品的风险控制</p>
+					 <p>看所选择P2P理财产品的产品的平台是否规范，是否有一套完善的风险管控技术，是否有抵押，是否有一套严格的信审流程，是否有一个成熟的风险控制团队，是否有还款风险金，是否每一笔的债权都是非常透明化，是否每个月都会在固定的时间给客户邮寄账单和债权列表等等，以上是非常重要的一些问题，所以客户在进行选择的时候一定要了解清楚。</p>
+                     <p>合同规范性</p>
+					 <p>认购产品时务必要把合同中的每一条认真的阅读清楚，清楚每一个条款每一个字的具体含义。</p>
                   </article>  
                 </section>
             </li>
@@ -68,24 +56,28 @@ trust）。信托法律网将其含义概括为：委托人向受托人提供资
              <section class="rel">
                <i class="web_skin other_icon"></i>
                </section>
-              <h2><i class="icon_q icon_align"></i>什么是信托受益凭证(Trust Beneficiary Certificate)？</h2>
+              <h2><i class="icon_q icon_align"></i>P2P理财有哪些优势？</h2>
               <section class="anli_info">
                   <article class="clearfix school_text">
                   <span class="icon_A fl"></span>
-                     <p>通常而言，信托受益凭证(Trust Beneficiary Certificate)就是信托机构为募集资金而向投资者发放的表明受益权之特别凭证。</p><p>
-信托受益凭证实际上代表的是信托受益权，是信托机构在接受投资者的资金后出具的一种类似股票等证券的凭证，即一种投资权益的证明。(trustlaws.net)
-</p><p>一般情况下，信托受益凭证属于有价证券，但这需要当地法律的认可。信托法律网发现，信托受益凭证的产生主要是为了便于标准化的交易。如果条件允许，信托受益凭证可以入市交易，从而实现自由流通。</p><p>
-信托受益凭证涉及到诸多细节，例如，在国内与国外募集资金时发行信托受益凭证可有不同；募集资金与追加募集资金时发行信托受益凭证也有不同。另外，还涉及
-到签证机构、代理机构、集中保管机构以及申购、交付、买回、换发等程序。信托法律网注意到，信托受益凭证在进行任何的转换或赎回时，通常需要交付受益凭
-证；如果信托受益凭证遗失，一般还需要补办。信托法律网提示，信托受益凭证经常被分为记名式与无记名式两种，一般采用记名式为多，前者需要背书转让，而后
-者是直接交付转让。</p><p>
-信托受益凭证的运用，需要一系列配套制度的支持。在较为发达的投资基金市场、资产证券化市场、REITS市场等，信托受益凭证被广泛运用，效果颇佳。以上为信托法律网(trustlaws.net)一家之言，仅供参考。
-
-</p>
+                     <p>1、与银行理财相比</p>
+					 <p>
+						(1)收益率高、银行理财低。<br />
+						(2)有抵押担保、银行理财无抵押。<br />
+						(3)流动收益按月(季)付息，银行理财到期付息。
+					 </p>
+                     <p>2、与信托理财相比</p>
+					 <p>(1)资金门槛低、信托理财门槛高。<br />(2)流动性好、信托理财流动性差。</p>
+                     <p>3、与私人借贷相比</p>
+					 <p>
+					 (1)议价能力强、私人借贷弱。<br />
+					 (2)抵押担保规范、私人借贷抵押担保不规范。 <br />
+					 (3)更专业的风险管理机制。
+					</p>
                   </article>  
                 </section>
             </li>
-			 <li>
+			 <!-- <li>
              <section class="rel">
                <i class="web_skin other_icon"></i>
                </section>
@@ -198,7 +190,7 @@ trust）。信托法律网将其含义概括为：委托人向受托人提供资
 					
                   </article>  
                 </section>
-            </li>
+            </li> -->
             </ul>
         </div>
         <div style="display: none;" class="video_box mt10">

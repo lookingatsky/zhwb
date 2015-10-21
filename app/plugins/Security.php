@@ -54,7 +54,7 @@ class Security extends Plugin
 			
 			/////
 			$publicResources = array(
-				'index' => array('index'),
+				'index' => array('index','verifycode','getdata'),
 				'about' => array('index','contact','culture'),
 				'service' => array('index','method','mode'),
 				'situation' => array('index'),

@@ -145,7 +145,7 @@ style.firebugResetStyles {
 
 <section class="conterbox mt_pt0">
     <section class="clearfix baner_border">
-          <img src="/../../img/index/new_baner.jpg" alt="中合万邦">
+          <a href="/index/index"><img src="/../../img/index/new_baner.jpg" alt="中合万邦"></a>
     </section>
   <section class="mt30 clearfix">          
        

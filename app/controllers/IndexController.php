@@ -49,4 +49,29 @@ class IndexController extends ControllerBase
 		$result = $verifycode->getCode();
 		return $result;
 	}
+	
+	public function getdataAction(){
+		$this->view->disable();
+		if($this->request->isPost()) {
+			$infos = $this->request->getPost();
+			$appointment = new Appointment();
+			$appointment->custName = $infos['res_custName'];
+			$appointment->mobile = $infos['res_mobile'];
+			$appointment->telephone = $infos['res_telephone'];
+			$appointment->email = $infos['res_email'];
+			$appointment->postcode = $infos['res_postcode'];
+			$appointment->custsex = $infos['res_custSex'];
+			$appointment->address = $infos['res_address'];
+			$appointment->type = 0;
+			$appointment->time = time();
+			if($appointment->save()){
+				echo true;
+			}else{
+				echo false;
+			}
+		}else{
+			$this->response->redirect("index/index");
+		}
+		
+	}
 }

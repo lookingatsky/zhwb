@@ -83,6 +83,59 @@ $(function() {
     }
    
 })
+/*address-scroll*/
+var oosetDate =null;
+$(function() {
+    var getDtListn = $(".startAddress").length;
+	var lastLiHeight;
+    var lastHtml;
+    if (getDtListn > 3) {
+        var moveFunction = function(moveWrapId) {
+            var Getcom = $("#hotAddress").attr("isCom");
+            if (Getcom == "1") {
+                $("#hotAddress").attr("isCom", "0");
+                lastLiHeight = $(moveWrapId).find("div.startAddress:last").height();
+			    lastHtml = $(moveWrapId).find("div.startAddress:last").remove().html();
+				
+			    $(moveWrapId).prepend("<div class='startAddress' style='zoom:1;display:block;height:0;clear:both;background-color:#fff;'></div>");
+                $(moveWrapId).find("div.startAddress:first").animate({
+                    "height":lastLiHeight},1200,function(){
+                    $(this).html(lastHtml).hide().fadeIn(1300, 
+                    function() {
+                        var ofalse = $(moveWrapId).attr("rel");
+                        if (ofalse == "0") {
+                            clearTimeout(oosetDate);
+                        }
+                        var cRel = $(moveWrapId).attr("rel");
+                        if (cRel == "1") {
+                            oosetDate = setTimeout(function() {
+                                moveFunction(moveWrapId);
+                            },
+                            2000);
+                        }
+                        $("#hotAddress").attr("isCom", "1");
+                    })
+                })
+            }
+        }
+        moveFunction("#hotAddress");
+        $("#hotAddress").hover(function() {
+            $("#hotAddress").attr("rel", "0");
+            clearTimeout(oosetDate);
+        },
+        function() {
+            $("#hotAddress").attr("rel", "1");
+            var getCOm = $("#hotAddress").attr("isCom");
+            if (getCOm == "1") {
+                setTimeout(function() {
+                    moveFunction("#hotAddress");
+                },
+                2000);
+            }
+        })
+    }
+   
+})
 function lay(){
 	var mask='<div class="mask"></div>'
 		$('body').append(mask)
