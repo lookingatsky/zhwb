@@ -55,12 +55,14 @@ class Security extends Plugin
 			/////
 			$publicResources = array(
 				'index' => array('index','verifycode','getdata'),
+				'news' => array('index'),
 				'about' => array('index','contact','culture'),
 				'service' => array('index','method','mode'),
 				'situation' => array('index'),
 				'college' => array('index','case','test'),
 				'account' => array('verify','register'),
 				'session' => array('index','start','end')
+				
 			);
 			foreach ($publicResources as $resource => $actions) {
 				$acl->addResource(new Phalcon\Acl\Resource($resource), $actions);
@@ -103,9 +105,9 @@ class Security extends Plugin
 		} else {
 			$role = 'customer';
 		}
+		
 		$controller = $dispatcher->getControllerName();
 		$action = $dispatcher->getActionName();
-
 		$acl = $this->getAcl();
 		
 		$allowed = $acl->isAllowed($role, $controller, $action);
