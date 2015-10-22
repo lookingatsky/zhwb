@@ -24,7 +24,7 @@
              <section class="rel">
                <i class="web_skin other_icon"></i>
                </section>
-              <h2><i class="icon_q icon_align"></i>业务模式是什么？</h2>
+              <h2><i class="icon_q icon_align"></i>P2P业务模式包括哪几种？</h2>
               <section class="anli_info">
                   <article class="clearfix school_text">
                   <span class="icon_A fl"></span>

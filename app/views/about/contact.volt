@@ -64,8 +64,8 @@
             	<span class="fl number_bg web_skin">04</span>
                 <dl class="fl lianxi_text">
                 	<dt>上海第二财富中心</dt>
-                    <dd>地址:上海市静安区南京西路1468号4201、4209室 
-					<br>联系方式:021-60232016</dd>
+                    <dd>地址:上海市长宁区宣化路300号1211室 
+					<br>联系方式:021-61918207</dd>
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/shanghai.png" title="上海第二财富中心" alt="上海第二财富中心"></div>
             </li>  
@@ -102,9 +102,17 @@
                     <dd>地址: 江苏省南京市建邺区庐山路188号南京新地中心45层4503、4504室<br>联系方式: 025-86918866</dd>
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/nanjing.png" title="南京新地财富中心" alt="南京新地财富中心"></div>
-            </li> 
-            <li class="clearfix">
+            </li>
+           <li class="clearfix">
             	<span class="fl number_bg web_skin">09</span>
+                <dl class="fl lianxi_text">
+                	<dt>杭州迪凯财富中心</dt>
+                    <dd>地址: 浙江省杭州市江干区丹桂街19号迪凯国际中心3701<br>联系方式: 0571-26209599</dd>
+                </dl>
+                <div class="fr mapbox"><img src="/../../img/index/map/nanjing.png" title="南京新地财富中心" alt="南京新地财富中心"></div>
+            </li>			
+            <li class="clearfix">
+            	<span class="fl number_bg web_skin">10</span>
                 <dl class="fl lianxi_text">
                 	<dt>海口时代普惠中心</dt>
                     <dd>地址: 海南省海口市龙华区国贸路2号海南时代广场18层东侧

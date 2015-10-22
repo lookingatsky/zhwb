@@ -27,7 +27,7 @@ label font{
     <h3>个人信息</h3>
 	<div class="clearfix" style="float:left;">
 		<label><b>名 称：</b> {{ customer.name }}</label>
-		<label><b>身份证号码：</b> {{ customer.number }}</label>
+		<label><b>身份证号码：</b> <?php echo substr($customer->number,0,5)?>********<?php echo substr($customer->number,14,4)?></label>
 		<label><b>现居地：</b> {{ customer.address }}</label>
 		<label><b>户籍地址：</b> {{ customer.registered }}</label>
 	</div>
@@ -64,7 +64,7 @@ label font{
 					<td style="vertical-align:middle;">{{ debts.total }}</td>
 					<td style="vertical-align:middle;">{{ debts.cost }}</td>
 					<td style="vertical-align:middle;">{{ debts.customer.name }}</td>	
-					<td style="vertical-align:middle;">{{ debts.customer.number }}</td>	
+					<td style="vertical-align:middle;"><?php echo substr($debts->customer->number,0,5)?>********<?php echo substr($debts->customer->number,14,4)?></td>	
 				</tr>
 			</tbody>
 		{% if loop.last %}
