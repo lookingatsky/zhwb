@@ -249,15 +249,30 @@ $(function(){
 										联系方式: 021-61279530</p>
 									</div>	
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+										<h3>上海第二财富中心</h3>
+										<p>地址: 上海市长宁区宣化路300号1211室<br>
+										联系方式: 021-61918207</p>
+									</div>									
+									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
 										<h3>苏州晋合财富中心</h3>
 										<p>地址:江苏省苏州市工业园区华池街88号晋合广场1幢1201室<br>
+										联系方式: 0512-89181688</p>	
+									</div>	
+									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+										<h3>苏州第二财富中心</h3>
+										<p>地址:江苏省苏州市工业园区华池街88号晋合广场1幢1201室 <br>
 										联系方式: 0512-89181688</p>	
 									</div>	
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
 										<h3>南京新地财富中心</h3>
 										<p>地址:江苏省南京市建邺区庐山路188号南京新地中心45层4503、4504室<br>
 										联系方式: 025-86918866</p>
-									</div>											
+									</div>	
+									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+										<h3>杭州迪凯财富中心</h3>
+										<p>地址:浙江省杭州市江干区丹桂街19号迪凯国际中心3701<br>
+										联系方式: 0571-26209599</p>
+									</div>										
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
 										<h3>广州白云财富中心</h3>
 										<p>地址: 广东省广州市越秀区三元里山西大厦3号楼3220室<br>
