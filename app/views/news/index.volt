@@ -5,6 +5,12 @@
             <p>更新时间：[{{ date('Y-m-d',detail.inputtime) }}]    作者：  {{ detail.username }}</p>
         </header>
         <p style="text-align: justify;">
+<script>
+$(function(){
+	$(".article").find("img").parent().css("text-align","center");
+	$(".article").find("img").parent().css("margin-left","0");
+})
+</script>		
 <style>
 .description{
 	border-radius:5px;
