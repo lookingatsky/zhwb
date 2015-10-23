@@ -28,7 +28,7 @@ $(function(){
 					<!-- javascript:void(0) -->
 					<div class="baner_imglist" id="advindex" isindex="1" style="left: 0px; width: 5712px;"> 
 						<div style="width:714px;">
-							<a href="#" target="_blank">
+							<a href="/news/index/32" target="_blank">
 								<img src="/../../img/index/index/index2.png" alt="">
 							</a>
 						</div>					
