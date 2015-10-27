@@ -99,7 +99,7 @@
 								</li> -->
 								<li class="menu_line">|</li>
 								<li class="rel job_menu">
-									<a href="http://www.zhwbchina.com/zxns/">诚聘英才</a>
+									<a href="http://old.zhwbchina.com/zxns/">诚聘英才</a>
 								</li>
 							</ul>
 						</nav>

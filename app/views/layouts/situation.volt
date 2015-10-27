@@ -88,7 +88,7 @@
               </li> -->
               <li class="menu_line">|</li>
               <li class="rel job_menu">
-              <a href="http://www.zhwbchina.com/zxns/">诚聘英才</a>
+              <a href="http://old.zhwbchina.com/zxns/">诚聘英才</a>
              </li>
             </ul>
           </nav>
@@ -109,7 +109,7 @@
             	<li><a href="/situation/index?type=X_MTBD" target="_blank">行业新闻</a></li>
                 <li><a href="/college/index" target="_blank"> 理财学堂</a></li>
                 <li><a href="/situation/index" target="_blank">公司动态</a></li>
-                <li><a href="http://www.zhwbchina.com/zxns/" target="_blank">诚聘英才</a></li>
+                <li><a href="http://old.zhwbchina.com/zxns/" target="_blank">诚聘英才</a></li>
                 <li><a href="/about/contact" target="_blank">联系我们</a></li>
             </ul>
 			<p>中合万邦投资管理有限公司  版权所有<span>  CopyRight 1999-2023 All Rights Reserved.<span><br> 
