@@ -41,9 +41,11 @@
 						<li style="width: auto;"><a href="/../../img/index/large/honor1.jpg" rel="prettyPhoto[]"><img src="/../../img/index/small/honor1.jpg"></a></li>
 						<li style="width: auto;"><a href="/../../img/index/large/honor2.jpg" rel="prettyPhoto[]"><img src="/../../img/index/small/honor2.jpg"></a></li>
 						<li style="width: auto;"><a href="/../../img/index/large/honor3.jpg" rel="prettyPhoto[]"><img src="/../../img/index/small/honor3.jpg"></a></li>
+						<li style="width: auto;"><a href="/../../img/index/large/honor7.jpg" rel="prettyPhoto[]"><img src="/../../img/index/small/honor7.jpg"></a></li>
 						<li style="width: auto;"><a href="/../../img/index/large/honor4.jpg" rel="prettyPhoto[]"><img src="/../../img/index/small/honor4.jpg"></a></li>
 						<li style="width: auto;"><a href="/../../img/index/large/honor5.jpg" rel="prettyPhoto[]"><img src="/../../img/index/small/honor5.jpg"></a></li>
 						<li style="width: auto;"><a href="/../../img/index/large/honor6.jpg" rel="prettyPhoto[]"><img src="/../../img/index/small/honor6.jpg"></a></li>					
+						<li style="width: auto;"><a href="/../../img/index/large/honor8.jpg" rel="prettyPhoto[]"><img src="/../../img/index/small/honor8.jpg"></a></li>					
 					</ul>
 					<div class="pic_prev"></div>
 					<div class="pic_next"></div>
