@@ -28,8 +28,11 @@ label font{
 	<div class="clearfix" style="float:left;">
 		<label><b>名 称：</b> {{ customer.name }}</label>
 		<label><b>身份证号码：</b> <?php echo substr($customer->number,0,5)?>********<?php echo substr($customer->number,14,4)?></label>
-		<label><b>现居地：</b> {{ customer.address }}</label>
+		<label><b>邮寄地址：</b> {{ customer.address }}</label>
+		{% if customer.registered is defined %}
 		<label><b>户籍地址：</b> {{ customer.registered }}</label>
+		{% endif %}
+		
 	</div>
 	<div style="clear:both;"></div>			
 	<hr />		
@@ -60,7 +63,7 @@ label font{
 				<tr>
 					<td style="vertical-align:middle;"><a href="/personal/detail/{{ debts.id }}">{{ debts.number }}</a></td>
 					<td style="vertical-align:middle;">{{ debts.type }}</td>
-					<td style="vertical-align:middle;">{{ debts.time }}</td>
+					<td style="vertical-align:middle;"><?php echo date("Y年m月d日",$debts->assign_time);?></td>
 					<td style="vertical-align:middle;">{{ debts.total }}</td>
 					<td style="vertical-align:middle;">{{ debts.cost }}</td>
 					<td style="vertical-align:middle;">{{ debts.customer.name }}</td>	

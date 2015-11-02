@@ -63,10 +63,29 @@ class PersonalController extends ControllerBase
 			$debt = Debt::find("fid = ".$id);
 			$this->view->debt = $debt;
 			$this->view->website = FILEWEBNAME ;
+			$match = Match::find("debt_number  = '".$debts->number ."'");
+			$this->view->match = $match;			
 		}else{
 			$this->flash->error("没有找到对应的债权");
 			return $this->forward("debt/index");
 		}	
+	}
+	
+	public function loanAction($id){
+		$id = $this->filter->sanitize($id, array("int"));
+		
+		if($id){
+			$searchParams = array("id = '".$id."'");
+			
+			$loan = Loan::findFirst($searchParams);
+			$this->view->setVar("loan", $loan);
+			
+			$pawn = Pawn::find("bid = ".$id);
+			$this->view->pawn = $pawn;
+		}else{
+			$this->flash->error("没有找到对应的借款");
+			return $this->forward("loan/index");
+		}			
 	}
 	
 }
