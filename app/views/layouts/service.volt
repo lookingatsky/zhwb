@@ -57,7 +57,7 @@
 								<a href="/situation/index">公司动态</a>
 								<div class="menulist">
 									<ul class="clearfix ulbox hydt_tab">
-										<li><a href="/situation/index?type=X_WXX">微信息<i class="web_skin menu_icon"></i></a></li>
+										<li><a href="/situation/index?type=X_WXX">公司新闻<i class="web_skin menu_icon"></i></a></li>
 										<li><a href="/situation/index?type=X_MTBD">行业新闻<i class="web_skin menu_icon"></i></a></li>
 										<li><a href="/situation/index?type=H_SCHD">市场活动<i class="web_skin menu_icon"></i></a></li>
 									</ul>

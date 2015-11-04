@@ -88,7 +88,7 @@ $(function(){
 						<li class="mr18">
 							<dl>
 								<dt class="clearfix">
-									<h2 class="fl message_title web_skin">微信息</h2>
+									<h2 class="fl message_title web_skin">公司新闻</h2>
 									<a href="/situation/index?type=X_WXX" class="morebtn fr icon_align" target="_blank">更多<i class="web_skin more_icon"></i></a> 
 								</dt>
 								<dd class="clearfix h_114">
@@ -238,12 +238,7 @@ $(function(){
 										<h3>中合万邦投资管理有限公司（总部）</h3>
 										<p>总部地址: 北京市朝阳区建国门外大街8号IFC A座32层02-03单元<br>
 										联系方式: 010-85659999</p>
-									</div>											
-									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
-										<h3>北京普惠中心</h3>
-										<p>地址:北京市朝阳区建外大街2号院银泰中心C座46层<br>
-										联系方式: 010-85659901</p>
-									</div>										
+									</div>																			
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
 										<h3>上海中欣财富中心</h3>
 										<p>地址: 上海市静安区南京西路1468号4201、4209室<br>
@@ -278,12 +273,7 @@ $(function(){
 										<h3>广州白云财富中心</h3>
 										<p>地址: 广东省广州市越秀区三元里山西大厦3号楼3220室<br>
 										联系方式: 020-36298548</p>
-									</div>											
-									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
-										<h3>海口时代普惠中心</h3>
-										<p>地址: 海南省海口市龙华区国贸路2号海南时代广场18层东侧<br>
-										联系方式: 0898-36651855</p>
-									</div>										
+									</div>																				
 								</section>
 								<!-- <div class="map_bg rel">
 									<section class="map001_zb" id="zb">
@@ -311,21 +301,6 @@ $(function(){
 											</div>
 										</div>
 									</section>
-									<section class="map13">
-										<a href="" class="nibo" title="北京"></a>
-										<strong class="text_tag">(&nbsp;总部&nbsp;)</strong> 
-										<div class="infobox_map position_m" style="z-index:999;">
-											<div class="rel relavebox2" style="height:190px;"></div>
-											<div class="maptext">
-												<h2>中合万邦投资管理有限公司（总部）</h2>
-												<p>总部地址: 北京市朝阳区建国门外大街8号IFC A座32层02-03单元<br>
-												联系方式: 010-85659999</p>
-												<h2>北京普惠中心</h2>
-												<p>地址:北京市朝阳区建外大街2号院银泰中心C座46层<br>
-												联系方式: 010-85659901</p>													
-											</div>
-										</div>
-									</section>
 									<section class="map20">
 										<a href="" class="nibo" title="广州"></a>
 										<div class="infobox_map position_20">
@@ -337,17 +312,6 @@ $(function(){
 											</div>
 										</div>
 									</section>
-									<section class="map21">
-										<a href="" class="nibo" title="海口"></a>
-										<div class="infobox_map position_21">
-											<div class="rel relavebox2"></div>
-											<div class="zblist">
-												<h2>海口时代普惠中心</h2>
-												<p>地址: 海南省海口市龙华区国贸路2号海南时代广场18层东侧<br>
-												联系方式: 0898-36651855</p>
-											</div>
-										</div>
-									</section>	
 									
 								</div>
 								<div class="company">
@@ -418,7 +382,7 @@ $(function(){
 					<div class="formbox clearfix tel400_bg" style="padding-top:10px;">
 						<div class="tel400 fl"><i class="web_skin tel400_icon"></i></div>
 						<div class="fr number_400">
-							<h3>客服热线</h3>
+							<h3>财富热线</h3>
 							<p>400-077-8000</p>
 							<p style="color:#26211a;font-size:12px;"><span style="font-family:&#39;微软雅黑&#39;;">(周一至周五：</span>9:00—18:00) </p>
 						</div>
@@ -797,7 +761,7 @@ $(function(){
 							<i class="web_skin tel400_icon"></i>
 						</div>
 						<div class="fr number_400">
-							<h3>客服热线</h3>
+							<h3>财富热线</h3>
 							<p>400-077-8000</p>
 						</div>
 					</section>

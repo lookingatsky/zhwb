@@ -24,7 +24,7 @@
 			<div class="clearfix aside_tel_aboutbg">
 				<div class="aside_telicon mt10 fl"><img src="/../../img/index/page_tel_03.gif"></div>
 				<div class="fr aside_number">
-					<h3>客服热线</h3>
+					<h3>财富热线</h3>
 					<p>400-077-8000</p>
 					<p style="color:#777;font-size:12px;"><span style="font-family:'微软雅黑';">周一至周五：</span>9:00—18:00 </p>
 				</div>
@@ -42,14 +42,6 @@
                     <dd>地址:北京朝阳区建国门外大街2号银泰中心C座46层<br>联系方式: 010-85659999</dd>
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/beijing.png" title="中合万邦投资管理有限公司（总部）" alt="中合万邦投资管理有限公司（总部）"></div>
-            </li>  
-            <li class="clearfix">
-            	<span class="fl number_bg web_skin">02</span>
-                <dl class="fl lianxi_text">
-                	<dt>北京普惠中心</dt>
-                    <dd>地址:北京市朝阳区建外大街2号院银泰中心C座46层<br>联系方式: 010-85659901</dd>
-                </dl>
-                <div class="fr mapbox"><img src="/../../img/index/map/beijing.png" title="北京普惠中心" alt="北京普惠中心"></div>
             </li>  
 			<li class="clearfix">
             	<span class="fl number_bg web_skin">03</span>
@@ -111,15 +103,6 @@
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/nanjing.png" title="南京新地财富中心" alt="南京新地财富中心"></div>
             </li>			
-            <li class="clearfix">
-            	<span class="fl number_bg web_skin">10</span>
-                <dl class="fl lianxi_text">
-                	<dt>海口时代普惠中心</dt>
-                    <dd>地址: 海南省海口市龙华区国贸路2号海南时代广场18层东侧
-					<br>联系方式: 0898-36651855</dd>
-                </dl>
-                <div class="fr mapbox"><img src="/../../img/index/map/haikou.png" title="海口时代普惠中心" alt="海口时代普惠中心"></div>
-            </li> 
          </ul>
 		</section>
 		</div>

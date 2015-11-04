@@ -14,7 +14,7 @@
     <div class="page_baner mt25"><img src="/../../img/index/hy_dtbaner.jpg" alt="关于我们"></div>
     <div class="dtlistbox mt25">
     	<ul class="dt_title  {% if type == 'X_WXX' %}index_tab001{% endif %} {% if type == 'X_MTBD' %}index_tab002{% endif %} {% if type == 'H_SCHD' %}index_tab003{% endif %}   clearfix">
-            <li class="hy_info_tab wxtitle" onclick="javascript:changeType('X_WXX')">微信息</li>
+            <li class="hy_info_tab wxtitle" onclick="javascript:changeType('X_WXX')">公司新闻</li>
             <li class="medio_tab" onclick="javascript:changeType('X_MTBD')">行业新闻</li>
             <li class="schd_tab" onclick="javascript:changeType('H_SCHD')">市场活动</li>
         </ul>

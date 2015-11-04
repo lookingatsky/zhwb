@@ -171,7 +171,7 @@ style.firebugResetStyles {
            <div style="padding-top:10px;" class="formbox clearfix tel400_bg">
                 <div class="tel400 fl"><i class="web_skin tel400_icon"></i></div>
                 <div class="fr number_400">
-                    <h3 style="text-align:left;">客服热线</h3>
+                    <h3 style="text-align:left;">财富热线</h3>
                     <p style="text-indent:0px;margin-bottom:0px;">400-077-8000</p>
                 </div>
            </div>
@@ -189,7 +189,7 @@ style.firebugResetStyles {
                     <i class="web_skin tel400_icon"></i>
                 </div>
                 <div class="fr number_400">
-                        <h3>客服热线</h3>
+                        <h3>财富热线</h3>
                         <p>400-077-8000</p>
                  </div>
              </section>

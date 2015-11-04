@@ -423,7 +423,7 @@ style.firebugResetStyles {
             <div class="clearfix aside_tel400_bg" style="border:1px solid #cbcbcb;border-top:none;">
                 <div class="aside_telicon mt10 fl"><img src="/../../img/index/page_tel_03.gif"></div>
                 <div class="fr aside_number">
-                    <h3>客服热线</h3>
+                    <h3>财富热线</h3>
                     <p>400-077-8000</p>
                     <p style="color:#777;font-size:12px;"><span style="font-family:'微软雅黑';">周一至周五：</span>9:00—18:00 </p>
                 </div>
