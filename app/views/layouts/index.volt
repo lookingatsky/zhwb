@@ -10,20 +10,20 @@
 	
 	<div class="" style="top: -711px;">
 	<style type="text/css">
-	/**-----------中合万邦 Banner start----------------*/
+	/**-----------万邦家族财富 Banner start----------------*/
 	.maxbanner{height:698px; width:100%; min-width:1200px; overflow:hidden; z-index:10000;}
 	.maxb_bg{min-width:100%; min-height:100%; _height:698px; _width:1000px; top:0; left:0; }
 	.pr{position:relative;}
 	.pa{position:absolute;}
 	.fixbox{position:inherit;}
 	.conterbox{margin-top:0px;}
-	/**-----------中合万邦 Banner end----------------*/
+	/**-----------万邦家族财富 Banner end----------------*/
 	</style>
 	
 		<section class="fixbox" style="top: 0px; left: 0px; position: fixed;">
 			<section class="clearfix headerbg">
 				<section class="header_warp">
-					<div class="logobox fl"> <a href="/index/index" class="logimg" title="中合万邦"></a> </div>
+					<div class="logobox fl"> <a href="/index/index" class="logimg" title="万邦家族财富"></a> </div>
 					<div class="menubox fr">
 						<div class="searchbox clearfix">
 							<div class="fl language"><!-- <span class="mr10">English</span>|<span class="ml10">中文</span> --></div>

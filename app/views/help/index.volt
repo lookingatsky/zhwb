@@ -2409,7 +2409,7 @@ $(document).ready(function(){
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="/index">中合万邦</a>
+            <a class="brand" href="/index">万邦家族财富</a>
             <div class="nav-collapse">
 				<ul class="nav pull-left">
 				<li><a href="/index/index">首 页</a></li>

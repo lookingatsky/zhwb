@@ -52,12 +52,7 @@ $(function(){
 							<a href="/news/index/19" target="_blank">
 								<img src="/../../img/index/index/index5.png" alt="">
 							</a>
-						</div>              	
-						<div style="width:714px;">
-							<a href="/news/index/22" target="_blank">
-								<img src="/../../img/index/index/index6.png" alt="">
-							</a>
-						</div>              	
+						</div>           	
 <!-- 						<div style="width:714px;">
 							<a href="#" target="_blank">
 								<img src="/../../img/index/index/index1.png" alt="">
@@ -235,7 +230,7 @@ $(function(){
 </style>							
 								<section id="hotAddress" rel="1" iscom="1" style="height:340px; overflow:hidden;">
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
-										<h3>中合万邦投资管理有限公司（总部）</h3>
+										<h3>北京银泰财富中心</h3>
 										<p>总部地址: 北京市朝阳区建国门外大街8号IFC A座32层02-03单元<br>
 										联系方式: 010-85659999</p>
 									</div>																			
@@ -315,7 +310,7 @@ $(function(){
 									
 								</div>
 								<div class="company">
-									<h2>中合万邦投资管理有限公司（总部）</h2>
+									<h2>北京银泰财富中心</h2>
 									<p>地址: 北京市朝阳区建国门外大街2号银泰中心c座 46层<br>
 									联系方式:400-077-8000 <li><a></a></li></p>
 								</div> -->
@@ -328,7 +323,7 @@ $(function(){
 			<!-- 右边内容-->
 			<section class="right_aside fr mt15">
 				<div class="user_loging">
-					<h2 style="font-size:16px;">账户登录</h2>
+					<h2 style="font-size:16px;">VIP账户登录</h2>
 					<div class="formbox">
 						<form class="loginForm" action="/session/start" method="post">
 							<table width="100" border="0" cellspacing="0" cellpadding="0">
@@ -656,7 +651,7 @@ $(function(){
 						</div>
 					</div>
 					<div class="user_loging mt5">
-						<h2>扫描加入中合万邦官方微信</h2>
+						<h2>扫描加入万邦家族财富官方微信</h2>
 						<div class="formbox clearfix wx ">
 							<img src="/../../img/index/wx_pic_03.png" width="132"> 
 							<span class="blank15"> </span>
@@ -782,7 +777,7 @@ $(function(){
 						<li><a href="/about/contact" target="_blank">联系我们</a></li>
 					</ul>
 					<p>
-						中合万邦投资管理有限公司  版权所有
+						万邦家族财富投资管理（北京）有限公司  版权所有
 						<span>  CopyRight 1999-2023 All Rights Reserved.
 							<span><br> 
 							京<span>ICP</span>备<span>15005678</span>号<span>-1</span>

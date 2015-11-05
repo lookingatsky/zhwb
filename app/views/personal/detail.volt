@@ -53,7 +53,9 @@ label font{
 		<li class="previous pull-left">
 			<div class="clearfix" style="float:left;">
 				<label><div class="title pull-left"><b>入账方式：</b></div> <div class="content pull-left">{{ debts.pay_method }}</div><div class="clear"></div></label>
+				{% if debts.if_received is defined %}
 				<label><div class="title pull-left"><b>是否接收债权文件：</b></div> <div class="content pull-left">{{ debts.if_received }}</div><div class="clear"></div></label>
+				{% endif %}
 				<label><div class="title pull-left"><b>接收债权文件地址：</b></div> <div class="content pull-left">{{ debts.r_address }}</div><div class="clear"></div></label>
 				<label><div class="title pull-left"><b>邮 编：</b></div> <div class="content pull-left">{{ debts.r_num }}</div><div class="clear"></div></label>
 				<label><div class="title pull-left"><b>邮寄方式：</b></div> <div class="content pull-left">{{ debts.mail_method }}</div><div class="clear"></div></label>
@@ -152,7 +154,113 @@ label font{
 			</tbody>	
 		</table>
 	</div>
-	
+	<hr />	
+{{ javascript_include('js/highcharts.js') }}
+{{ javascript_include('js/exporting.js') }}	
+{{ javascript_include('js/highcharts-3d.js') }}	
+<script>
+$(function () {
+	Highcharts.setOptions({
+		lang:{
+		   contextButtonTitle:"图表导出菜单",
+		   decimalPoint:".",
+		   downloadJPEG:"下载JPEG图片",
+		   downloadPDF:"下载PDF文件",
+		   downloadPNG:"下载PNG文件",
+		   downloadSVG:"下载SVG文件",
+		   drillUpText:"返回 {series.name}",
+		   loading:"加载中",
+		   months:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+		   noData:"没有数据",
+		   numericSymbols: [ "千" , "兆" , "G" , "T" , "P" , "E"],
+		   printChart:"打印图表",
+		   resetZoom:"恢复缩放",
+		   resetZoomTitle:"恢复图表",
+		   shortMonths: [ "1月" , "2月" , "3月" , "4月" , "5月" , "6月" , "7月" , "8月" , "9月" , "10月" , "11月" , "12月"],
+		   thousandsSep:",",
+		   weekdays: ["星期一", "星期二", "星期三", "星期三", "星期四", "星期五", "星期六","星期天"]
+		}
+	}); 
+    // Set up the chart
+    var chart = new Highcharts.Chart({
+        chart: {
+            renderTo: 'container',
+            type: 'column',
+            margin: 75,
+            options3d: {
+                enabled: true,
+                alpha: 15,
+                beta: 15,
+                depth: 50,
+                viewDistance: 25
+            }
+        },
+        title: {
+            text: '借款人图表'
+        },
+        subtitle: {
+            text: '由万邦家族财富提供数据'
+        },
+        plotOptions: {
+            column: {
+                depth: 25
+            }
+        },
+		xAxis: {
+ 			 categories: [ 
+			 {% for index,detail in match %}
+				"{{ detail.loan.borrower.name }}",
+			 {% endfor %}
+			 ]        
+        },     
+		yAxis: { 
+			min: 0, 
+			title: { text: 'RMB（元）' } 
+		},		
+        series: [{
+			name:'金额',
+            data: [
+			 {% for index,detail in match %}
+				{{ detail.debt_borrow }},
+			 {% endfor %}
+				]
+        }]
+    });
+    
+
+    // Activate the sliders
+    $('#R0').on('change', function(){
+        chart.options.chart.options3d.alpha = this.value;
+        showValues();
+        chart.redraw(false);
+    });
+    $('#R1').on('change', function(){
+        chart.options.chart.options3d.beta = this.value;
+        showValues();
+        chart.redraw(false);
+    });
+
+/*    function showValues() {
+        $('#R0-value').html(chart.options.chart.options3d.alpha);
+        $('#R1-value').html(chart.options.chart.options3d.beta);
+    }
+    showValues();*/
+})	
+</script>
+<div id="container" style="min-width:700px;height:400px"></div> ﻿ 
+	<div id="sliders" style="min-width:310px;max-width: 800px;margin: 0 auto;"> 
+<!-- 	<table> 
+		<tr>
+			<td>Alpha Angle</td>
+			<td><input id="R0" type="range" min="0" max="45" value="15"/> <span id="R0-value" class="value"></span></td>
+		</tr> 
+		<tr>
+			<td>Beta Angle</td>
+			<td><input id="R1" type="range" min="0" max="45" value="15"/> <span id="R1-value" class="value"></span></td>
+		</tr> 
+	</table>  -->
+	</div>
+	<hr />
 	<h3>借款人列表</h3>
 	<hr />
 	<div style="text-align:left;">
@@ -163,7 +271,6 @@ label font{
 					<th>借款编号</th>
 					<th>借款人</th>
 					<th>出借编号</th>
-					<th>出借金额</th>
 					<th>此次分配金额</th>
 					<th>剩余金额</th>
 					<th>目前状态</th>
@@ -176,7 +283,6 @@ label font{
 					<td><a target="_blank" href="/personal/loan/{{ detail.loan.id }}">{{ detail.loan_number }}</a></td>
 					<td>{{ detail.loan.borrower.name }}</td>
 					<td>{{ detail.debt_number }}</td>
-					<td>{{ detail.debt_money }}</td>
 					<td>{{ detail.debt_borrow }}</td>
 					<td>{{ detail.debt_last }}</td>
 					<td>{{ detail.status }}</td>

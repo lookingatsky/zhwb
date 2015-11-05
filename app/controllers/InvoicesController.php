@@ -24,7 +24,7 @@ class InvoicesController extends ControllerBase
 		if($auth['did'] != '' && $auth['did'] != 0){
 			$department = Department::findFirst($auth['did']);
 		}else{
-			$department->name = '中合万邦总部';
+			$department->name = '北京银泰财富中心';
 		}
 		
 		$this->view->setVar("department",$department);

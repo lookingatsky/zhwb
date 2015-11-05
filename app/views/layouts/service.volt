@@ -115,7 +115,7 @@
 					<li><a href="/about/contact" target="_blank">联系我们</a></li>
 				</ul>
 				<p>
-					中合万邦投资管理有限公司  版权所有<span>  CopyRight 1999-2023 All Rights Reserved.<span><br> 
+					万邦家族财富投资管理（北京）有限公司  版权所有<span>  CopyRight 1999-2023 All Rights Reserved.<span><br> 
 					京<span>ICP</span>备<span>15005678</span>号<span>-1</span>
 					</span>
 					</span>

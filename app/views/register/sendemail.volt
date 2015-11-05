@@ -2,7 +2,7 @@
 {{ content() }}
 
 <div class="page-header">
-    <h2>注册中合万邦</h2>
+    <h2>注册万邦家族财富</h2>
 </div>
  <fieldset>
 <div>

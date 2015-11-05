@@ -2,7 +2,7 @@
 <?php echo $this->getContent() ?>
 
 <div class="page-header">
-    <h2>注册中合万邦帐号</h2>
+    <h2>注册万邦家族财富帐号</h2>
 </div>
 <ul class="pager">
     <li class="previous pull-left">

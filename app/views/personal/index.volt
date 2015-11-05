@@ -35,8 +35,76 @@ label font{
 		
 	</div>
 	<div style="clear:both;"></div>			
-	<hr />		
-		
+	<hr />
+{{ javascript_include('js/highcharts.js') }}
+{{ javascript_include('js/exporting.js') }}	
+<script>
+$(function(){
+	Highcharts.setOptions({
+		lang:{
+		   contextButtonTitle:"图表导出菜单",
+		   decimalPoint:".",
+		   downloadJPEG:"下载JPEG图片",
+		   downloadPDF:"下载PDF文件",
+		   downloadPNG:"下载PNG文件",
+		   downloadSVG:"下载SVG文件",
+		   drillUpText:"返回 {series.name}",
+		   loading:"加载中",
+		   months:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
+		   noData:"没有数据",
+		   numericSymbols: [ "千" , "兆" , "G" , "T" , "P" , "E"],
+		   printChart:"打印图表",
+		   resetZoom:"恢复缩放",
+		   resetZoomTitle:"恢复图表",
+		   shortMonths: [ "1月" , "2月" , "3月" , "4月" , "5月" , "6月" , "7月" , "8月" , "9月" , "10月" , "11月" , "12月"],
+		   thousandsSep:",",
+		   weekdays: ["星期一", "星期二", "星期三", "星期三", "星期四", "星期五", "星期六","星期天"]
+		}
+	}); 	
+	
+	$('#highchartsFrame').highcharts({ 
+		chart: { 
+			type: 'spline' 
+		}, 
+		title: { 
+			text: '<span style="color:#0088cc">{{ customer.name }}</span>的投资曲线' 
+		}, 
+		subtitle: { 
+			text: '来源: 万邦家族财富' 
+		}, 
+		xAxis: { 
+			type: 'datetime',  
+				labels: {  
+				step: 4,   
+				formatter: function () {  
+				return Highcharts.dateFormat('%Y年%m月', this.value);  
+				}  
+				} 
+		}, 
+		yAxis: { 
+			title: { 
+				text: '投资金额（人民币：元）' 
+			},
+			min: 0
+		}, 
+		tooltip: { 
+			formatter: function() { 
+				return '<b>'+ Highcharts.dateFormat('%Y年%m月%d日 ', this.x) +'</b><br>'+ this.series.name +': '+ this.y +' 元'; 
+			}
+		},
+		series: [{ 
+			name: '投资曲线', 
+			data: [
+			{% for debts in page.items %}
+				[Date.UTC(<?php echo date("Y",$debts->pay_time);?>, <?php echo date("m",$debts->pay_time)-1;?>, <?php echo date("d",$debts->pay_time);?>), {{ debts.total }} ], 
+			{% endfor %}
+			] 
+		}] 
+	}); 
+})
+</script>
+	<div id="highchartsFrame" style="height:300px;width:100%;"></div>	
+	<hr />	
 	<div style="text-align:left;">
 		<ul class="pager">
 			<li class="previous pull-left">

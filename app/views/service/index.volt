@@ -532,7 +532,7 @@ style.firebugResetStyles {
                       </span></td></tr>
                      <?php }?>
                     </tbody></table>
-                    <form action="product.shtml" method="post" id="pageForm">
+                    <form action="index" method="post" id="pageForm">
 			       		<input name="page.begin" id="pagebegin" type="hidden">
 			       		<input name="status" id="status" value="" type="hidden">
 			       </form>

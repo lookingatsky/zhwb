@@ -306,13 +306,13 @@
       <div class="fangan_list" style="margin-top:50px;">
       	<ul class="clearfix">
         	<li>
-            	<h3>初识中合万邦</h3>
+            	<h3>初识万邦家族财富</h3>
                 <p><span class="web_skin cp_falist_icon"></span>填写资产配置测试表</p>
  				<p><span class="web_skin cp_falist_icon"></span>理财师评估</p>
  				<p><span class="web_skin cp_falist_icon"></span>专属的资产配置建议</p>
             </li>
             <li>
-            	<h3>成为中合万邦VIP</h3>
+            	<h3>成为万邦家族财富VIP</h3>
                 <p><span class="web_skin cp_falist_icon"></span>专属定制服务，Email与<br>&nbsp;&nbsp;&nbsp;微信形式接收最新财富资讯</p>
  				<p><span class="web_skin cp_falist_icon"></span>不定期专家讲座，最新行<br>&nbsp;&nbsp;&nbsp;业动态、市场热点专家解析</p>
  				<p><span class="web_skin cp_falist_icon"></span>丰富的理财沙龙，投资者与<br>&nbsp;&nbsp;&nbsp;理财专家交流平台</p>

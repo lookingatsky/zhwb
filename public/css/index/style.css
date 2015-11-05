@@ -11,7 +11,7 @@ section.headerbg{background:url(./../../img/index/nav_bg.jpg) repeat-x left top;
 .conterbox{margin-top:95px;display:block;*padding-top:110px;_margin-top:0px;}
 .index_mt0{margin-top:0px;}
 /*logo与语言*/
-.logobox{width:307px;height:86px; }
+.logobox{width:388px;height:86px; }
 a.logimg{display:block;height:86px; background:url(./../../img/index/logo_png.png) no-repeat left top;_background:url(./../../img/index/logo_03.png) no-repeat left top;}
 section.navline{height:9px;background:#3c3c3c;width:100%; overflow:hidden;zoom:1; position:relative;top:-1px; z-index:5;}
 .menubox{width:545px;height:86px;}
