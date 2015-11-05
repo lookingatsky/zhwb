@@ -231,7 +231,7 @@ $(function(){
 								<section id="hotAddress" rel="1" iscom="1" style="height:340px; overflow:hidden;">
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
 										<h3>北京银泰财富中心</h3>
-										<p>总部地址: 北京市朝阳区建国门外大街8号IFC A座32层02-03单元<br>
+										<p>总部地址: 地址:北京朝阳区建国门外大街2号银泰中心C座46层<br>
 										联系方式: 010-85659999</p>
 									</div>																			
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
