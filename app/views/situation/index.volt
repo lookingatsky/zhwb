@@ -23,7 +23,7 @@
 			<?php foreach ($page1->items  as $key=>$new) { ?>
         	<dl {% if key%2 !=0 %}style="margin-left: 15px;"{% endif %} class="clearfix">
             	<dt>
-					<a href="/news/index/{{ new.id }}" target="_blank">{{ new.title }}</a>
+					<a href="/news/index/{{ new.id }}" target="_blank"><?php if(mb_strlen($new->title,'utf-8')  > 28){ echo mb_substr($new->title,0,28,'utf-8')."..."; }else{ echo $new->title;  }?></a>
             	</dt>
                 <dd>
 					<a href="/news/index/{{ new.id }}" target="_blank">

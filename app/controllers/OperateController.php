@@ -295,9 +295,12 @@ class OperateController extends ControllerBase
 					$getType = explode('.',$file->getName());
 					$imageName = date('YmdHis').".".$getType[count($getType)-1];
 					
-					$file->moveTo(APP_PATH.'/public/files/'.$fileName.'/'.$imageName);
+					if($getType[count($getType)-1] != ''){
+						$file->moveTo(APP_PATH.'/public/files/'.$fileName.'/'.$imageName);
+						$news->thumb = '/files/'.$fileName.'/'.$imageName;
+					}
 				}
-				$news->thumb = '/files/'.$fileName.'/'.$imageName;
+				
 			}
 			$news->typeid = $request->getPost("typeid");
 			$news->title = $request->getPost("title");
@@ -314,7 +317,6 @@ class OperateController extends ControllerBase
 			$news = new News();
 			if ($this->request->hasFiles('fileDataFileName') == true) {
 				$fileName = date('Ymd');
-				
 				if (!file_exists(APP_PATH.'/public/files/'.$fileName)){ 
 					mkdir(APP_PATH.'/public/files/'.$fileName); 
 				}	 		
@@ -323,12 +325,13 @@ class OperateController extends ControllerBase
 
 					$getType = explode('.',$file->getName());
 					$imageName = date('YmdHis').".".$getType[count($getType)-1];
-					
-					$file->moveTo(APP_PATH.'/public/files/'.$fileName.'/'.$imageName);
+					if($getType[count($getType)-1] != ''){
+						$file->moveTo(APP_PATH.'/public/files/'.$fileName.'/'.$imageName);
+						$news->thumb = '/files/'.$fileName.'/'.$imageName;
+					}else{
+						$news->thumb = '/img/test.jpg';
+					}
 				}
-				$news->thumb = '/files/'.$fileName.'/'.$imageName;
-			}else{
-				$news->thumb = '/img/test.jpg';
 			}
 			
 			$news->typeid = $request->getPost("typeid");
