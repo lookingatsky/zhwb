@@ -42,6 +42,31 @@ class OperateController extends ControllerBase
 		$this->view->setVar("Newstype",$Newstype);		
 	}
 	
+	public function editnewsAction($id){
+		$id = $this->filter->sanitize($id, array("int"));	
+		if($id){
+			$Newstype = Newstype::find();
+			$this->view->setVar("Newstype",$Newstype);
+			
+			$news = News::findFirst("id =".$id);
+			if($news){
+				Tag::setDefault("newsid",$news->id);
+				Tag::setDefault("typeid",$news->typeid);	
+				Tag::setDefault("title",$news->title);	
+				Tag::setDefault("description",$news->description);	
+				Tag::setDefault("content",$news->content);	
+				if($news->thumb){
+					$this->view->thumb = $news->thumb;
+				}
+			}else{
+				$this->response->redirect("index/index");
+			}
+			
+		}else{
+			$this->response->redirect("index/index");
+		}
+	}
+	
 	public function saveAction(){
 		
 		$id = $this->request->getPost("id", "int");
@@ -255,42 +280,72 @@ class OperateController extends ControllerBase
 			
 		}
 		$this->view->disable();
-		//fb($content);
-		$news = new News();
-		//if(is_uploaded_file($_FILES['upfile']['tmp_name'])){
-        if ($this->request->hasFiles('fileDataFileName') == true) {
-			$fileName = date('Ymd');
-			
- 			if (!file_exists(APP_PATH.'/public/files/'.$fileName)){ 
-				mkdir(APP_PATH.'/public/files/'.$fileName); 
-			}	 		
-			
-            foreach ($this->request->getUploadedFiles() as $file) {
-
-				$getType = explode('.',$file->getName());
-				$imageName = date('YmdHis').".".$getType[count($getType)-1];
+		//判断是编辑还是添加
+		if($request->getPost("newsid") != ''){
+			$news = News::findFirst("id =".$request->getPost("newsid"));
+			if ($this->request->hasFiles('fileDataFileName') == true) {
+				$fileName = date('Ymd');
 				
-                $file->moveTo(APP_PATH.'/public/files/'.$fileName.'/'.$imageName);
-            }
-			$news->thumb = '/files/'.$fileName.'/'.$imageName;
-        }else{
-			$news->thumb = '/img/test.jpg';
-		}
-		
-		$news->typeid = $request->getPost("typeid");
-		$news->title = $request->getPost("title");
-		$news->description = $request->getPost("description");
-		$news->content = $request->getPost("content");
-		$news->username = 'admin';
-		$news->inputtime = time();
-		$news->updatetime = time();
-		$news->status = 0;
-		if($news->save()){
-			$this->flash->notice("保存成功！");
+				if (!file_exists(APP_PATH.'/public/files/'.$fileName)){ 
+					mkdir(APP_PATH.'/public/files/'.$fileName); 
+				}	 		
+				
+				foreach ($this->request->getUploadedFiles() as $file) {
+
+					$getType = explode('.',$file->getName());
+					$imageName = date('YmdHis').".".$getType[count($getType)-1];
+					
+					$file->moveTo(APP_PATH.'/public/files/'.$fileName.'/'.$imageName);
+				}
+				$news->thumb = '/files/'.$fileName.'/'.$imageName;
+			}
+			$news->typeid = $request->getPost("typeid");
+			$news->title = $request->getPost("title");
+			$news->description = $request->getPost("description");
+			$news->content = $request->getPost("content");
+			if($news->save()){
+				$this->flash->notice("保存成功！");
+			}else{
+				foreach ($news->getMessages() as $message) {
+					$this->flash->error((string) $message);
+				}
+			}				
 		}else{
-            foreach ($news->getMessages() as $message) {
-                $this->flash->error((string) $message);
-            }
+			$news = new News();
+			if ($this->request->hasFiles('fileDataFileName') == true) {
+				$fileName = date('Ymd');
+				
+				if (!file_exists(APP_PATH.'/public/files/'.$fileName)){ 
+					mkdir(APP_PATH.'/public/files/'.$fileName); 
+				}	 		
+				
+				foreach ($this->request->getUploadedFiles() as $file) {
+
+					$getType = explode('.',$file->getName());
+					$imageName = date('YmdHis').".".$getType[count($getType)-1];
+					
+					$file->moveTo(APP_PATH.'/public/files/'.$fileName.'/'.$imageName);
+				}
+				$news->thumb = '/files/'.$fileName.'/'.$imageName;
+			}else{
+				$news->thumb = '/img/test.jpg';
+			}
+			
+			$news->typeid = $request->getPost("typeid");
+			$news->title = $request->getPost("title");
+			$news->description = $request->getPost("description");
+			$news->content = $request->getPost("content");
+			$news->username = 'admin';
+			$news->inputtime = time();
+			$news->updatetime = time();
+			$news->status = 0;
+			if($news->save()){
+				$this->flash->notice("保存成功！");
+			}else{
+				foreach ($news->getMessages() as $message) {
+					$this->flash->error((string) $message);
+				}
+			}			
 		}
 	}
 	
