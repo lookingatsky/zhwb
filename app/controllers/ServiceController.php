@@ -11,10 +11,10 @@ class ServiceController extends ControllerBase
 
     public function indexAction(){
 		$indexProducts = Products::find(array(
-			"limit" => 4,
+			"limit" => 5,
 			"order" => "id asc"
 		));
-	
+		
 		$products = Products::find(array(
 			"order" => "id asc"
 		));
