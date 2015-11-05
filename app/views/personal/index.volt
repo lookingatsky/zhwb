@@ -67,7 +67,7 @@ $(function(){
 			type: 'spline' 
 		}, 
 		title: { 
-			text: '<span style="color:#0088cc">{{ customer.name }}</span>的投资曲线' 
+			text: '<span style="color:#0088cc">{{ customer.name }}</span>的理财曲线' 
 		}, 
 		subtitle: { 
 			text: '来源: 万邦家族财富' 
@@ -93,7 +93,7 @@ $(function(){
 			}
 		},
 		series: [{ 
-			name: '投资曲线', 
+			name: '理财曲线', 
 			data: [
 			{% for debts in page.items %}
 				[Date.UTC(<?php echo date("Y",$debts->pay_time);?>, <?php echo date("m",$debts->pay_time)-1;?>, <?php echo date("d",$debts->pay_time);?>), {{ debts.total }} ], 
@@ -118,24 +118,22 @@ $(function(){
 			<thead>
 				<tr>
 					<th>出借编号</th>
+					<th>初始出借金额</th>
 					<th>资金出借及回收方式</th>
 					<th>初始出借日期</th>
-					<th>初始出借金额</th>
+					<th>到期日期</th>
 					<th>账户管理费</th>
-					<th>债权受让人（新债权人）</th>
-					<th>身份证（护照）号码</th>
 				</tr>
 			</thead>
 		{% endif %}
 			<tbody>
 				<tr>
 					<td style="vertical-align:middle;"><a href="/personal/detail/{{ debts.id }}">{{ debts.number }}</a></td>
+					<td style="vertical-align:middle;">{{ debts.total }}</td>
 					<td style="vertical-align:middle;">{{ debts.type }}</td>
 					<td style="vertical-align:middle;"><?php echo date("Y年m月d日",$debts->assign_time);?></td>
-					<td style="vertical-align:middle;">{{ debts.total }}</td>
+					<td style="vertical-align:middle;"><?php echo date("Y年m月d日",$debts->assign_time);?></td>
 					<td style="vertical-align:middle;">{{ debts.cost }}</td>
-					<td style="vertical-align:middle;">{{ debts.customer.name }}</td>	
-					<td style="vertical-align:middle;"><?php echo substr($debts->customer->number,0,5)?>********<?php echo substr($debts->customer->number,14,4)?></td>	
 				</tr>
 			</tbody>
 		{% if loop.last %}

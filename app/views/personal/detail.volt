@@ -58,26 +58,11 @@ label font{
 				{% endif %}
 				<label><div class="title pull-left"><b>接收债权文件地址：</b></div> <div class="content pull-left">{{ debts.r_address }}</div><div class="clear"></div></label>
 				<label><div class="title pull-left"><b>邮 编：</b></div> <div class="content pull-left">{{ debts.r_num }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>邮寄方式：</b></div> <div class="content pull-left">{{ debts.mail_method }}</div><div class="clear"></div></label>
 				{% if debts.mail_time is defined %}
 				<label><div class="title pull-left"><b>邮寄日期：</b></div> <div class="content pull-left">{{ debts.mail_time }}</div><div class="clear"></div></label>
 				{% endif %}
 				{% if debts.mail_num is defined %}
 				<label><div class="title pull-left"><b>快递单号：</b></div> <div class="content pull-left">{{ debts.mail_num }}</div><div class="clear"></div></label>
-				{% endif %}
-				<label><div class="title pull-left"><b>申请门店：</b></div> <div class="content pull-left">{{ debts.apply_store }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>营业部：</b></div> <div class="content pull-left">{{ debts.department }}</div><div class="clear"></div></label>
-				{% if debts.account_manager is defined %}
-				<label><div class="title pull-left"><b>客户经理：</b></div> <div class="content pull-left">{{ debts.account_manager }}</div><div class="clear"></div></label>
-				{% endif %}
-				{% if debts.team_manager is defined %}
-				<label><div class="title pull-left"><b>团队经理：</b></div> <div class="content pull-left">{{ debts.team_manager }}</div><div class="clear"></div></label>
-				{% endif %}
-				{% if debts.d_manager is defined %}
-				<label><div class="title pull-left"><b>营业部经理：</b></div> <div class="content pull-left">{{ debts.d_manager }}</div><div class="clear"></div></label>
-				{% endif %}
-				{% if debts.d_assistant is defined %}
-				<label><div class="title pull-left"><b>营业部副经理：</b></div> <div class="content pull-left">{{ debts.d_assistant }}</div><div class="clear"></div></label>
 				{% endif %}
 			
 			</div>
@@ -86,19 +71,14 @@ label font{
 			<div class="clearfix" style="float:left;">
 				<label><div class="title pull-left"><b>出借编号：</b></div> <div class="content pull-left">{{ debts.number }}</div><div class="clear"></div></label>
 				<label><div class="title pull-left"><b>合同编号：</b></div> <div class="content pull-left">{{ debts.contract_num }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>签约日期：</b></div> <div class="content pull-left"><?php echo date("Y年m月d日",$debts->assign_time);?></div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>划扣日期：</b></div> <div class="content pull-left"><?php if($debts->pay_time == "续签"){ echo $debts->pay_time; }else{ echo date("Y年m月d日",$debts->pay_time); } ?></div><div class="clear"></div></label>
 				<label><div class="title pull-left"><b>出借日期：</b></div> <div class="content pull-left"><?php echo date("Y年m月d日",$debts->invest_time);?></div><div class="clear"></div></label>
 				<label><div class="title pull-left"><b>产品名称：</b></div> <div class="content pull-left">{{ debts.type }}</div><div class="clear"></div></label>
 				<label><div class="title pull-left"><b>出借金额：</b></div> <div class="content pull-left">{{ debts.total }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>POS小条流水号：</b></div> <div class="content pull-left">{{ debts.pos_num }}</div><div class="clear"></div></label>
-				{% if debts.if_match is defined %}
-				<label><div class="title pull-left"><b>是否匹配：</b></div> <div class="content pull-left">{{ debts.if_match }}</div><div class="clear"></div></label>
-				{% endif %}
+				<label><div class="title pull-left"><b>到期日期：</b></div> <div class="content pull-left"><?php echo date("Y年m月d日",$debts->invest_time);?></div><div class="clear"></div></label>
 				{% if debts.if_invest is defined %}
 				<label><div class="title pull-left"><b>续投：</b></div> <div class="content pull-left">{{ debts.if_invest }}</div><div class="clear"></div></label>
 				{% endif %}
-				<label><div class="title pull-left"><b>反息日：</b></div> <div class="content pull-left">{{ debts.return_day }}天</div><div class="clear"></div></label>					
+				<label><div class="title pull-left"><b>账单日：</b></div> <div class="content pull-left">每月{{ debts.return_day }}号</div><div class="clear"></div></label>					
 			</div>
 		</li>	
 	</ul>		
@@ -181,115 +161,85 @@ $(function () {
 		   weekdays: ["星期一", "星期二", "星期三", "星期三", "星期四", "星期五", "星期六","星期天"]
 		}
 	}); 
-    // Set up the chart
-    var chart = new Highcharts.Chart({
+    
+  $('#p_container').highcharts({
         chart: {
-            renderTo: 'container',
-            type: 'column',
-            margin: 75,
+            type: 'pie',
             options3d: {
                 enabled: true,
-                alpha: 15,
-                beta: 15,
-                depth: 50,
-                viewDistance: 25
+                alpha: 45,
+                beta: 0
             }
         },
         title: {
-            text: '借款人图表'
+            text: '借款详情表'
         },
-        subtitle: {
-            text: '由万邦家族财富提供数据'
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
         },
         plotOptions: {
-            column: {
-                depth: 25
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                depth: 35,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}'
+                }
             }
         },
-		xAxis: {
- 			 categories: [ 
-			 {% for index,detail in match %}
-				"{{ detail.loan.borrower.name }}",
-			 {% endfor %}
-			 ]        
-        },     
-		yAxis: { 
-			min: 0, 
-			title: { text: 'RMB（元）' } 
-		},		
         series: [{
-			name:'金额',
+            type: 'pie',
+            name: '借款金额分配',
             data: [
-			 {% for index,detail in match %}
-				{{ detail.debt_borrow }},
-			 {% endfor %}
-				]
+			{% for index,detail in match %}
+				[
+					'{{ detail.loan.borrower.name }}',   
+					{{ detail.debt_borrow }},
+				],
+			{% endfor %}
+            ]
         }]
-    });
-    
-
-    // Activate the sliders
-    $('#R0').on('change', function(){
-        chart.options.chart.options3d.alpha = this.value;
-        showValues();
-        chart.redraw(false);
-    });
-    $('#R1').on('change', function(){
-        chart.options.chart.options3d.beta = this.value;
-        showValues();
-        chart.redraw(false);
-    });
-
-/*    function showValues() {
-        $('#R0-value').html(chart.options.chart.options3d.alpha);
-        $('#R1-value').html(chart.options.chart.options3d.beta);
-    }
-    showValues();*/
+    });	
 })	
 </script>
-<div id="container" style="min-width:700px;height:400px"></div> ﻿ 
-	<div id="sliders" style="min-width:310px;max-width: 800px;margin: 0 auto;"> 
-<!-- 	<table> 
-		<tr>
-			<td>Alpha Angle</td>
-			<td><input id="R0" type="range" min="0" max="45" value="15"/> <span id="R0-value" class="value"></span></td>
-		</tr> 
-		<tr>
-			<td>Beta Angle</td>
-			<td><input id="R1" type="range" min="0" max="45" value="15"/> <span id="R1-value" class="value"></span></td>
-		</tr> 
-	</table>  -->
-	</div>
-	<hr />
 	<h3>借款人列表</h3>
 	<hr />
 	<div style="text-align:left;">
-		<table class="table table-bordered table-striped" align="center" style="width:100%;max-width:100%;">
-			<thead>
-				<tr>
-					<th>序号</th>
-					<th>借款编号</th>
-					<th>借款人</th>
-					<th>出借编号</th>
-					<th>此次分配金额</th>
-					<th>剩余金额</th>
-					<th>目前状态</th>
-				</tr>
-			</thead>
-			<tbody>
-				{% for index,detail in match %}
-				<tr>
-					<td>{{ index+1 }}</td>
-					<td><a target="_blank" href="/personal/loan/{{ detail.loan.id }}">{{ detail.loan_number }}</a></td>
-					<td>{{ detail.loan.borrower.name }}</td>
-					<td>{{ detail.debt_number }}</td>
-					<td>{{ detail.debt_borrow }}</td>
-					<td>{{ detail.debt_last }}</td>
-					<td>{{ detail.status }}</td>
-				</tr>
-				{% endfor %}
-			</tbody>	
-		</table>
+		<div class="pull-left" style="width:60%;">
+			<table class="table table-bordered table-striped" align="center" style="width:100%;max-width:100%;">
+				<thead>
+					<tr>
+						<th>序号</th>
+						<th>借款编号</th>
+						<th>借款人</th>
+						<th>初始借款金额</th>
+						<th>本次转让债权价值</th>
+						<th>借款用途</th>
+						<th>到期还款日</th>
+						<th>剩余还款月数</th>
+						<th>目前状态</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for index,detail in match %}
+					<tr>
+						<td>{{ index+1 }}</td>
+						<td><a target="_blank" href="/personal/loan/{{ detail.loan.id }}">{{ detail.loan_number }}</a></td>
+						<td>{{ detail.loan.borrower.name }}</td>
+						<td>{{ detail.loan.allowed_money }}</td>
+						<td>{{ detail.debt_borrow }}</td>
+						<td>{{ detail.loan.purpose }}</td>
+						<td></td>
+						<td></td>
+						<td>{{ detail.status }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>	
+			</table>
+		</div>
+		<div id="p_container" class="pull-left" style="width:40%;height:300px"></div>
+		<div style="clear:both;"></div>	
 	</div>		
 </div>
 

@@ -32,7 +32,7 @@ class IndexController extends ControllerBase
 		));
 
 		$indexProducts = Products::find(array(
-			"limit" => 4,
+			"limit" => 5,
 			"order" => "id asc"
 		));		
 		$this->view->indexProducts = $indexProducts;

@@ -61,19 +61,6 @@ label font{
 				<label><div class="title pull-left"><b>来源：</b></div> <div class="content pull-left">{{ loan.borrower.source }}</div><div class="clear"></div></label>
 				{% endif %}
 				<label><div class="title pull-left"><b>性 别：</b></div> <div class="content pull-left">{% if loan.borrower.sex == 1 %}男{% else %}女{% endif %}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>营业部：</b></div> <div class="content pull-left">{{ loan.department }}</div><div class="clear"></div></label>
-				{% if loan.account_manager is defined %}
-				<label><div class="title pull-left"><b>客户经理：</b></div> <div class="content pull-left">{{ loan.account_manager }}</div><div class="clear"></div></label>
-				{% endif %}
-				{% if loan.team_manager is defined %}
-				<label><div class="title pull-left"><b>团队经理：</b></div> <div class="content pull-left">{{ loan.team_manager }}</div><div class="clear"></div></label>
-				{% endif %}
-				{% if loan.d_manager is defined %}
-				<label><div class="title pull-left"><b>营业部经理：</b></div> <div class="content pull-left">{{ loan.d_manager }}</div><div class="clear"></div></label>
-				{% endif %}
-				{% if loan.d_assistant is defined %}
-				<label><div class="title pull-left"><b>营业部副经理：</b></div> <div class="content pull-left">{{ loan.d_assistant }}</div><div class="clear"></div></label>
-				{% endif %}
 			</div>
 		</li>
 		<li class="previous pull-left">
@@ -82,9 +69,7 @@ label font{
 				<label><div class="title pull-left"><b>产品类型：</b></div> <div class="content pull-left">{{ loan.type }}</div><div class="clear"></div></label>
 				<label><div class="title pull-left"><b>借款期数：</b></div> <div class="content pull-left">{{ loan.cycle }}</div><div class="clear"></div></label>
 				<label><div class="title pull-left"><b>借款用途：</b></div> <div class="content pull-left">{{ loan.purpose }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>签约日期：</b></div> <div class="content pull-left">{{ loan.assign_time }}</div><div class="clear"></div></label>
 				<label><div class="title pull-left"><b>借款状态：</b></div> <div class="content pull-left">{{ loan.loan_status }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>终审日期：</b></div> <div class="content pull-left">{{ loan.verify_time }}</div><div class="clear"></div></label>
 				{% if loan.remark is defined %}
 				<label><div class="title pull-left"><b>备注：</b></div> <div class="content pull-left">{{ loan.remark }}</div><div class="clear"></div></label>
 				{% endif %}
