@@ -206,7 +206,7 @@ $(function () {
 	<h3>借款人列表</h3>
 	<hr />
 	<div style="text-align:left;">
-		<div class="pull-left" style="width:60%;">
+		<div >
 			<table class="table table-bordered table-striped" align="center" style="width:100%;max-width:100%;">
 				<thead>
 					<tr>
@@ -230,15 +230,21 @@ $(function () {
 						<td>{{ detail.loan.allowed_money }}</td>
 						<td>{{ detail.debt_borrow }}</td>
 						<td>{{ detail.loan.purpose }}</td>
-						<td></td>
-						<td></td>
+						<td>{{ detail.endtime }}</td>
+						<td><?php 
+							if(strtotime($detail->endtime) > time()){
+								echo date("m",strtotime($detail->endtime))-date("m",time());
+							}else{
+								echo 0;
+							}?>
+						</td>
 						<td>{{ detail.status }}</td>
 					</tr>
 					{% endfor %}
 				</tbody>	
 			</table>
 		</div>
-		<div id="p_container" class="pull-left" style="width:40%;height:300px"></div>
+		<div id="p_container" style="height:400px"></div>
 		<div style="clear:both;"></div>	
 	</div>		
 </div>

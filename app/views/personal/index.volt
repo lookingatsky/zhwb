@@ -131,8 +131,24 @@ $(function(){
 					<td style="vertical-align:middle;"><a href="/personal/detail/{{ debts.id }}">{{ debts.number }}</a></td>
 					<td style="vertical-align:middle;">{{ debts.total }}</td>
 					<td style="vertical-align:middle;">{{ debts.type }}</td>
-					<td style="vertical-align:middle;"><?php echo date("Y年m月d日",$debts->assign_time);?></td>
-					<td style="vertical-align:middle;"><?php echo date("Y年m月d日",$debts->assign_time);?></td>
+					<td style="vertical-align:middle;"><?php echo date("Y年m月d日",$debts->invest_time);?></td>
+					<td style="vertical-align:middle;">
+					<?php 
+						if($debts->type == '单季赢'){
+							echo date("Y年m月d日",strtotime("+1 Months -1 days",$debts->invest_time));
+						}elseif($debts->type == '双季赢'){
+							echo date("Y年m月d日",strtotime("+2 Months -1 days",$debts->invest_time));
+						}elseif($debts->type == '一年赢'){
+							echo date("Y年m月d日",strtotime("+1 Years -1 days",$debts->invest_time));
+						}elseif($debts->type == '一年宝'){
+							echo date("Y年m月d日",strtotime("+1 Years -1 days",$debts->invest_time));
+						}elseif($debts->type == '年年赢'){
+							echo date("Y年m月d日",strtotime("+2 Years -1 days",$debts->invest_time));
+						}else{
+							echo "理财类型不明，无法计算时间";
+						}
+					?>
+					</td>
 					<td style="vertical-align:middle;">{{ debts.cost }}</td>
 				</tr>
 			</tbody>
