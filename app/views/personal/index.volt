@@ -72,6 +72,7 @@ $(function(){
 		subtitle: { 
 			text: '来源: 万邦家族财富' 
 		}, 
+
 		xAxis: { 
 			type: 'datetime',  
 				labels: {  
@@ -83,7 +84,12 @@ $(function(){
 		}, 
 		yAxis: { 
 			title: { 
-				text: '投资金额（人民币：元）' 
+				text: '金额（人民币：元）' 
+			},
+			labels: {
+				formatter: function() {
+					return this.value / 10000 +'万';
+				}
 			},
 			min: 0
 		}, 
