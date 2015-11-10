@@ -48,7 +48,7 @@ $(function(){
 							</a>
 						</div>              	
   						<div style="width:714px;">
-							<a href="/service/index" target="_blank">
+							<a href="/news/index/34" target="_blank">
 								<img src="/../../img/index/index/index6.png" alt="">
 							</a>
 						</div>      	

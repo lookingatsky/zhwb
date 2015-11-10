@@ -27,6 +27,9 @@ $(function(){
 p{
 	font-size:14px;
 }
+b{
+	font-weight:bold;
+}
 </style>		
 			<div class="description"><?php if(mb_strlen($detail->description,'utf-8')  > 38){ echo mb_substr($detail->description,0,37,'utf-8')."..."; }else{ echo $detail->description;  }?></div>
 			{{ detail.content }}
