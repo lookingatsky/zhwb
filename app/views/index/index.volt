@@ -27,27 +27,31 @@ $(function(){
 				<div class="baner" id="advDivindex">
 					<!-- javascript:void(0) -->
 					<div class="baner_imglist" id="advindex" isindex="1" style="left: 0px; width: 5712px;"> 
-						<div style="width:714px;">
+<!-- 						<div style="width:714px;">
 							<a href="/news/index/32" target="_blank">
 								<img src="/../../img/index/index/index2.png" alt="">
 							</a>
-						</div>					
+						</div>	 -->	
+						<div style="width:714px;">
+							<a href="/news/index/20" target="_blank">
+								<img src="/../../img/index/index/index4.png" alt="">
+							</a>
+						</div>  						
 						<div style="width:714px;">
 							<a href="/news/index/18" target="_blank">
 								<img src="/../../img/index/index/index1.png" alt="">
 							</a>
-						</div>              	
-						              	
+						</div>                     	
 						<div style="width:714px;">
 							<a href="/news/index/21" target="_blank">
 								<img src="/../../img/index/index/index3.png" alt="">
 							</a>
 						</div>              	
-						<div style="width:714px;">
-							<a href="/news/index/20" target="_blank">
-								<img src="/../../img/index/index/index4.png" alt="">
+  						<div style="width:714px;">
+							<a href="/service/index" target="_blank">
+								<img src="/../../img/index/index/index6.png" alt="">
 							</a>
-						</div>        	
+						</div>      	
 						<div style="width:714px;">
 							<a href="/news/index/19" target="_blank">
 								<img src="/../../img/index/index/index5.png" alt="">
