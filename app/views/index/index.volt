@@ -204,7 +204,7 @@ $(function(){
 										<div class="fl infotext">
 											<p><?php if(mb_strlen($new->description,'utf-8')  > 41){ echo mb_substr($new->description,0,40,'utf-8')."..."; }else{ echo $new->description;  }?></p>
 										</div>
-										<div class="fr picbox"><a href="/news/index/{{ new.id }}" target="_blank"><img src="/../..{{ new.thumb }}" style="width:123px;height:66px;"></a></div>
+										<div class="fr picbox"><a href="/news/index/{{ new.id }}" target="_blank"><img src="{{ new.thumb }}" style="width:123px;height:66px;"></a></div>
 									</div>
 								</div>
 								{% endfor %}			  

@@ -27,7 +27,7 @@
             	</dt>
                 <dd>
 					<a href="/news/index/{{ new.id }}" target="_blank">
-						<img src="/../..{{ new.thumb }}">
+						<img src="{{ new.thumb }}">
 					</a>
 				</dd>
                 <dd class="info_text">
@@ -91,7 +91,7 @@
                     	<a href="/news/index/{{ new.id }}" target="_blank">查看详情<i class="more_icon web_skin"></i></a><br>
                         <span>[{{ date("Y-m-d",new.inputtime) }}]</span>
                         </h3>
-                        <a href="/news/index/{{ new.id }}" class="fl picbox" target="_blank"><img src="/../..{{ new.thumb }}" style="width:155px;height:88px"></a>
+                        <a href="/news/index/{{ new.id }}" class="fl picbox" target="_blank"><img src="{{ new.thumb }}" style="width:155px;height:88px"></a>
                         </div>
                     </div>
                 </li>
