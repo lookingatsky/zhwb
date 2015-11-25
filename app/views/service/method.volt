@@ -321,7 +321,7 @@
             	<h3>尊享的财富生活之旅</h3>
                 <p><span class="web_skin cp_falist_icon"></span>存续期持续跟踪服务</p>
  				<p><span class="web_skin cp_falist_icon"></span>定期财富体验，动态的财富管理跟踪</p>
- 				<p><span class="web_skin cp_falist_icon"></span>高端财富生活交流平台，不<br>&nbsp;&nbsp;&nbsp;定期直面业内精英，尊享丰<br>&nbsp;&nbsp;&nbsp;富的财富外生活</p>
+ 				<p><span class="web_skin cp_falist_icon"></span>高端财富生活交流平台，不<br>&nbsp;&nbsp;&nbsp;定期直面业内精英，尊享丰<br>&nbsp;&nbsp;&nbsp;富的财富生活</p>
             </li>
         </ul>
       </div>
