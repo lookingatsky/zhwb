@@ -78,7 +78,7 @@
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/suzhou.png" title="苏州晋合财富中心" alt="苏州晋合财富中心"></div>
             </li> 
-            <li class="clearfix">
+<!--             <li class="clearfix">
             	<span class="fl number_bg web_skin">07</span>
                 <dl class="fl lianxi_text">
                 	<dt>苏州第二财富中心</dt>
@@ -86,7 +86,7 @@
 					<br>联系方式: 0512-89181688</dd>
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/suzhou.png" title="苏州第二财富中心" alt="苏州第二财富中心"></div>
-            </li>
+            </li> -->
            <li class="clearfix">
             	<span class="fl number_bg web_skin">08</span>
                 <dl class="fl lianxi_text">

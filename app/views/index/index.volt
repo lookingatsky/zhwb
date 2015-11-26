@@ -254,11 +254,11 @@ $(function(){
 										<p>地址:江苏省苏州市工业园区华池街88号晋合广场1幢1201室<br>
 										联系方式: 0512-89181688</p>	
 									</div>	
-									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+<!-- 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
 										<h3>苏州第二财富中心</h3>
 										<p>地址:江苏省苏州市工业园区华池街88号晋合广场1幢1201室 <br>
 										联系方式: 0512-89181688</p>	
-									</div>	
+									</div>	 -->
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
 										<h3>南京新地财富中心</h3>
 										<p>江苏省南京市建邺区庐山路188号南京新地中心53层5303室<br>
