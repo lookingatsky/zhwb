@@ -91,7 +91,7 @@
             	<span class="fl number_bg web_skin">08</span>
                 <dl class="fl lianxi_text">
                 	<dt>南京新地财富中心</dt>
-                    <dd>地址: 江苏省南京市建邺区庐山路188号南京新地中心53楼5303室<br>联系方式: 025-86918866</dd>
+                    <dd>地址: 江苏省南京市建邺区庐山路188号南京新地中心53层5303室<br>联系方式: 025-86918866</dd>
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/nanjing.png" title="南京新地财富中心" alt="南京新地财富中心"></div>
             </li>

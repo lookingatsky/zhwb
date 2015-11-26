@@ -261,7 +261,7 @@ $(function(){
 									</div>	
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
 										<h3>南京新地财富中心</h3>
-										<p>地址:江苏省南京市建邺区庐山路188号南京新地中心45层4503、4504室<br>
+										<p>江苏省南京市建邺区庐山路188号南京新地中心53层5303室<br>
 										联系方式: 025-86918866</p>
 									</div>	
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
