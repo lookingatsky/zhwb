@@ -1,130 +1,199 @@
-
-<ul class="pager">
-    <li class="previous pull-left">
-        {{ link_to("personal/index/", "&larr; 返回") }}
-    </li>
-</ul>
 <style>
-label{
-	text-align:left;
-}	
-label font{
-	height:30px;
-	width:150px;
-}
-.fileList{
-	list-style-type:none;
-}
-.fileList li{
-	text-align:center;
-	float:left;
-	margin-right:50px;
-	width:100px;
-}
 .clear{
 	clear:both;
 }
-.title{
-	width:150px;
-	text-align:right;
-	margin-right:30px;
-	line-height:25px;
+.gold{
+	color:#d6a77a;
 }
-.content{
-	width:400px;
-	line-height:25px;
+.grey{
+	color:#707070;
+}
+.menu_frame{
+	width:150px;
+	border:0px solid #000;
+	margin-right:50px;
+	font-family:'微软雅黑';
+}
+.content_frame{
+	width:950px;
+	border:1px solid #d6a77a;
+	height:600px;
+	font-family:'微软雅黑';
+}
+.menu_list{
+	list-style-type:none;
+	margin:0px 0px 50px 0px;
+	padding:0px;
+	border-collapse: separate;
+}
+.menu_list>li:nth-of-type(1){
+	width:148px;
+	color:#d6a77a;
+	height:47px;
+	line-height:47px;
+	font-size:20px;
+	border:1px solid #d6a77a;
+	border-bottom:0px solid #d6a77a;
+}
+.menu_list>li:nth-of-type(2){
+	margin-bottom:10px;
+}
+.menu_list img{
+	border:1px solid #d6a77a;
+}
+.info_list{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position
+}
+.info_frame{
+	position:relative;
+	top:80px;
+	left:80px;
+}
+.info_list>li{
+	height:80px;
+}
+.info_list>li>div:nth-of-type(1){
+	width:150px;
+	height:30px;
+	line-height:30px;
+	border:1px solid #d6a77a;
+	color:#d6a77a;
+	margin-right:20px;
+}
+.info_list>li>div:nth-of-type(2){
+	width:350px;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+	color:#999;
+	margin-right:20px;
+}
+.info_list>li>.button{
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	border-radius:5px;
+	color:#fff;
+	background:#d6a77a;
+	cursor:pointer;
+}
+.table{
+	border:1px solid #d6a77a;
+}
+.table th{
+	border:1px solid #d6a77a;
+	border-width:0px 0px 1px 1px;
+}
+.table td{
+	border:1px solid #d6a77a;
+	border-width:0px 0px 1px 1px;
+}
+.btn-group a{
+	background:#d6a77a;
+	margin-right:5px;
+	color:#fff;
+	width:70px;
 }
 </style>
 <script>
-	$(function(){		
-		
-	　　 function trim(str){ //删除左右两端的空格
-	　　     return str.replace(/(^\s*)|(\s*$)/g, "");
-	　　 }
-	　　 function ltrim(str){ //删除左边的空格
-	　　     return str.replace(/(^\s*)/g,"");
-	　　 }
-	　　 function rtrim(str){ //删除右边的空格
-	　　     return str.replace(/(\s*$)/g,"");
-	　　 }		
+$(function(){
+	$(".menu_list").find("img").not(".active").hover(function(){
+		$(this).attr("src",$(this).attr("img2"));
+	},function(){
+		$(this).attr("src",$(this).attr("img1"));
 	})
+})
 </script>
 <div class="center scaffold">
-    <h3>借款基本信息</h3>
-	<hr />
-	
-	<ul class="pager">
-		<li class="previous pull-left">
-			<div class="clearfix" style="float:left;">
-				<label><div class="title pull-left"><b>借款人姓名：</b></div> <div class="content pull-left">{{ loan.borrower.name }}</div><div class="clear"></div></label>
-				{% if loan.borrower.source is defined %}
-				<label><div class="title pull-left"><b>来源：</b></div> <div class="content pull-left">{{ loan.borrower.source }}</div><div class="clear"></div></label>
-				{% endif %}
-				<label><div class="title pull-left"><b>性 别：</b></div> <div class="content pull-left">{% if loan.borrower.sex == 1 %}男{% else %}女{% endif %}</div><div class="clear"></div></label>
-			</div>
-		</li>
-		<li class="previous pull-left">
-			<div class="clearfix" style="float:left;">
-				<label><div class="title pull-left"><b>合同编号：</b></div> <div class="content pull-left">{{ loan.number }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>产品类型：</b></div> <div class="content pull-left">{{ loan.type }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>借款期数：</b></div> <div class="content pull-left">{{ loan.cycle }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>借款用途：</b></div> <div class="content pull-left">{{ loan.purpose }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>借款状态：</b></div> <div class="content pull-left">{{ loan.loan_status }}</div><div class="clear"></div></label>
-				{% if loan.remark is defined %}
-				<label><div class="title pull-left"><b>备注：</b></div> <div class="content pull-left">{{ loan.remark }}</div><div class="clear"></div></label>
-				{% endif %}
-			</div>
-		</li>	
-	</ul>
-	<hr />
-	<h3>抵押物文件列表</h3>
-	<hr />	
-	<div style="text-align:left;">	
-		<ul class="fileList">
-		{% for detail in pawn %}
-			{% if detail.type == 'txt'%}
-				<li>
-					<a href="{{detail.src}}"><img src="/img/icon/file/txt.png" width="100"/></a><br />
-					<a href="{{detail.src}}">{{ detail.title }}</a>
-				</li>
-			{% elseif detail.type == 'xlsx' or detail.type == 'xls' %}
-				<li>
-					<a href="{{detail.src}}"><img src="/img/icon/file/excel.png" width="100"/></a><br />
-					<a href="{{detail.src}}">{{ detail.title }}</a>
-				</li>
-			{% elseif detail.type == 'pdf' %}	
-				<li>
-					<a href="{{detail.src}}"><img src="/img/icon/file/pdf.png" width="100"/></a><br />
-					<a href="{{detail.src}}">{{ detail.title }}</a>
-				</li>	
-			{% elseif detail.type == 'doc' or detail.type == 'docx' %}	
-				<li>
-					<a href="{{detail.src}}"><img src="/img/icon/file/word.png" width="100"/></a><br />
-					<a href="{{detail.src}}">{{ detail.title }}</a>
-				</li>				
-			{% endif %}
-		{% endfor %}
+	<div class="pull-left menu_frame">	
+		<ul class="menu_list">
+			<li>我的信息</li>
+			<li><a href="/personal/index"><img src="/img/personal/info.png" width="148" img1="/img/personal/info.png" img2="/img/personal/info_.png" /></a></li>
 		</ul>
-		<div class="clear"></div>
+		<ul class="menu_list">
+			<li>我的账户</li>
+			<li><a href="#"><img src="/img/personal/account.png" width="148" img1="/img/personal/account.png" img2="/img/personal/account_.png" /></a></li>
+			<li><a href="#"><img src="/img/personal/money.png" width="148" img1="/img/personal/money.png" img2="/img/personal/money_.png" /></a></li>
+		</ul>
+		<ul class="menu_list">
+			<li>我的投资</li>
+			<li><a href="/personal/highchart"><img src="/img/personal/highchart.png" width="148" img1="/img/personal/highchart.png" img2="/img/personal/highchart_.png" /></a></li>
+			<li><a><img class="active" src="/img/personal/log_.png" width="148" img1="/img/personal/log.png" img2="/img/personal/log_.png" /></a></li>
+		</ul>
 	</div>
-	<hr />	
-	<div style="text-align:left;">
-		<table class="table table-bordered table-striped" align="center" style="width:100%;max-width:100%;">
-			<thead>
-				<tr>
-					<th>序号</th>
-					<th>文件标题</th>
-				</tr>
-			</thead>
-			<tbody>
-				{% for index,detail in pawn %}
-				<tr>
-					<td>{{ index+1 }}</td>
-					<td><a href="{{detail.src}}">{{ detail.title }}</a></td>
-				</tr>
+	<div class="pull-left content_frame">
+		<div class="info_frame">	
+			<div style="text-align:left;">
+				<ul class="pager">
+					<li class="previous pull-left">
+						<h4>债权记录</h4>
+					</li>	
+				</ul>
+				{% for debts in page.items %}
+				{% if loop.first %}
+				<table class="table table-bordered table-striped pull-left" align="center" bgcolor="#d6a77a" style="width:85%;max-width:85%;">
+					<thead>
+						<tr>
+							<th>出借编号</th>
+							<th>初始出借金额</th>
+							<th>资金出借及回收方式</th>
+							<th>初始出借日期</th>
+							<th>到期日期</th>
+							<th>账户管理费</th>
+						</tr>
+					</thead>
+				{% endif %}
+					<tbody>
+						<tr>
+							<td style="vertical-align:middle;"><a href="/personal/detail/{{ debts.id }}">{{ debts.number }}</a></td>
+							<td style="vertical-align:middle;">{{ debts.total }}</td>
+							<td style="vertical-align:middle;">{{ debts.type }}</td>
+							<td style="vertical-align:middle;"><?php echo date("Y年m月d日",$debts->invest_time);?></td>
+							<td style="vertical-align:middle;">
+							<?php 
+								if($debts->type == '单季赢'){
+									echo date("Y年m月d日",strtotime("+1 Months -1 days",$debts->invest_time));
+								}elseif($debts->type == '双季赢'){
+									echo date("Y年m月d日",strtotime("+2 Months -1 days",$debts->invest_time));
+								}elseif($debts->type == '一年赢'){
+									echo date("Y年m月d日",strtotime("+1 Years -1 days",$debts->invest_time));
+								}elseif($debts->type == '一年宝'){
+									echo date("Y年m月d日",strtotime("+1 Years -1 days",$debts->invest_time));
+								}elseif($debts->type == '年年赢'){
+									echo date("Y年m月d日",strtotime("+2 Years -1 days",$debts->invest_time));
+								}else{
+									echo "理财类型不明，无法计算时间";
+								}
+							?>
+							</td>
+							<td style="vertical-align:middle;">{{ debts.cost }}</td>
+						</tr>
+					</tbody>
+				{% if loop.last %}
+					<tbody>
+						<tr>
+							<td colspan="9" align="right">
+								<div class="btn-group">
+									{{ link_to("personal/index/" ~ customer.id, ' 首 页', "class": "btn") }}
+									{{ link_to("personal/index/" ~ customer.id ~"?page=" ~ page.before, ' 上一页', "class": "btn ") }}
+									{{ link_to("personal/index/" ~ customer.id ~"?page=" ~ page.next, ' 下一页', "class": "btn") }}
+									{{ link_to("personal/index/" ~ customer.id ~"?page=" ~ page.last, ' 尾 页', "class": "btn") }}
+									<span class="help-inline">{{ page.current }}/{{ page.total_pages }}</span>
+								</div>
+							</td>
+						</tr>
+					<tbody>
+				</table>
+				{% endif %}
+				{% else %}
+					没有债权信息
 				{% endfor %}
-			</tbody>	
-		</table>
+			</div>
+		</div>
 	</div>
+	<div class="clear"></div>
 </div>
-

@@ -1,9 +1,3 @@
-
-<ul class="pager">
-    <li class="previous pull-left">
-        {{ link_to("personal/index/", "&larr; 返回") }}
-    </li>	
-</ul>
 <style>
 label{
 	text-align:left;
@@ -31,6 +25,9 @@ label font{
 .title{
 	line-height:25px;
 }
+h3{
+	font-family:"宋体";
+}
 </style>
 <script>
 	$(function(){
@@ -46,206 +43,294 @@ label font{
 	　　 }		
 	})
 </script>
-<div class="center scaffold">
-    <h3>债权基本信息</h3>
-	<hr />
-	<ul class="pager">
-		<li class="previous pull-left">
-			<div class="clearfix" style="float:left;">
-				<label><div class="title pull-left"><b>入账方式：</b></div> <div class="content pull-left">{{ debts.pay_method }}</div><div class="clear"></div></label>
-				{% if debts.if_received is defined %}
-				<label><div class="title pull-left"><b>是否接收债权文件：</b></div> <div class="content pull-left">{{ debts.if_received }}</div><div class="clear"></div></label>
-				{% endif %}
-				<label><div class="title pull-left"><b>接收债权文件地址：</b></div> <div class="content pull-left">{{ debts.r_address }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>邮 编：</b></div> <div class="content pull-left">{{ debts.r_num }}</div><div class="clear"></div></label>
-				{% if debts.mail_time is defined %}
-				<label><div class="title pull-left"><b>邮寄日期：</b></div> <div class="content pull-left">{{ debts.mail_time }}</div><div class="clear"></div></label>
-				{% endif %}
-				{% if debts.mail_num is defined %}
-				<label><div class="title pull-left"><b>快递单号：</b></div> <div class="content pull-left">{{ debts.mail_num }}</div><div class="clear"></div></label>
-				{% endif %}
-			
-			</div>
-		</li>
-		<li class="previous pull-left">
-			<div class="clearfix" style="float:left;">
-				<label><div class="title pull-left"><b>出借编号：</b></div> <div class="content pull-left">{{ debts.number }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>合同编号：</b></div> <div class="content pull-left">{{ debts.contract_num }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>出借日期：</b></div> <div class="content pull-left"><?php echo date("Y年m月d日",$debts->invest_time);?></div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>产品名称：</b></div> <div class="content pull-left">{{ debts.type }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>出借金额：</b></div> <div class="content pull-left">{{ debts.total }}</div><div class="clear"></div></label>
-				<label><div class="title pull-left"><b>到期日期：</b></div> <div class="content pull-left"><?php echo date("Y年m月d日",$debts->invest_time);?></div><div class="clear"></div></label>
-				{% if debts.if_invest is defined %}
-				<label><div class="title pull-left"><b>续投：</b></div> <div class="content pull-left">{{ debts.if_invest }}</div><div class="clear"></div></label>
-				{% endif %}
-				<label><div class="title pull-left"><b>账单日：</b></div> <div class="content pull-left">每月{{ debts.return_day }}号</div><div class="clear"></div></label>					
-			</div>
-		</li>	
-	</ul>		
 
-	
-	<hr />
-	<h3>债权文件列表</h3>
-	<hr />	
-	<div style="text-align:left;">	
-		<ul class="fileList">
-		{% for detail in debt %}
-			{% if detail.type == 'txt'%}
-				<li>
-					<a target="_blank" href="{{ website }}{{detail.src}}"><img src="/img/icon/file/txt.png" width="100"/></a><br />
-					<a target="_blank" href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
-				</li>
-			{% elseif detail.type == 'xlsx' or detail.type == 'xls' %}
-				<li>
-					<a target="_blank" href="{{ website }}{{detail.src}}"><img src="/img/icon/file/excel.png" width="100"/></a><br />
-					<a target="_blank" href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
-				</li>
-			{% elseif detail.type == 'pdf' %}	
-				<li>
-					<a target="_blank" href="{{ website }}{{detail.src}}"><img src="/img/icon/file/pdf.png" width="100"/></a><br />
-					<a target="_blank" href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
-				</li>	
-			{% elseif detail.type == 'doc' or detail.type == 'docx' %}	
-				<li>
-					<a target="_blank" href="{{ website }}{{detail.src}}"><img src="/img/icon/file/word.png" width="100"/></a><br />
-					<a target="_blank" href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
-				</li>				
-			{% endif %}
-		{% endfor %}
-		</ul>
-		<div class="clear"></div>
-	</div>
-	<hr />	
-	<div style="text-align:left;">
-		<table class="table table-bordered table-striped" align="center" style="width:100%;max-width:100%;">
-			<thead>
-				<tr>
-					<th>序号</th>
-					<th>文件标题</th>
-				</tr>
-			</thead>
-			<tbody>
-				{% for index,detail in debt %}
-				<tr>
-					<td>{{ index+1 }}</td>
-					<td><a target="_blank" href="{{ website }}{{detail.src}}">{{ detail.title }}</a></td>
-				</tr>
-				{% endfor %}
-			</tbody>	
-		</table>
-	</div>
-	<hr />	
-{{ javascript_include('js/highcharts.js') }}
-{{ javascript_include('js/exporting.js') }}	
-{{ javascript_include('js/highcharts-3d.js') }}	
+
+<style>
+.clear{
+	clear:both;
+}
+.gold{
+	color:#d6a77a;
+}
+.grey{
+	color:#707070;
+}
+.menu_frame{
+	width:150px;
+	border:0px solid #000;
+	margin-right:50px;
+	font-family:'微软雅黑';
+}
+.content_frame{
+	width:950px;
+	border:1px solid #d6a77a;
+	min-height:1000px;
+	font-family:'微软雅黑';
+}
+.menu_list{
+	list-style-type:none;
+	margin:0px 0px 50px 0px;
+	padding:0px;
+	border-collapse: separate;
+}
+.menu_list>li:nth-of-type(1){
+	width:148px;
+	color:#d6a77a;
+	height:47px;
+	line-height:47px;
+	font-size:20px;
+	border:1px solid #d6a77a;
+	border-bottom:0px solid #d6a77a;
+}
+.menu_list>li:nth-of-type(2){
+	margin-bottom:10px;
+}
+.menu_list img{
+	border:1px solid #d6a77a;
+}
+.info_list{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position
+}
+.info_frame{
+	position:relative;
+	top:40px;
+	left:80px;
+}
+.info_list>li{
+	height:80px;
+}
+.info_list>li>div:nth-of-type(1){
+	width:150px;
+	height:30px;
+	line-height:30px;
+	border:1px solid #d6a77a;
+	color:#d6a77a;
+	margin-right:20px;
+}
+.info_list>li>div:nth-of-type(2){
+	width:350px;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+	color:#999;
+	margin-right:20px;
+}
+.info_list>li>.button{
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	border-radius:5px;
+	color:#fff;
+	background:#d6a77a;
+	cursor:pointer;
+}
+.previous:nth-of-type(1){
+	width:475px;
+	border:0px solid #000;
+	margin-right:30px;
+}
+.previous:nth-of-type(2){
+	width:295px;
+	border:0px solid #000;
+}
+.previous:nth-of-type(1) .title{
+	width:150px;
+	text-align:right;
+	margin-right:10px;
+}
+.previous:nth-of-type(1) .content{
+	width:300px;
+}
+.previous:nth-of-type(2) .title{
+	width:100px;
+	text-align:right;
+	margin-right:10px;
+}
+.previous:nth-of-type(2) .content{
+	width:170px;
+}
+.backforward{
+	position:relative;
+	left:280px;
+}
+.backforward .btn{
+	background:#d6a77a;
+	color:#fff;
+	border-radius:5px;
+	width:70px;
+}
+</style>
 <script>
-$(function () {
-	Highcharts.setOptions({
-		lang:{
-		   contextButtonTitle:"图表导出菜单",
-		   decimalPoint:".",
-		   downloadJPEG:"下载JPEG图片",
-		   downloadPDF:"下载PDF文件",
-		   downloadPNG:"下载PNG文件",
-		   downloadSVG:"下载SVG文件",
-		   drillUpText:"返回 {series.name}",
-		   loading:"加载中",
-		   months:["一月","二月","三月","四月","五月","六月","七月","八月","九月","十月","十一月","十二月"],
-		   noData:"没有数据",
-		   numericSymbols: [ "千" , "兆" , "G" , "T" , "P" , "E"],
-		   printChart:"打印图表",
-		   resetZoom:"恢复缩放",
-		   resetZoomTitle:"恢复图表",
-		   shortMonths: [ "1月" , "2月" , "3月" , "4月" , "5月" , "6月" , "7月" , "8月" , "9月" , "10月" , "11月" , "12月"],
-		   thousandsSep:",",
-		   weekdays: ["星期一", "星期二", "星期三", "星期三", "星期四", "星期五", "星期六","星期天"]
-		}
-	}); 
-    
-  $('#p_container').highcharts({
-        chart: {
-            type: 'pie',
-            options3d: {
-                enabled: true,
-                alpha: 45,
-                beta: 0
-            }
-        },
-        title: {
-            text: '借款详情表'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                depth: 35,
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.name}'
-                }
-            }
-        },
-        series: [{
-            type: 'pie',
-            name: '借款金额分配',
-            data: [
-			{% for index,detail in match %}
-				[
-					'{{ detail.loan.borrower.name }}',   
-					{{ detail.debt_borrow }},
-				],
-			{% endfor %}
-            ]
-        }]
-    });	
-})	
+$(function(){
+	$(".menu_list").find("img").not(".active").hover(function(){
+		$(this).attr("src",$(this).attr("img2"));
+	},function(){
+		$(this).attr("src",$(this).attr("img1"));
+	})
+})
 </script>
-	<h3>借款人列表</h3>
-	<hr />
-	<div style="text-align:left;">
-		<div >
-			<table class="table table-bordered table-striped" align="center" style="width:100%;max-width:100%;">
-				<thead>
-					<tr>
-						<th>序号</th>
-						<th>借款编号</th>
-						<th>借款人</th>
-						<th>初始借款金额</th>
-						<th>本次转让债权价值</th>
-						<th>借款用途</th>
-						<th>到期还款日</th>
-						<th>剩余还款月数</th>
-						<th>目前状态</th>
-					</tr>
-				</thead>
-				<tbody>
-					{% for index,detail in match %}
-					<tr>
-						<td>{{ index+1 }}</td>
-						<td><a target="_blank" href="/personal/loan/{{ detail.loan.id }}">{{ detail.loan_number }}</a></td>
-						<td>{{ detail.loan.borrower.name }}</td>
-						<td>{{ detail.loan.allowed_money }}</td>
-						<td>{{ detail.debt_borrow }}</td>
-						<td>{{ detail.loan.purpose }}</td>
-						<td>{{ detail.endtime }}</td>
-						<td><?php 
-							if(strtotime($detail->endtime) > time()){
-								echo date("m",strtotime($detail->endtime))-date("m",time());
-							}else{
-								echo 0;
-							}?>
-						</td>
-						<td>{{ detail.status }}</td>
-					</tr>
-					{% endfor %}
-				</tbody>	
-			</table>
-		</div>
-		<div id="p_container" style="height:400px"></div>
-		<div style="clear:both;"></div>	
-	</div>		
-</div>
+<div class="center scaffold">
+	<div class="pull-left menu_frame">
+		
+		<ul class="menu_list">
+			<li>我的信息</li>
+			<li><a><img src="/img/personal/info.png" width="148" img1="/img/personal/info.png" img2="/img/personal/info_.png" /></a></li>
+		</ul>
+		<ul class="menu_list">
+			<li>我的账户</li>
+			<li><a href="#"><img src="/img/personal/account.png" width="148" img1="/img/personal/account.png" img2="/img/personal/account_.png" /></a></li>
+			<li><a href="#"><img src="/img/personal/money.png" width="148" img1="/img/personal/money.png" img2="/img/personal/money_.png" /></a></li>
+		</ul>
+		<ul class="menu_list">
+			<li>我的投资</li>
+			<li><a href="/personal/highchart"><img src="/img/personal/highchart.png" width="148" img1="/img/personal/highchart.png" img2="/img/personal/highchart_.png" /></a></li>
+			<li><a><img  class="active" src="/img/personal/log_.png" width="148" img1="/img/personal/log.png" img2="/img/personal/log_.png" /></a></li>
+		</ul>
+	</div>
+	<div class="pull-left content_frame">
+		<div class="info_frame">	
+			<ul class="pager">
+				<li class="backforward">
+					{{ link_to("personal/loan/", '返 回', "class": "btn") }}
+				</li>
+			</ul>
+			<div class="clear"></div>	
+		
+			<ul class="pager">
+				<h3 style="text-align:left;margin-bottom:20px;">债权基本信息</h3>
+				<li class="previous pull-left" style="text-align:left;">
+					<div class="clearfix" style="float:left;">
+						<label>
+							<span class="title"><b>入账方式：</b></span> 
+							<span class="content">{{ debts.pay_method }}</span>
+						</label>
+						{% if debts.if_received is defined %}
+						<label><span class="title"><b>是否接收债权文件：</b></span> <span class="content">{{ debts.if_received }}</span></label>
+						{% endif %}
+						<label><span class="title"><b>接收债权文件地址：</b></span> <span class="content">{{ debts.r_address }}</span></label>
+						<label><span class="title"><b>邮 编：</b></span> <span class="content">{{ debts.r_num }}</span></label>
+						{% if debts.mail_time is defined %}
+						<label><span class="title"><b>邮寄日期：</b></span> <span class="content">{{ debts.mail_time }}</span></label>
+						{% endif %}
+						{% if debts.mail_num is defined %}
+						<label><span class="title"><b>快递单号：</b></span> <span class="content">{{ debts.mail_num }}</span></label>
+						{% endif %}
+					
+					</div>
+				</li>
+				<li class="previous pull-left">
+					<div class="clearfix" style="float:left;">
+						<label><span class="title"><b>出借编号：</b></span> <span class="content">{{ debts.number }}</span></label>
+						<label><span class="title"><b>合同编号：</b></span> <span class="content">{{ debts.contract_num }}</span></label>
+						<label><span class="title"><b>出借日期：</b></span> <span class="content"><?php echo date("Y年m月d日",$debts->invest_time);?></span></label>
+						<label><span class="title"><b>产品名称：</b></span> <span class="content">{{ debts.type }}</span></label>
+						<label><span class="title"><b>出借金额：</b></span> <span class="content">{{ debts.total }}</span></label>
+						<label><span class="title"><b>到期日期：</b></span> <span class="content"><?php echo date("Y年m月d日",$debts->invest_time);?></span></label>
+						{% if debts.if_invest is defined %}
+						<label><span class="title"><b>续投：</b></span> <span class="content">{{ debts.if_invest }}</span></label>
+						{% endif %}
+						<label><span class="title"><b>账单日：</b></span> <span class="content">每月{{ debts.return_day }}号</span></label>					
+					</div>
+				</li>
+				<div class="clear"></div>
+			</ul>		
 
+ 			<div style="text-align:left;">
+			<h3 style="text-align:left;margin-bottom:20px;">债权文件列表</h3>
+				<ul class="fileList">
+				{% for detail in debt %}
+					{% if detail.type == 'txt'%}
+						<li>
+							<a target="_blank" href="{{ website }}{{detail.src}}"><img src="/img/icon/file/txt.png" width="100"/></a><br />
+							<a target="_blank" href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
+						</li>
+					{% elseif detail.type == 'xlsx' or detail.type == 'xls' %}
+						<li>
+							<a target="_blank" href="{{ website }}{{detail.src}}"><img src="/img/icon/file/excel.png" width="100"/></a><br />
+							<a target="_blank" href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
+						</li>
+					{% elseif detail.type == 'pdf' %}	
+						<li>
+							<a target="_blank" href="{{ website }}{{detail.src}}"><img src="/img/icon/file/pdf.png" width="100"/></a><br />
+							<a target="_blank" href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
+						</li>	
+					{% elseif detail.type == 'doc' or detail.type == 'docx' %}	
+						<li>
+							<a target="_blank" href="{{ website }}{{detail.src}}"><img src="/img/icon/file/word.png" width="100"/></a><br />
+							<a target="_blank" href="{{ website }}{{detail.src}}">{{ detail.title }}</a>
+						</li>				
+					{% endif %}
+				{% endfor %}
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div style="text-align:left;">
+				<table class="table table-bordered table-striped pull-left" align="center" style="width:85%;max-width:85%;">
+					<thead>
+						<tr>
+							<th width="150">序号</th>
+							<th>文件标题</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for index,detail in debt %}
+						<tr>
+							<td>{{ index+1 }}</td>
+							<td><a target="_blank" href="{{ website }}{{detail.src}}">{{ detail.title }}</a></td>
+						</tr>
+						{% endfor %}
+					</tbody>	
+				</table>
+			</div>
+			<div class="clear"></div>
+			
+			<div style="text-align:left;">
+			<h3 style="text-align:left;margin-bottom:20px;">借款人列表</h3>
+				<div>
+					<table class="table table-bordered table-striped pull-left" align="center" style="width:85%;max-width:85%;">
+						<thead>
+							<tr>
+								<th width="30">序号</th>
+								<th width="100">借款编号</th>
+								<th width="70">借款人</th>
+								<th>初始借款金额</th>
+								<th>本次转让债权价值</th>
+								<th>借款用途</th>
+								<th>到期还款日</th>
+								<th>剩余还款月数</th>
+								<th>状态</th>
+							</tr>
+						</thead>
+						<tbody>
+							{% for index,detail in match %}
+							<tr>
+								<td>{{ index+1 }}</td>
+								<td><a target="_blank" href="/personal/loan/{{ detail.loan.id }}">{{ detail.loan_number }}</a></td>
+								<td>{{ detail.loan.borrower.name }}</td>
+								<td>{{ detail.loan.allowed_money }}</td>
+								<td>{{ detail.debt_borrow }}</td>
+								<td>{{ detail.loan.purpose }}</td>
+								<td>{{ detail.endtime }}</td>
+								<td><?php 
+									if(strtotime($detail->endtime) > time()){
+										echo date("m",strtotime($detail->endtime))-date("m",time());
+									}else{
+										echo 0;
+									}?>
+								</td>
+								<td>{{ detail.status }}</td>
+							</tr>
+							{% endfor %}
+						</tbody>	
+					</table>
+				</div>
+				<div class="clear"></div>
+			</div>	
+		</div>
+	</div>
+	<div class="clear"></div>
+</div>
