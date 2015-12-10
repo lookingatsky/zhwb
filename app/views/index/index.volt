@@ -235,20 +235,20 @@ $(function(){
 </style>							
 								<section id="hotAddress" rel="1" iscom="1" style="height:340px; overflow:hidden;">
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
-										<h3>北京银泰财富中心</h3>
+										<h3>北京银泰财富中心(总部)</h3>
 										<p>总部地址: 地址:北京朝阳区建国门外大街2号银泰中心C座46层<br>
-										联系方式: 010-85659999</p>
+										联系方式: 400-077-8000</p>
 									</div>																			
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
 										<h3>上海中欣财富中心</h3>
 										<p>地址: 上海市静安区南京西路1468号4201、4209室<br>
 										联系方式: 021-61279530</p>
 									</div>	
-									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
+									<!-- <div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
 										<h3>上海第二财富中心</h3>
 										<p>地址: 上海市长宁区宣化路300号1211室<br>
 										联系方式: 021-61918207</p>
-									</div>									
+									</div>	 -->								
 									<div class="startAddress" style="zoom: 1; display: block; clear: both; background-color: rgb(255, 255, 255);">
 										<h3>苏州晋合财富中心</h3>
 										<p>地址:江苏省苏州市工业园区华池街88号晋合广场1幢1201室<br>
@@ -780,12 +780,13 @@ $(function(){
 						<li><a href="/situation/index" target="_blank">公司动态</a></li>
 						<li><a href="http://old.zhwbchina.com/zxns/" target="_blank">诚聘英才</a></li>
 						<li><a href="/about/contact" target="_blank">联系我们</a></li>
+						<li><a href="/about/partner" target="_blank">合作伙伴</a></li>
 					</ul>
 					<p>
 						万邦家族财富投资管理（北京）有限公司  版权所有
 						<span>  CopyRight 1999-2023 All Rights Reserved.
 							<span><br> 
-							京<span>ICP</span>备<span>15005678</span>号<span>-1</span>
+							京<span>ICP</span>备<span>15062970</span>号<span>-1</span>
 							</span>
 						</span>
 					</p>

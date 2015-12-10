@@ -53,6 +53,7 @@
 										<!-- <li><a href="/about/partner">合作伙伴<i class="web_skin menu_icon"></i></a></li> -->
 										<li><a href="/about/contact">联系我们<i class="web_skin menu_icon"></i></a></li>
 										<li><a href="/about/culture">公司文化<i class="web_skin menu_icon"></i> </a></li>
+										<li><a href="/about/partner">合作伙伴<i class="web_skin menu_icon"></i> </a></li>
 										<!-- <li><a href="#">万邦荣誉<i class="web_skin menu_icon"></i></a></li>-->
 									</ul>
 								</div>
@@ -118,10 +119,11 @@
 					<li><a href="/situation/index" target="_blank">公司动态</a></li>
 					<li><a href="http://old.zhwbchina.com/zxns/" target="_blank">诚聘英才</a></li>
 					<li><a href="/about/contact" target="_blank">联系我们</a></li>
+					<li><a href="/about/partner" target="_blank">合作伙伴</a></li>
 				</ul>
 				<p>
 					万邦家族财富投资管理（北京）有限公司  版权所有<span>  CopyRight 1999-2023 All Rights Reserved.<span><br> 
-					京<span>ICP</span>备<span>15005678</span>号<span>-1</span>
+					京<span>ICP</span>备<span>15062970</span>号<span>-1</span>
 					</span>
 					</span>
 				</p>

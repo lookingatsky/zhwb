@@ -172,5 +172,6 @@ section div.formbox ul li{margin:0 3px 15px 3px;}
 .hcwl{ background-position:-485px -9px;}
 .zxxc{ background-position:-607px -9px; }
 
-.hezuo_box table td{border:1px solid #cbcbcb;width:120px;height:100px; text-align:center;font-size:16px; font-family:"微软雅黑";color:#000; font-weight:bold;letter-spacing:3px;}
+.hezuo_box table td{height:100px; text-align:left;font-size:16px; font-family:"微软雅黑";color:#000; font-weight:bold;letter-spacing:3px;}
+.hezuo_box table td img{text-align:center;}
 .new_bg{ background:url(./../../img/index/zhici_bg.jpg) no-repeat left top;border:1px solid #dbdbd9;padding:50px 43px 45px 170px;}

@@ -20,6 +20,7 @@
 						<i class="web_skin aside_arrow"></i>
 					</a>
 				</li>
+				<li style="border-bottom: 0px none;" class="none_line"><a href="/about/partner" class="clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li>
 			</ul>
 			<div class="clearfix aside_tel_aboutbg">
 				<div class="aside_telicon mt10 fl"><img src="/../../img/index/page_tel_03.gif"></div>
@@ -38,13 +39,13 @@
           	<li class="clearfix">
             	<span class="fl number_bg web_skin">01</span>
                 <dl class="fl lianxi_text">
-                	<dt>北京银泰财富中心</dt>
-                    <dd>地址:北京朝阳区建国门外大街2号银泰中心C座46层<br>联系方式: 010-85659999</dd>
+                	<dt>北京银泰财富中心(总部)</dt>
+                    <dd>地址:北京朝阳区建国门外大街2号银泰中心C座46层<br>联系方式: 400-077-8000</dd>
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/beijing.png" title="北京银泰财富中心" alt="北京银泰财富中心"></div>
             </li>  
 			<li class="clearfix">
-            	<span class="fl number_bg web_skin">03</span>
+            	<span class="fl number_bg web_skin">02</span>
                 <dl class="fl lianxi_text">
                 	<dt>上海中欣财富中心</dt>
                     <dd>地址:上海市静安区南京西路1468号中欣大厦4201室
@@ -52,7 +53,7 @@
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/shanghai.png" title="上海中欣财富中心" alt="上海中欣财富中心"></div>
             </li>  
-			<li class="clearfix">
+<!-- 			<li class="clearfix">
             	<span class="fl number_bg web_skin">04</span>
                 <dl class="fl lianxi_text">
                 	<dt>上海第二财富中心</dt>
@@ -60,9 +61,9 @@
 					<br>联系方式:021-61918207</dd>
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/shanghai.png" title="上海第二财富中心" alt="上海第二财富中心"></div>
-            </li>  
+            </li>   -->
             <li class="clearfix">
-            	<span class="fl number_bg web_skin">05</span>
+            	<span class="fl number_bg web_skin">03</span>
                 <dl class="fl lianxi_text">
                 	<dt>广州白云财富中心</dt>
                     <dd>地址: 广东省广州市越秀区三元里山西大厦3号楼3220室
@@ -71,7 +72,7 @@
                 <div class="fr mapbox"><img src="/../../img/index/map/guangzhou.png" title="广州白云财富中心" alt="广州白云财富中心"></div>
             </li> 
             <li class="clearfix">
-            	<span class="fl number_bg web_skin">06</span>
+            	<span class="fl number_bg web_skin">04</span>
                 <dl class="fl lianxi_text">
                 	<dt>苏州晋合财富中心</dt>
                     <dd>地址: 江苏省苏州市工业园区华池街88号晋合广场1幢1201室<br>联系方式: 0512-89181688</dd>
@@ -88,7 +89,7 @@
                 <div class="fr mapbox"><img src="/../../img/index/map/suzhou.png" title="苏州第二财富中心" alt="苏州第二财富中心"></div>
             </li> -->
            <li class="clearfix">
-            	<span class="fl number_bg web_skin">08</span>
+            	<span class="fl number_bg web_skin">05</span>
                 <dl class="fl lianxi_text">
                 	<dt>南京新地财富中心</dt>
                     <dd>地址: 江苏省南京市建邺区庐山路188号南京新地中心53层5303室<br>联系方式: 025-86918866</dd>
@@ -96,7 +97,7 @@
                 <div class="fr mapbox"><img src="/../../img/index/map/nanjing.png" title="南京新地财富中心" alt="南京新地财富中心"></div>
             </li>
            <li class="clearfix">
-            	<span class="fl number_bg web_skin">09</span>
+            	<span class="fl number_bg web_skin">06</span>
                 <dl class="fl lianxi_text">
                 	<dt>杭州迪凯财富中心</dt>
                     <dd>地址: 浙江省杭州市江干区丹桂街19号迪凯国际中心3701<br>联系方式: 0571-26209599</dd>

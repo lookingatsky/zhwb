@@ -10,6 +10,7 @@
 				<!-- <li><a href="javascript:void(0)" class=" aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li> -->
 				<!-- <li><a href="#" class="clearfix"><span class="fl">员工风采</span><i class="web_skin aside_arrow"></i></a></li>-->
 				<li style="border-bottom: 0px none;" class="none_line"><a href="/about/contact" class="clearfix"><span style="margin-left: 0px;" class="fl">联系我们</span><i class="web_skin aside_arrow"></i></a></li>
+				<li style="border-bottom: 0px none;" class="none_line"><a href="javascript:void(0)" class="aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li>
 			</ul>
 			<div class="clearfix aside_tel_aboutbg">
 				<div class="aside_telicon mt10 fl"><img src="/../../img/index/page_tel_03.gif"></div>
@@ -28,12 +29,26 @@
 				<table border="0" cellpadding="0" cellspacing="0" width="100%">
 					<tbody>
 						<tr>
-							<td><i class="hezuo_icon xingye"></i>兴业信托</td>
-							<td><i class="hezuo_icon zt"></i>中泰信托</td>
-							<td><i class="hezuo_icon hx"></i>华鑫信托</td>
-							<td><i class="hezuo_icon sc"></i>四川信托</td>
-							<td><i class="hezuo_icon zh"></i>中航信托</td>
-							<td><i class="hezuo_icon jianxin"></i>建信信托</td>
+							<td width="100"><img src="/../img/partner/dingyuan.png" height="50" /></td>
+							<td width="20"></td>
+							<td><a href="/news/index/39">鼎苑</a></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><img src="/../img/partner/jinghui.png" height="50" /></td>
+							<td width="20"></td>
+							<td><a href="/news/index/39">景汇Vista</a></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><img src="/../img/partner/jialianwei.png" height="50" /></td>
+							<td width="20"></td>
+							<td><a href="/news/index/39">加连威老道港式火锅</a></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="2"><img src="/../img/partner/yangguang.jpg" height="50" /></td>
+							<td><a href="/news/index/35">阳光保险</a></td>
 						</tr>
 					</tbody>
 				</table>

@@ -115,7 +115,13 @@ class PersonalController extends ControllerBase
 			$this->view->debt = $debt;
 			$this->view->website = FILEWEBNAME ;
 			$match = Match::find("debt_number  = '".$debts->number ."'");
-			$this->view->match = $match;			
+			$this->view->match = $match;
+			
+			foreach($match as $key=>$val){
+				
+			}
+			
+			fb($match->toArray());
 		}else{
 			$this->flash->error("没有找到对应的债权");
 			return $this->forward("debt/index");

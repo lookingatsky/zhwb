@@ -10,6 +10,7 @@
 				<!-- <li><a href="/about/partner" class="clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li> -->
 				<!-- <li><a href="#" class="clearfix"><span class="fl">员工风采</span><i class="web_skin aside_arrow"></i></a></li>-->
 				<li style="border-bottom: 0px none;" class="none_line"><a href="/about/contact" class="clearfix"><span style="margin-left: 0px;" class="fl">联系我们</span><i class="web_skin aside_arrow"></i></a></li>
+				<li style="border-bottom: 0px none;" class="none_line"><a href="/about/partner" class="clearfix"><span style="margin-left: 0px;" class="fl">合作伙伴</span><i class="web_skin aside_arrow"></i></a></li>
 			</ul>
 			<div class="clearfix aside_tel_aboutbg">
 				<div class="aside_telicon mt10 fl"><img src="/../../img/index/page_tel_03.gif"></div>

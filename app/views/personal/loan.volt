@@ -178,10 +178,10 @@ $(function(){
 						<tr>
 							<td colspan="9" align="right">
 								<div class="btn-group">
-									{{ link_to("personal/index/" ~ customer.id, ' 首 页', "class": "btn") }}
-									{{ link_to("personal/index/" ~ customer.id ~"?page=" ~ page.before, ' 上一页', "class": "btn ") }}
-									{{ link_to("personal/index/" ~ customer.id ~"?page=" ~ page.next, ' 下一页', "class": "btn") }}
-									{{ link_to("personal/index/" ~ customer.id ~"?page=" ~ page.last, ' 尾 页', "class": "btn") }}
+									{{ link_to("personal/loan/" ~ customer.id, ' 首 页', "class": "btn") }}
+									{{ link_to("personal/loan/" ~ customer.id ~"?page=" ~ page.before, ' 上一页', "class": "btn ") }}
+									{{ link_to("personal/loan/" ~ customer.id ~"?page=" ~ page.next, ' 下一页', "class": "btn") }}
+									{{ link_to("personal/loan/" ~ customer.id ~"?page=" ~ page.last, ' 尾 页', "class": "btn") }}
 									<span class="help-inline">{{ page.current }}/{{ page.total_pages }}</span>
 								</div>
 							</td>

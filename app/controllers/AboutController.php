@@ -24,4 +24,5 @@ class AboutController extends ControllerBase
 	public function contactAction(){
 		
 	}
+	
 }

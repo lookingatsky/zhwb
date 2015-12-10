@@ -57,6 +57,7 @@
 											<!-- <li><a href="/about/partner">合作伙伴<i class="web_skin menu_icon"></i></a></li> -->
 											<li><a href="/about/contact">联系我们<i class="web_skin menu_icon"></i></a></li>
 											<li><a href="/about/culture">公司文化<i class="web_skin menu_icon"></i> </a></li>
+											<li><a href="/about/partner">合作伙伴<i class="web_skin menu_icon"></i> </a></li>
 											<!-- <li><a href="#">万邦荣誉<i class="web_skin menu_icon"></i></a></li>-->
 										</ul>
 									</div>

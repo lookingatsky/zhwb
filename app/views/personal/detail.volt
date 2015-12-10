@@ -163,6 +163,17 @@ h3{
 	border-radius:5px;
 	width:70px;
 }
+.table{
+	border:1px solid #d6a77a;
+}
+.table th{
+	border:1px solid #d6a77a;
+	border-width:0px 0px 1px 1px;
+}
+.table td{
+	border:1px solid #d6a77a;
+	border-width:0px 0px 1px 1px;
+}
 </style>
 <script>
 $(function(){
@@ -171,11 +182,14 @@ $(function(){
 	},function(){
 		$(this).attr("src",$(this).attr("img1"));
 	})
+	
+	$(".button").click(function(){
+		$("."+$(this).attr("childclass")).toggle();
+	})
 })
 </script>
 <div class="center scaffold">
 	<div class="pull-left menu_frame">
-		
 		<ul class="menu_list">
 			<li>我的信息</li>
 			<li><a><img src="/img/personal/info.png" width="148" img1="/img/personal/info.png" img2="/img/personal/info_.png" /></a></li>
@@ -191,6 +205,7 @@ $(function(){
 			<li><a><img  class="active" src="/img/personal/log_.png" width="148" img1="/img/personal/log.png" img2="/img/personal/log_.png" /></a></li>
 		</ul>
 	</div>
+	
 	<div class="pull-left content_frame">
 		<div class="info_frame">	
 			<ul class="pager">
@@ -239,7 +254,7 @@ $(function(){
 				<div class="clear"></div>
 			</ul>		
 
- 			<div style="text-align:left;">
+ 			<div style="text-align:left;margin-bottom:50px;">
 			<h3 style="text-align:left;margin-bottom:20px;">债权文件列表</h3>
 				<ul class="fileList">
 				{% for detail in debt %}
@@ -268,24 +283,7 @@ $(function(){
 				</ul>
 				<div class="clear"></div>
 			</div>
-			<div style="text-align:left;">
-				<table class="table table-bordered table-striped pull-left" align="center" style="width:85%;max-width:85%;">
-					<thead>
-						<tr>
-							<th width="150">序号</th>
-							<th>文件标题</th>
-						</tr>
-					</thead>
-					<tbody>
-						{% for index,detail in debt %}
-						<tr>
-							<td>{{ index+1 }}</td>
-							<td><a target="_blank" href="{{ website }}{{detail.src}}">{{ detail.title }}</a></td>
-						</tr>
-						{% endfor %}
-					</tbody>	
-				</table>
-			</div>
+
 			<div class="clear"></div>
 			
 			<div style="text-align:left;">
@@ -307,9 +305,9 @@ $(function(){
 						</thead>
 						<tbody>
 							{% for index,detail in match %}
-							<tr>
+							<tr class="button" childclass="show{{ index }}" style="cursor:pointer;">
 								<td>{{ index+1 }}</td>
-								<td><a target="_blank" href="/personal/loan/{{ detail.loan.id }}">{{ detail.loan_number }}</a></td>
+								<td><!-- <a target="_blank" href="/personal/loan/{{ detail.loan.id }}"> -->{{ detail.loan_number }}<!-- </a> --></td>
 								<td>{{ detail.loan.borrower.name }}</td>
 								<td>{{ detail.loan.allowed_money }}</td>
 								<td>{{ detail.debt_borrow }}</td>
@@ -324,12 +322,20 @@ $(function(){
 								</td>
 								<td>{{ detail.status }}</td>
 							</tr>
+							<tr class="show{{ index }}" style="display:none;">
+								<td colspan="9" height="100" style="margin:0;padding:0px;">
+									<div style="background:#d6a77a;color:#fff;width:100%;height:100%;">
+										
+									</div>
+								</td>
+							</tr>
 							{% endfor %}
 						</tbody>	
 					</table>
 				</div>
 				<div class="clear"></div>
 			</div>	
+			
 		</div>
 	</div>
 	<div class="clear"></div>
