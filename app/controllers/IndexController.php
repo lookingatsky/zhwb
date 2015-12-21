@@ -41,6 +41,10 @@ class IndexController extends ControllerBase
 		$this->view->setVar("news2",$news2);
 		$this->view->setVar("news3",$news3);
 		$this->view->setVar("news4",$news4);
+		
+		
+		$userInfo = $this->session->get('auth');
+		$this->view->userInfo = $userInfo;
     }
 
 	public function verifycodeAction(){

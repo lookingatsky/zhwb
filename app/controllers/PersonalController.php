@@ -11,7 +11,7 @@ class PersonalController extends ControllerBase
 {
     public function initialize()
     {
-        $this->view->setTemplateAfter('main');
+        //$this->view->setTemplateAfter('main');
         Tag::setTitle('个人信息');
         parent::initialize();
     }
@@ -115,16 +115,68 @@ class PersonalController extends ControllerBase
 			$this->view->debt = $debt;
 			$this->view->website = FILEWEBNAME ;
 			$match = Match::find("debt_number  = '".$debts->number ."'");
-			$this->view->match = $match;
 			
 			foreach($match as $key=>$val){
-				
+				$pawn = array();
+				if($val->loan->id != ''){
+					$pawn = Pawn::find("bid = ".$val->loan->id);
+					$pawn = $pawn->toArray();
+				}
+				$pawns[] = $pawn;
 			}
-			
-			fb($match->toArray());
+			$this->view->pawns = $pawns;
+			$this->view->match = $match;
 		}else{
 			$this->flash->error("没有找到对应的债权");
 			return $this->forward("debt/index");
 		}	
-	}	
+	}
+	
+	public function changeinfoAction(){
+		$this->view->disable();
+		$auth = $this->session->get("auth");
+		$id = $auth['cid'];
+		$searchParams = array();
+		$searchParams = array("id = '".$id."'");			
+		$customer = Customer::findFirst($searchParams);
+		
+		$type = $this->request->getPost('type');
+		$val = $this->request->getPost('val');
+		if($type == 'cellphone'){
+			$customer->cellphone = $val;
+			if($customer->save()){
+				echo true;
+			}else{
+				echo false;
+			}
+		}
+		
+		if($type == 'email'){
+			$customer->email = $val;
+			if($customer->save()){
+				echo true;
+			}else{
+				echo false;
+			}
+		}
+
+		if($type == 'address'){
+			$customer->address = $val;
+			if($customer->save()){
+				echo true;
+			}else{
+				echo false;
+			}
+		}		
+	}
+	
+	
+	public function infosAction(){
+		
+	}
+	
+	public function moneyAction(){
+			
+	}
+	
 }

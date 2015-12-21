@@ -289,7 +289,7 @@ $(function(){
 			<div style="text-align:left;">
 			<h3 style="text-align:left;margin-bottom:20px;">借款人列表</h3>
 				<div>
-					<table class="table table-bordered table-striped pull-left" align="center" style="width:85%;max-width:85%;">
+					<table class="table table-bordered table-striped pull-left" align="center" style="width:85%;max-width:85%;margin-bottom:50px;">
 						<thead>
 							<tr>
 								<th width="30">序号</th>
@@ -323,9 +323,44 @@ $(function(){
 								<td>{{ detail.status }}</td>
 							</tr>
 							<tr class="show{{ index }}" style="display:none;">
-								<td colspan="9" height="100" style="margin:0;padding:0px;">
+								<td colspan="9" height="150" style="margin:0;padding:0px;">
 									<div style="background:#d6a77a;color:#fff;width:100%;height:100%;">
-										
+										<div class="infoFrame" style="width:90%;height:90%;position:relative;top:10px;left:10px;">
+<style>
+.infoFrame em{
+	margin-left:10px;
+}
+.infoFrame a{
+	line-height:30px;
+	padding:0 10px;
+	color:#d6a77a;
+	background:#fff;
+	margin-left:5px;
+}
+.infoFrame a:hover{
+	text-decoration:none;
+}
+</style>										
+											<h4 style="line-height:30px;">借款基本信息：</h4>
+													<em>借款人姓名：{{ detail.loan.borrower.name }}</em>
+													<em>性别：{% if detail.loan.borrower.sex is 0 %}女{% else %}男{% endif %}</em>
+													<em>合同编号：{{ detail.loan.number }}</em>
+													<em>产品类型：{{ detail.loan.type }}</em>
+													<em>产品期数：{{ detail.loan.cycle }}</em>
+													<em>借款状态：{{ detail.loan.loan_status }}</em>
+											<h4 style="line-height:30px;">抵押物文件列表：</h4>
+											<div>
+												{% for pawnDetail in pawns[index] %}
+													
+													<?php if($pawnDetail != '' && !empty($pawnDetail) ){ ?>
+														<em>文件名称：<?php echo $pawnDetail['title']; ?></em>
+														<a href="{{ website }}<?php echo $pawnDetail['src']; ?>">下载</a>
+													<?php }else{ ?>
+														<em>暂无数据</em>
+													<?php } ?>
+												{% endfor %}
+											</div>
+										</div>
 									</div>
 								</td>
 							</tr>

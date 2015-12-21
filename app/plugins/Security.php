@@ -46,7 +46,7 @@ class Security extends Plugin
 			
 			////
 			$userResources = array(
-				'personal' => array('index', 'detail','loan')
+				'personal' => array('index', 'highchart','loan','money','infos')
 			);
 			foreach ($userResources as $resource => $actions) {
 				$acl->addResource(new Phalcon\Acl\Resource($resource), $actions);

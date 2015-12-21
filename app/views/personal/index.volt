@@ -262,6 +262,17 @@ $(function(){
 	background:#d6a77a;
 	cursor:pointer;
 }
+.info_list>li>.submit{
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	border-radius:5px;
+	color:#fff;
+	background:#d6a77a;
+	cursor:pointer;
+	display:none;
+}
 </style>
 <script>
 $(function(){
@@ -270,6 +281,41 @@ $(function(){
 	},function(){
 		$(this).attr("src",$(this).attr("img1"));
 	})
+	
+	$(".button").click(function(){
+		$(this).parent().find(".showFrame").hide();
+		$(this).parent().find(".inputFrame").show();
+		$(this).parent().find(".inputFrame>input").val($(this).parent().find(".showFrame").html());
+		$(this).hide();
+		$(this).parent().find(".submit").show();
+	})
+	
+	$(".submit").click(function(){
+		$(this).hide();
+		$(this).parent().find(".button").show();
+		
+		var inputDom = $(this).parent().find(".inputFrame");
+		var changeDom = $(this).parent().find(".showFrame");
+		
+		var type = $(this).parent().find(".inputFrame>input").attr("name");
+		var val = $(this).parent().find(".inputFrame>input").val();
+		
+		$.post('/personal/changeinfo',{
+			type:type,
+			val:val
+		},function(data){
+			if(data == 1){
+				alert("修改成功");
+				changeDom.show();
+				inputDom.hide();
+				changeDom.html(val);
+			}else{
+				changeDom.show();
+				inputDom.hide();
+				alert("修改失败");
+			}
+		})
+	})	
 })
 </script>
 <div class="center scaffold">
@@ -280,8 +326,8 @@ $(function(){
 		</ul>
 		<ul class="menu_list">
 			<li>我的账户</li>
-			<li><a href="#"><img src="/img/personal/account.png" width="148" img1="/img/personal/account.png" img2="/img/personal/account_.png" /></a></li>
-			<li><a href="#"><img src="/img/personal/money.png" width="148" img1="/img/personal/money.png" img2="/img/personal/money_.png" /></a></li>
+			<li><a href="/personal/infos"><img src="/img/personal/account.png" width="148" img1="/img/personal/account.png" img2="/img/personal/account_.png" /></a></li>
+			<li><a href="/personal/money"><img src="/img/personal/money.png" width="148" img1="/img/personal/money.png" img2="/img/personal/money_.png" /></a></li>
 		</ul>
 		<ul class="menu_list">
 			<li>我的投资</li>
@@ -289,6 +335,20 @@ $(function(){
 			<li><a href="/personal/loan"><img src="/img/personal/log.png" width="148" img1="/img/personal/log.png" img2="/img/personal/log_.png" /></a></li>
 		</ul>
 	</div>
+<style>
+.inputFrame{
+	display:none;
+}
+.inputFrame input{
+	border:none;
+	width:350px;
+	height:30px;
+	line-height:30px;
+	text-align:left;
+	color:#999;
+	margin-right:10px;	
+}
+</style>	
 	<div class="pull-left content_frame">
 		<div class="info_frame">	
 			<ul class="info_list">
@@ -304,20 +364,26 @@ $(function(){
 				</li>
 				<li>
 					<div class="pull-left">手机号码</div>
-					<div class="pull-left">{{ customer.cellphone }}</div>		
+					<div class="pull-left showFrame">{{ customer.cellphone }}</div>
+					<div class="pull-left inputFrame"><input type="text" name="cellphone" value="{{ customer.cellphone }}" /></div>		
 					<div class="pull-left button">修 改</div>
+					<div class="pull-left submit">保 存</div>
 					<div class="clear"></div>
 				</li>
 				<li>
 					<div class="pull-left">邮箱</div>
-					<div class="pull-left">{{ customer.email }}</div>		
+					<div class="pull-left showFrame">{{ customer.email }}</div>		
+					<div class="pull-left inputFrame"><input type="text" name="email" value="{{ customer.email }}" /></div>		
 					<div class="pull-left button">修 改</div>
+					<div class="pull-left submit">保 存</div>
 					<div class="clear"></div>
 				</li>
 				<li>
 					<div class="pull-left">邮寄地址</div>
-					<div class="pull-left">{{ customer.address }}</div>		
+					<div class="pull-left showFrame">{{ customer.address }}</div>	
+					<div class="pull-left inputFrame"><input type="text" name="address" value="{{ customer.address }}" /></div>
 					<div class="pull-left button">修 改</div>
+					<div class="pull-left submit">保 存</div>
 					<div class="clear"></div>
 				</li>
 			</ul>

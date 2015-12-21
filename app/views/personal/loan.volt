@@ -116,8 +116,8 @@ $(function(){
 		</ul>
 		<ul class="menu_list">
 			<li>我的账户</li>
-			<li><a href="#"><img src="/img/personal/account.png" width="148" img1="/img/personal/account.png" img2="/img/personal/account_.png" /></a></li>
-			<li><a href="#"><img src="/img/personal/money.png" width="148" img1="/img/personal/money.png" img2="/img/personal/money_.png" /></a></li>
+			<li><a href="/personal/infos"><img src="/img/personal/account.png" width="148" img1="/img/personal/account.png" img2="/img/personal/account_.png" /></a></li>
+			<li><a href="/personal/money"><img src="/img/personal/money.png" width="148" img1="/img/personal/money.png" img2="/img/personal/money_.png" /></a></li>
 		</ul>
 		<ul class="menu_list">
 			<li>我的投资</li>

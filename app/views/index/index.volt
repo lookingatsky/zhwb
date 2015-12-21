@@ -330,6 +330,10 @@ $(function(){
 				<div class="user_loging">
 					<h2 style="font-size:16px;">VIP账户登录</h2>
 					<div class="formbox">
+						{% if userInfo is defined %}
+						欢迎你 {{ userInfo['name'] }}
+						<a href="/personal/index" style="color:darkred;">点击返回系统</a>
+						{% else %}
 						<form class="loginForm" action="/session/start" method="post">
 							<table width="100" border="0" cellspacing="0" cellpadding="0">
 								<tbody>
@@ -354,7 +358,8 @@ $(function(){
 								<a class="loging_btn_ web_skin ml50 fl">登&nbsp;&nbsp;录</a>
 								<!-- <a href="javascript:void(0)" class="fr mt5 mr18 help_btn">在线帮助</a> -->
 							</div>
-						</form>
+						</form>							
+						{% endif %}
 					</div>
 				</div>
 
