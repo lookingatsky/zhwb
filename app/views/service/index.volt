@@ -145,7 +145,9 @@ style.firebugResetStyles {
 	<section class="about_aside">
 		<h2 class="page_title title_pl18">产品与服务</h2>
 		<ul class="aside_listbox">
+            <!--
 			<li><a href="javascript:void(0)" class="aside_btn_on clearfix"><span style="margin-left: 0px;" class="fl">公司产品</span><i class="web_skin aside_arrow"></i></a></li>
+            <!--
 			<!-- <li><a href="/service/infos" class="clearfix"><span style="margin-left: 0px;" class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li> -->
 			<li><a href="/service/method" class=" clearfix"><span style="margin-left: 0px;" class="fl">服务方式</span><i class="web_skin aside_arrow"></i></a></li>
 			<li style="border-bottom: 0px none;"><a href="/service/mode" class="clearfix"><span style="margin-left: 0px;" class="fl">服务理念</span><i class="web_skin aside_arrow"></i></a></li>
