@@ -432,8 +432,9 @@ style.firebugResetStyles {
 
 
     </aside>
-  
-    <div class="about_conter fr mt30">
+
+ <!--
+   <div class="about_conter fr mt30">
     <section class=" rel">
      <h2 class="title_text ">公司产品</h2>
      <p class="mbx">当前位置：首页  &gt; 产品与服务 &gt; 公司产品</p>
@@ -459,8 +460,8 @@ style.firebugResetStyles {
                     </dl>
                     <p class="in_btnbox"><a href="/service/product/{{ product.id }}" target="_blank">进入详情</a></p>
                 </li>
-                {% endfor %}
-<!--               	<li>
+                {% endfor %}             
+               	<li>
                 	<h2><span>产品名称：</span>XXXXXXXXXX</h2>
                     <h2><span>产品类型：</span>XXXXXXXXXX</h2>
                     
@@ -500,7 +501,8 @@ style.firebugResetStyles {
                         <dd class="jianjie fr">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</dd>
                     </dl>
                     <p class="in_btnbox"><a href="http://www.chyjr.com/site/web/productDetail.shtml?pid=82" target="_blank">进入详情</a></p>
-                </li> -->
+                </li> 
+-->
                 
               </ul>
             </div>
