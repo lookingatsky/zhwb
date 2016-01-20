@@ -47,11 +47,11 @@ $(function(){
 								<img src="/../../img/index/index/index3.png" alt="">
 							</a>
 						</div>              	
-  						<div style="width:714px;">
+/*  						<div style="width:714px;">
 							<a href="/news/index/34" target="_blank">
 								<img src="/../../img/index/index/index6.png" alt="">
 							</a>
-						</div>      	
+						</div> */     	
 						<div style="width:714px;">
 							<a href="/news/index/19" target="_blank">
 								<img src="/../../img/index/index/index5.png" alt="">
