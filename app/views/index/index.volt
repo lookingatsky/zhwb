@@ -152,7 +152,7 @@ $(function(){
 						</li> -->
 					</ul>
 				</section>
-				<!--热销业务-->
+				<!-- 热销业务
 				<section class="hot_yewu mt20">
 					<dl>
 						<dt class="clearfix">
@@ -188,7 +188,7 @@ $(function(){
 							</section>
 						</dd>
 					</dl>
-				</section>
+				</section> -->
 				<!-- 活动市场分支机构-->
 				<section class="clearfix mt20">
 					<div class="fl bazaar">
