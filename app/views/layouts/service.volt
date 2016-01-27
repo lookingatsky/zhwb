@@ -66,7 +66,7 @@
 							</li>
 							<li class="menu_line">|</li>
 							<li class="rel cpfu_menubtn">
-								<a style="" href="/service/index" class="menu_on">产品与服务</a>
+								<a style="" href="/service/index" class="menu_on">公司服务</a>
 								<div class="menulist">
 									<ul class="clearfix ulbox">
 										<li><a href="/service/index">公司产品<i class="web_skin menu_icon"></i></a></li>

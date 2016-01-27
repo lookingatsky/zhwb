@@ -75,7 +75,7 @@
 								</li>
 								<li class="menu_line">|</li>
 								<li class="rel cpfu_menubtn">
-									<a href="/service/index">产品与服务</a>
+									<a href="/service/index">公司服务</a>
 									<div class="menulist">
 										<ul class="clearfix ulbox">
 											
