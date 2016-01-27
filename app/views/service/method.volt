@@ -22,7 +22,7 @@
             <li>
                 	<a href="javascript:void('0')" id="yuyue">
                     	<img src="/../../img/index/tools_icon.jpg" alt="理财案例">
-                        <span>预约理财师</span>
+                        <span>预约理财师 </span>
                     </a>
                 </li>
                 <li>
