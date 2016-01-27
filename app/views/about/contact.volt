@@ -74,7 +74,7 @@
             </li> 
             -->
             <li class="clearfix">
-            	<span class="fl number_bg web_skin">04</span>
+            	<span class="fl number_bg web_skin">03</span>
                 <dl class="fl lianxi_text">
                 	<dt>苏州晋合财富中心</dt>
                     <dd>地址: 江苏省苏州市工业园区华池街88号晋合广场1幢1201室<br>联系方式: 0512-89181688</dd>
@@ -91,7 +91,7 @@
                 <div class="fr mapbox"><img src="/../../img/index/map/suzhou.png" title="苏州第二财富中心" alt="苏州第二财富中心"></div>
             </li> -->
            <li class="clearfix">
-            	<span class="fl number_bg web_skin">05</span>
+            	<span class="fl number_bg web_skin">04</span>
                 <dl class="fl lianxi_text">
                 	<dt>南京新地财富中心</dt>
                     <dd>地址: 江苏省南京市建邺区庐山路188号南京新地中心53层5303室<br>联系方式: 025-86918866</dd>
@@ -99,7 +99,7 @@
                 <div class="fr mapbox"><img src="/../../img/index/map/nanjing.png" title="南京新地财富中心" alt="南京新地财富中心"></div>
             </li>
            <li class="clearfix">
-            	<span class="fl number_bg web_skin">06</span>
+            	<span class="fl number_bg web_skin">05</span>
                 <dl class="fl lianxi_text">
                 	<dt>杭州迪凯财富中心</dt>
                     <dd>地址: 浙江省杭州市江干区丹桂街19号迪凯国际中心3701<br>联系方式: 0571-26209599</dd>
