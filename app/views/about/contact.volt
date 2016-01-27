@@ -62,6 +62,7 @@
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/shanghai.png" title="上海第二财富中心" alt="上海第二财富中心"></div>
             </li>   -->
+            <--
             <li class="clearfix">
             	<span class="fl number_bg web_skin">03</span>
                 <dl class="fl lianxi_text">
@@ -71,6 +72,7 @@
                 </dl>
                 <div class="fr mapbox"><img src="/../../img/index/map/guangzhou.png" title="广州白云财富中心" alt="广州白云财富中心"></div>
             </li> 
+            -->
             <li class="clearfix">
             	<span class="fl number_bg web_skin">04</span>
                 <dl class="fl lianxi_text">
