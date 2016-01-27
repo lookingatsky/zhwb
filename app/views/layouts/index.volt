@@ -78,9 +78,9 @@
 									<a href="/service/index">公司服务</a>
 									<div class="menulist">
 										<ul class="clearfix ulbox">
-											
+											<!--
 											<li><a href="/service/index">公司产品<i class="web_skin menu_icon"></i></a></li>
-
+											-->
 											<!-- <li><a href="/service/infos">信息披露<i class="web_skin menu_icon"></i></a></li> -->
 											<li><a href="/service/method">服务方式<i class="web_skin menu_icon"></i></a></li>
 											<li><a href="/service/mode">服务理念<i class="web_skin menu_icon"></i></a></li>
