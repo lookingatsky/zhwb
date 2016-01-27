@@ -1,10 +1,12 @@
   <section class="conterbox clearfix">
-    <div class="page_baner mt25"><img src="/../../img/index/products_baner.jpg" alt="关于我们产品与服务"></div>
+    <div class="page_baner mt25"><img src="/../../img/index/products_baner.jpg" alt="关于我们公司服务"></div>
  	<aside class="fl mt30">
         <section class="about_aside">
-    	<h2 class="page_title title_pl18">产品与服务</h2>
+    	<h2 class="page_title title_pl18">公司服务</h2>
         <ul class="aside_listbox">
+        <!--
         <li><a href="/service/index" class=" clearfix"><span class="fl">公司产品</span><i class="web_skin aside_arrow"></i></a></li>
+        -->
         <!-- <li><a href="/service/infos" class="clearfix"><span class="fl">信息披露</span><i class="web_skin aside_arrow"></i></a></li> -->
         <li><a href="javascript:void(0)" class="aside_btn_on clearfix"><span class="fl">服务方式</span><i class="web_skin aside_arrow"></i></a></li>
         <li style="border-bottom: 0px none;"><a href="/service/mode" class="clearfix"><span class="fl">服务理念</span><i class="web_skin aside_arrow"></i></a></li>
@@ -296,7 +298,7 @@
   <div class="about_conter fr mt30">
     <section class="rel">
      <h2 class="title_text ">服务方式</h2>
-      <p class="mbx">当前位置：首页  &gt; 产品与服务 &gt; 服务方式</p>
+      <p class="mbx">当前位置：首页  &gt; 公司服务 &gt; 服务方式</p>
      <div class="hycp_box mt10">
       <section class="cpgl_mode">
      	 <h2 class="mt20 w192">动态财富管理体系:</h2>

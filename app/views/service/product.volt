@@ -1,3 +1,4 @@
+<!--
 <style class="firebugResetStyles" type="text/css" charset="utf-8">/* See license.txt for terms of usage */
 /** reset styling **/
 .firebugResetStyles {
@@ -468,3 +469,5 @@ style.firebugResetStyles {
  
     </div>
  </section>
+
+-->
